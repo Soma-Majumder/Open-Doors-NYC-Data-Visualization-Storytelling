@@ -3,10 +3,18 @@ let BOROUGHS = [];
 let selectedBoroughIdx = 0;
 
 // 5-step data ramp (low -> high access) and text-safe equivalents for type on white.
-// Tier thresholds mirror the real band boundaries in data.bands (zero/low/mid/high/top).
 const RAMP = ['var(--ramp-0)', 'var(--ramp-1)', 'var(--ramp-2)', 'var(--ramp-3)', 'var(--ramp-4)'];
 const RAMP_TEXT = ['var(--ramp-text-0)', 'var(--ramp-text-1)', 'var(--ramp-text-2)', 'var(--ramp-text-3)', 'var(--ramp-text-4)'];
-const BAND_HEAD = { zero: 'None reported', low: 'Limited', mid: 'Some access', high: 'Broad access', top: 'Widespread' };
+
+// Band definitions (range/name/desc) are fixed content per the design spec.
+// School counts per band are computed from the real data — see renderBands().
+const BAND_DEFS = [
+  { range: '0–5%', name: 'Barely ajar', desc: 'Almost no eighth grader here enters accelerated math.' },
+  { range: '5–15%', name: 'Narrow', desc: 'A small selected group gets in; most students do not.' },
+  { range: '15–30%', name: 'Ajar', desc: 'Roughly a quarter of the grade has a path in.' },
+  { range: '30–50%', name: 'Open', desc: 'Accelerated math is a normal option, not an exception.' },
+  { range: '50%+', name: 'Wide open', desc: 'Most eighth graders take accelerated math here.' }
+];
 
 // Shared scale ceiling for every percentage-based bar/column on the page, so a
 // given rate always occupies the same visual proportion wherever it appears.
@@ -24,10 +32,10 @@ const fmtUSD = n => '$' + Math.round(n).toLocaleString('en-US');
 
 function tierFor(pct) {
   if (pct === null || pct === undefined) return null;
-  if (pct <= 0) return 0;
-  if (pct <= 20) return 1;
-  if (pct <= 50) return 2;
-  if (pct <= 80) return 3;
+  if (pct < 5) return 0;
+  if (pct < 15) return 1;
+  if (pct < 30) return 2;
+  if (pct < 50) return 3;
   return 4;
 }
 
@@ -112,7 +120,7 @@ function buildBoroughs(data) {
       tier,
       swatch: RAMP[tier],
       textColor: RAMP_TEXT[tier],
-      band: data.bands[tier],
+      band: BAND_DEFS[tier],
       schoolCount
     };
   });
@@ -149,19 +157,26 @@ function selectBorough(idx) {
   document.getElementById('snapSchools').textContent = b.schoolCount;
   document.getElementById('snapRank').textContent = b.rank;
   const bandEl = document.getElementById('snapBand');
-  bandEl.textContent = b.band.range;
+  bandEl.textContent = b.band.name;
   bandEl.style.color = b.textColor;
 }
 
 function renderBands(data) {
+  const counts = [0, 0, 0, 0, 0];
+  data.schools.forEach(s => {
+    const tier = tierFor(s.pct);
+    if (tier !== null) counts[tier]++;
+  });
+
   const box = document.getElementById('bandsGrid');
-  box.innerHTML = data.bands.map((band, i) => `
+  box.innerHTML = BAND_DEFS.map((band, i) => `
     <div class="band-card">
       <div class="strip" style="background:${RAMP[i]}"></div>
       <div class="body">
         <div class="range">${band.range}</div>
-        <div class="label">${BAND_HEAD[band.key] || band.label}</div>
-        <div class="count">${band.count} schools</div>
+        <div class="label">${band.name}</div>
+        <div class="desc">${band.desc}</div>
+        <div class="count">${counts[i]} schools</div>
       </div>
     </div>
   `).join('');
@@ -246,7 +261,7 @@ function renderCaseStudy(data) {
       <div class="sub">of eighth graders take accelerated math</div>
       <div class="divider"></div>
       <div class="row"><span>Citywide pass rate</span><span>${fmtPct(data.citywide.passPct)}</span></div>
-      <div class="row"><span>Access band</span><span>${data.bands[tier].range}</span></div>
+      <div class="row"><span>Access band</span><span>${BAND_DEFS[tier].name}</span></div>
     </div>
   `;
   }).join('');
