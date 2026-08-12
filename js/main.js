@@ -1,14 +1,43 @@
 let DATA = null;
+let BOROUGHS = [];
+let selectedBoroughIdx = 0;
 
-async function loadData(){
+// 5-step data ramp (low -> high access) and text-safe equivalents for type on white.
+// Tier thresholds mirror the real band boundaries in data.bands (zero/low/mid/high/top).
+const RAMP = ['var(--ramp-0)', 'var(--ramp-1)', 'var(--ramp-2)', 'var(--ramp-3)', 'var(--ramp-4)'];
+const RAMP_TEXT = ['var(--ramp-text-0)', 'var(--ramp-text-1)', 'var(--ramp-text-2)', 'var(--ramp-text-3)', 'var(--ramp-text-4)'];
+const BAND_HEAD = { zero: 'None reported', low: 'Limited', mid: 'Some access', high: 'Broad access', top: 'Widespread' };
+
+// Shared scale ceiling for every percentage-based bar/column on the page, so a
+// given rate always occupies the same visual proportion wherever it appears.
+const AXIS_MAX = 45;
+
+function tierFor(pct) {
+  if (pct === null || pct === undefined) return null;
+  if (pct <= 0) return 0;
+  if (pct <= 20) return 1;
+  if (pct <= 50) return 2;
+  if (pct <= 80) return 3;
+  return 4;
+}
+
+function barPct(pct) {
+  return Math.max(0, Math.min(100, Math.round((pct / AXIS_MAX) * 100))) + '%';
+}
+
+function fmtPct(n) {
+  return (n === null || n === undefined) ? '—' : n.toFixed(1).replace(/\.0$/, '') + '%';
+}
+
+async function loadData() {
   // Step 1: fetch and parse the data file. Only THIS step's failures
   // should show the "couldn't load the data file" message.
   let data;
-  try{
+  try {
     const res = await fetch('./data/open-doors-data.json', { cache: 'no-store' });
-    if(!res.ok) throw new Error('HTTP ' + res.status);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     data = await res.json();
-  }catch(err){
+  } catch (err) {
     console.error('Failed to load open-doors-data.json', err);
     document.getElementById('loadState').style.display = 'none';
     document.getElementById('errorState').style.display = 'block';
@@ -16,208 +45,238 @@ async function loadData(){
   }
 
   // Step 2: the data loaded fine — show the page no matter what happens
-  // next. A rendering problem (e.g. a blocked third-party script) should
-  // never hide real content that already loaded successfully.
+  // next. A rendering problem should never hide real content that already
+  // loaded successfully.
   DATA = data;
   document.getElementById('loadState').style.display = 'none';
   document.getElementById('siteContent').style.display = 'block';
-  try{
+  try {
     renderAll(data);
-  }catch(err){
+  } catch (err) {
     console.error('Error while rendering the page', err);
   }
 }
 
-// Wraps a Chart.js call so a blocked/failed charting library (common with
-// ad blockers, since Chart.js loads from a third-party CDN) degrades to a
-// plain-text note instead of breaking the rest of the page.
-function safeChart(canvasId, config){
-  const canvas = document.getElementById(canvasId);
-  if(typeof Chart === 'undefined'){
-    canvas.outerHTML = '<div class="chart-fallback">Chart couldn\'t load — this is usually a content/ad blocker blocking the charting library from its CDN. The numbers on this page are accurate either way.</div>';
-    return;
-  }
-  try{
-    new Chart(canvas, config);
-  }catch(err){
-    console.error('Chart render failed for', canvasId, err);
-    canvas.outerHTML = '<div class="chart-fallback">This chart couldn\'t render, but the numbers elsewhere on this page are accurate.</div>';
-  }
+function renderAll(data) {
+  renderHero(data);
+  BOROUGHS = buildBoroughs(data);
+  renderBoroughRows();
+  selectBorough(0);
+  renderBands(data);
+  renderGap(data);
+  renderBoroughCards();
+  renderCompareBars(data);
+  renderTrend(data);
+  renderCaseStudy(data);
+  renderUnknown(data);
+  renderFooter(data);
 }
 
-function fmtPct(n){
-  return (n === null || n === undefined) ? '—' : n.toFixed(1).replace(/\.0$/, '') + '%';
-}
-
-function renderAll(data){
-  // Hero facts
+function renderHero(data) {
   document.getElementById('factSchools').textContent = data.citywide.schoolCount;
   document.getElementById('factAccess').textContent = fmtPct(data.citywide.accessPct);
-  document.getElementById('factYearA').textContent = data.meta.schoolYearLabel;
-  document.getElementById('boroughYearNote').textContent = data.meta.schoolYearLabel;
+}
 
-  // Search
-  const note = document.getElementById('searchDemoNote');
-  if(data.schools.length < data.citywide.schoolCount){
-    note.textContent = `Searching ${data.schools.length} of ${data.citywide.schoolCount} schools — the live directory hasn't been fully synced yet. Run "npm run fetch-data" with real network access to pull all schools.`;
-  } else {
-    note.textContent = `Searching all ${data.schools.length} reporting schools.`;
-  }
+function buildBoroughs(data) {
+  const withMeta = data.boroughs.map(b => {
+    const tier = tierFor(b.pct);
+    const schoolCount = data.schools.filter(s => s.borough === b.name).length;
+    return {
+      code: b.code,
+      name: b.name,
+      pct: b.pct,
+      tier,
+      swatch: RAMP[tier],
+      textColor: RAMP_TEXT[tier],
+      band: data.bands[tier],
+      schoolCount
+    };
+  });
+  withMeta.sort((a, b) => b.pct - a.pct);
+  withMeta.forEach((b, i) => { b.rank = (i + 1) + ' of ' + withMeta.length; });
+  return withMeta;
+}
 
-  // Bands
-  const bandsBox = document.getElementById('bandsContainer');
-  const maxCount = Math.max(...data.bands.map(b => b.count), 1);
-  bandsBox.innerHTML = data.bands.map(b => `
-    <div class="band-row">
-      <div class="range">${b.range}</div>
-      <div class="label">${b.label}</div>
-      <div class="count-wrap">
-        <div class="count-bar-outer"><div class="count-bar-inner" style="width:${Math.round((b.count/maxCount)*100)}%;${b.key==='zero'?'background:var(--coral-dark);':''}"></div></div>
-        <div class="count-num">${b.count} schools</div>
+function renderBoroughRows() {
+  const box = document.getElementById('boroughRows');
+  box.innerHTML = BOROUGHS.map((b, i) => `
+    <div class="borough-row" onclick="selectBorough(${i})">
+      <div class="left">
+        <div class="swatch" style="background:${b.swatch}"></div>
+        <div class="name">${b.name}</div>
+      </div>
+      <div class="right">
+        <div class="track"><div class="fill" style="width:${barPct(b.pct)};background:${b.swatch}"></div></div>
+        <div class="rate">${fmtPct(b.pct)}</div>
       </div>
     </div>
   `).join('');
-  const zeroBand = data.bands.find(b => b.key === 'zero');
-  const topBand = data.bands.find(b => b.key === 'top');
-  document.getElementById('zeroCallout').innerHTML =
-    `<b>${Math.round((zeroBand.count/data.bandsTotal)*100)}% of NYC middle schools</b> — ${zeroBand.count} out of ${data.bandsTotal} — reported zero eighth graders taking accelerated math in ${data.meta.schoolYearLabel}. Only <b>${Math.round((topBand.count/data.bandsTotal)*100)}%</b> reached the 81–100% band.`;
+}
 
-  // Opportunity gap
+function selectBorough(idx) {
+  selectedBoroughIdx = idx;
+  document.querySelectorAll('.borough-row').forEach((el, i) => el.classList.toggle('selected', i === idx));
+  const b = BOROUGHS[idx];
+  document.getElementById('snapName').textContent = b.name;
+  document.getElementById('snapPlain').textContent =
+    `About ${Math.round(b.pct / 10)} in 10 eighth graders in ${b.name} get a shot at accelerated math.`;
+  document.getElementById('snapRate').textContent = fmtPct(b.pct);
+  document.getElementById('snapPass').textContent = fmtPct(DATA.citywide.passPct);
+  document.getElementById('snapSchools').textContent = b.schoolCount;
+  document.getElementById('snapRank').textContent = b.rank;
+  const bandEl = document.getElementById('snapBand');
+  bandEl.textContent = b.band.range;
+  bandEl.style.color = b.textColor;
+}
+
+function renderBands(data) {
+  const box = document.getElementById('bandsGrid');
+  box.innerHTML = data.bands.map((band, i) => `
+    <div class="band-card">
+      <div class="strip" style="background:${RAMP[i]}"></div>
+      <div class="body">
+        <div class="range">${band.range}</div>
+        <div class="label">${BAND_HEAD[band.key] || band.label}</div>
+        <div class="count">${band.count} schools</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderGap(data) {
   document.getElementById('gapEntry').textContent = fmtPct(data.citywide.accessPct);
   document.getElementById('gapOutcome').textContent = fmtPct(data.citywide.passPct);
 
-  // Borough chart
-  safeChart('boroughChart', {
-    type: 'bar',
-    data: {
-      labels: data.boroughs.map(b => b.name),
-      datasets: [{
-        data: data.boroughs.map(b => b.pct),
-        backgroundColor: data.boroughs.map(b => b.name === 'Bronx' ? '#e2775a' : '#4f8d76'),
-        borderRadius: 6,
-        barThickness: 28
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.x + '%' } } },
-      scales: { x: { max: 50, ticks: { callback: v => v + '%' } }, y: { grid: { display: false } } }
-    }
-  });
+  const entryFilled = Math.round(data.citywide.accessPct);
+  const passFilled = Math.round(data.citywide.passPct);
+  document.getElementById('entryDots').innerHTML = Array.from({ length: 100 }, (_, i) =>
+    `<div style="background:${i < entryFilled ? 'var(--primary)' : 'var(--pastel-soft)'}"></div>`
+  ).join('');
+  document.getElementById('passDots').innerHTML = Array.from({ length: 100 }, (_, i) =>
+    `<div style="background:${i < passFilled ? 'var(--ink)' : 'var(--pastel-soft)'}"></div>`
+  ).join('');
+}
 
-  // Charter vs district
-  const cd = data.charterVsDistrict;
-  document.getElementById('charterSub').textContent =
-    `Charter schools average ${fmtPct(cd.charter.pct)} accelerated-math participation. District schools average ${fmtPct(cd.district.pct)} — more than double.`;
-  safeChart('charterChart', {
-    type: 'bar',
-    data: {
-      labels: [`Charter schools (${cd.charter.schoolCount} schools)`, `District schools (${cd.district.schoolCount} schools)`],
-      datasets: [{
-        data: [cd.charter.pct, cd.district.pct],
-        backgroundColor: ['#e2775a', '#4f8d76'],
-        borderRadius: 6,
-        barThickness: 44
-      }]
-    },
-    options: {
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.y + '%' } } },
-      scales: { y: { max: 45, ticks: { callback: v => v + '%' } } }
-    }
-  });
-
-  // Trend
-  const firstYear = data.trend[0]?.schoolYear;
-  const lastYear = data.trend[data.trend.length - 1];
-  document.getElementById('trendSub').textContent =
-    `Citywide participation was ${fmtPct(data.trend[0]?.pct)} in ${firstYear}. It collapsed during remote learning, rebounded to a peak, and has fallen since — to ${fmtPct(lastYear?.pct)} in ${lastYear?.schoolYear}.`;
-  safeChart('trendChart', {
-    type: 'line',
-    data: {
-      labels: data.trend.map(t => t.schoolYear),
-      datasets: [{
-        data: data.trend.map(t => t.pct),
-        borderColor: '#4f8d76',
-        backgroundColor: 'rgba(79,141,118,0.12)',
-        pointBackgroundColor: data.trend.map(t => t.pct !== null && t.pct < 15 ? '#e2775a' : '#4f8d76'),
-        pointRadius: 6,
-        spanGaps: false,
-        fill: true,
-        tension: 0.25
-      }]
-    },
-    options: {
-      plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.y === null ? 'No data (COVID disruption)' : c.parsed.y + '%' } } },
-      scales: { y: { min: 0, max: 45, ticks: { callback: v => v + '%' } } }
-    }
-  });
-
-  // Case study — pull two known Brooklyn schools by DBN out of the live directory
-  const caseDbns = ['13K113', '15K442'];
-  const caseSchools = caseDbns.map(dbn => data.schools.find(s => s.dbn === dbn)).filter(Boolean);
-  document.getElementById('caseStudyPair').innerHTML = caseSchools.map(s => `
-    <div class="pcard ${s.pct === 0 ? 'zero' : 'high'}">
-      <div class="tag">District ${s.district} · ${s.borough}</div>
-      <h3>${s.name}</h3>
-      <div class="meta">${s.students} eighth graders reported</div>
-      <div class="bignum">${fmtPct(s.pct)}</div>
-      <div class="sub">took accelerated math in ${data.meta.schoolYearLabel}</div>
+function renderBoroughCards() {
+  const box = document.getElementById('boroughCards');
+  box.innerHTML = BOROUGHS.map(b => `
+    <div class="borough-card">
+      <div class="rate">${fmtPct(b.pct)}</div>
+      <div class="bar" style="width:${barPct(b.pct)};background:${b.swatch}"></div>
+      <div class="name">${b.name}</div>
     </div>
   `).join('');
+}
 
-  // Benchmark gap
+function renderCompareBars(data) {
+  const cd = data.charterVsDistrict;
+  const rows = [
+    { label: 'Charter schools', pct: cd.charter.pct },
+    { label: 'District schools', pct: cd.district.pct }
+  ];
+  document.getElementById('compareBars').innerHTML = rows.map(r => `
+    <div class="compare-bar">
+      <div class="head"><span>${r.label}</span><span>${fmtPct(r.pct)}</span></div>
+      <div class="track"><div class="fill" style="width:${barPct(r.pct)};background:${RAMP[tierFor(r.pct)]}"></div></div>
+    </div>
+  `).join('');
+}
+
+function renderTrend(data) {
+  const bars = data.trend.map(t => {
+    const disrupted = t.schoolYear === '2019–20';
+    if (disrupted) {
+      return { year: t.reportYear, label: '—', height: '4%', color: 'var(--nodata)' };
+    }
+    return {
+      year: t.reportYear,
+      label: t.pct.toFixed(1).replace(/\.0$/, ''),
+      height: Math.max(4, Math.round((t.pct / AXIS_MAX) * 100)) + '%',
+      color: RAMP[tierFor(t.pct)]
+    };
+  });
+  document.getElementById('trendBars').innerHTML = bars.map(b => `
+    <div class="trend-bar">
+      <div class="val">${b.label}</div>
+      <div class="col" style="height:${b.height};background:${b.color}"></div>
+    </div>
+  `).join('');
+  document.getElementById('trendYears').innerHTML = bars.map(b => `<div>${b.year}</div>`).join('');
+}
+
+function renderCaseStudy(data) {
+  const caseDbns = ['13K113', '15K442'];
+  const caseSchools = caseDbns
+    .map(dbn => data.schools.find(s => s.dbn === dbn))
+    .filter(Boolean)
+    .sort((a, b) => b.pct - a.pct);
+
+  document.getElementById('caseStudyPair').innerHTML = caseSchools.map((s, i) => {
+    const spotlight = i === 0;
+    const tier = tierFor(s.pct);
+    return `
+    <div class="case-card ${spotlight ? 'spotlight' : 'plain'}">
+      <div class="tag">${s.dbn} · ${(s.borough || '').toUpperCase()} · ${(s.type || '').toUpperCase()}</div>
+      <h3>${s.name}</h3>
+      <div class="rate">${fmtPct(s.pct)}</div>
+      <div class="sub">of eighth graders take accelerated math</div>
+      <div class="divider"></div>
+      <div class="row"><span>Citywide pass rate</span><span>${fmtPct(data.citywide.passPct)}</span></div>
+      <div class="row"><span>Access band</span><span>${data.bands[tier].range}</span></div>
+    </div>
+  `;
+  }).join('');
+}
+
+function renderUnknown(data) {
   const bg = data.benchmarkGap;
   document.getElementById('benchProf').textContent = fmtPct((bg.proficiency.withBenchmark / bg.proficiency.totalRecords) * 100);
   document.getElementById('benchAccess').textContent = fmtPct((bg.access.withBenchmark / bg.access.totalRecords) * 100);
   document.getElementById('benchAccessTotal').textContent = bg.access.totalRecords.toLocaleString();
+}
 
-  // Footer
+function renderFooter(data) {
   const generated = new Date(data.meta.generatedAt);
   document.getElementById('footerMeta').innerHTML =
     `Source: <a href="${data.meta.source}" target="_blank">${data.meta.dataset}</a><br>
      Most recent report year: ${data.meta.schoolYearLabel} · Data last refreshed ${generated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
 }
 
-function doSearch(){
-  if(!DATA) return;
+function doSearch() {
+  if (!DATA) return;
   const q = document.getElementById('schoolSearch').value.toLowerCase().trim();
   const box = document.getElementById('searchResults');
-  box.innerHTML = '';
-  if(q.length < 2) return;
-  const matches = DATA.schools.filter(s =>
-    (s.name && s.name.toLowerCase().includes(q)) || (s.dbn && s.dbn.toLowerCase().includes(q))
-  ).slice(0, 8);
-  matches.forEach(s => {
-    const el = document.createElement('div');
-    el.className = 'school-card';
-    const plain = s.pct === null ? 'No data reported for this school.'
-      : s.pct === 0 ? 'No eighth graders took accelerated math here.'
-      : `About ${Math.round(s.pct/10)} in 10 eighth graders here took accelerated math.`;
-    el.innerHTML = `<div class="sname">${s.name || s.dbn}</div><div class="smeta">District ${s.district} · ${s.borough || ''} · ${s.students ?? '—'} eighth graders</div><div class="spct">${fmtPct(s.pct)}</div><div class="splain">${plain}</div>`;
-    box.appendChild(el);
-  });
-  if(matches.length === 0){
-    box.innerHTML = `<div class="demo-note">No match in the ${DATA.schools.length}-school directory currently loaded.</div>`;
+  if (q.length < 2) {
+    box.classList.remove('show');
+    box.innerHTML = '';
+    return;
   }
-}
+  const matches = DATA.schools.filter(s =>
+    (s.name && s.name.toLowerCase().includes(q)) ||
+    (s.dbn && s.dbn.toLowerCase().includes(q)) ||
+    (s.borough && s.borough.toLowerCase().includes(q))
+  ).slice(0, 8);
 
-function showBorough(code){
-  if(!DATA) return;
-  document.querySelectorAll('.btile').forEach(t => t.classList.remove('active'));
-  document.getElementById('tile-' + code).classList.add('active');
-  const b = DATA.boroughs.find(x => x.code === code);
-  if(!b) return;
-  const band = DATA.bands.find(bd => {
-    if(bd.key === 'zero') return b.pct === 0;
-    if(bd.key === 'low') return b.pct > 0 && b.pct <= 20;
-    if(bd.key === 'mid') return b.pct > 20 && b.pct <= 50;
-    if(bd.key === 'high') return b.pct > 50 && b.pct <= 80;
-    return b.pct > 80;
-  });
-  document.getElementById('snapTitle').textContent = b.name + ' — ' + fmtPct(b.pct);
-  document.getElementById('snapBar').style.width = b.pct + '%';
-  document.getElementById('snapPlain').textContent = (band ? band.range + ': ' + band.label + '. ' : '') +
-    `About ${Math.round(b.pct/10)} in 10 eighth graders in ${b.name} get a shot at accelerated math.`;
+  if (matches.length === 0) {
+    box.classList.remove('show');
+    box.innerHTML = '';
+    return;
+  }
+
+  box.classList.add('show');
+  box.innerHTML = matches.map(s => {
+    const tier = tierFor(s.pct);
+    const color = tier === null ? 'var(--muted)' : RAMP_TEXT[tier];
+    return `
+    <div class="result-row">
+      <div>
+        <div class="rname">${s.name || s.dbn}</div>
+        <div class="rmeta">${s.dbn} · ${s.borough || '—'}</div>
+      </div>
+      <div class="rrate" style="color:${color}">${fmtPct(s.pct)}</div>
+    </div>
+  `;
+  }).join('');
 }
 
 loadData();

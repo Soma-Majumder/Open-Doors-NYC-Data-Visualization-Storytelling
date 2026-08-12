@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Doors — NYC Middle-School Math Access Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
 
 <nav>
   <div class="wrap">
-    <div class="brand"><span class="mark">OD</span> Open Doors</div>
+    <div class="brand"><span class="mark">OD</span><span class="name">Open Doors</span></div>
     <div class="navlinks">
       <a href="#why">Why it matters</a>
       <a href="#start">Find a school</a>
@@ -33,13 +33,13 @@
 
 <section id="hero">
   <div class="wrap">
-    <div class="eyebrow">NYC MIDDLE-SCHOOL MATH ACCESS GUIDE</div>
-    <h1 class="hero-head">Not every NYC middle school<br><span class="accent">opens the door</span><br>to advanced math.</h1>
+    <div class="eyebrow">NYC middle-school math access guide</div>
+    <h1 class="hero-head">Not every NYC middle school <span class="accent">opens the door</span> to advanced math.</h1>
     <p class="hero-sub">Open Doors shows which NYC middle schools give eighth graders a real shot at accelerated math — and which don't — using the city's own public school-report data.</p>
     <a href="#start" class="cta">Find a school ↓</a>
-    <div class="facts-rail">
+    <div class="stat-grid cols-3">
       <div><div class="tag">Explore</div><div class="num" id="factSchools">—</div><div class="lbl">schools reporting</div></div>
-      <div><div class="tag">Understand</div><div class="num" id="factAccess">—</div><div class="lbl">citywide participation, <span id="factYearA">—</span></div></div>
+      <div><div class="tag">Understand</div><div class="num accent" id="factAccess">—</div><div class="lbl">citywide participation</div></div>
       <div><div class="tag">Compare</div><div class="num">5</div><div class="lbl">boroughs</div></div>
     </div>
   </div>
@@ -47,104 +47,116 @@
 
 <section id="why">
   <div class="wrap">
-    <div class="eyebrow">Why This Matters</div>
+    <div class="eyebrow">Why this matters</div>
     <h2 class="section-head">A seat in 8th-grade math can be worth real money later.</h2>
     <p class="section-sub">Advanced math in middle school isn't just a harder class — it's the first link in a course chain. Skip it, and calculus by senior year becomes very hard to reach.</p>
 
-    <div class="pathway-chain">
-      <div class="step grade8">8th grade: Algebra I</div>
-      <div class="arrow">→</div>
-      <div class="step">9th: Geometry</div>
-      <div class="arrow">→</div>
-      <div class="step">10th: Algebra II</div>
-      <div class="arrow">→</div>
-      <div class="step">11th–12th: Calculus</div>
+    <div class="chain-grid">
+      <div class="chain-card primary has-arrow">
+        <div class="tag">8th grade</div>
+        <div class="name">Algebra I</div>
+      </div>
+      <div class="chain-card pastel has-arrow">
+        <div class="tag">9th</div>
+        <div class="name">Geometry</div>
+      </div>
+      <div class="chain-card pastel-soft has-arrow">
+        <div class="tag">10th</div>
+        <div class="name">Algebra II</div>
+      </div>
+      <div class="chain-card outline">
+        <div class="tag">11th–12th</div>
+        <div class="name">Calculus</div>
+      </div>
     </div>
 
-    <div class="earn-stats">
-      <div class="estat">
+    <div class="earn-grid">
+      <div class="earn-stat earn-stat--1">
         <div class="n">+19.5%</div>
         <div class="l">predicted earnings boost per additional year of calculus taken in high school — still measurable a decade later</div>
       </div>
-      <div class="estat">
+      <div class="earn-stat earn-stat--2">
         <div class="n">+8.0%</div>
         <div class="l">predicted earnings boost per additional year of algebra/geometry coursework</div>
       </div>
-    </div>
-
-    <div class="earn-stats">
-      <div class="estat">
-        <div class="n" style="color:var(--coral-dark);">2%</div>
+      <div class="earn-stat">
+        <div class="n">2%</div>
         <div class="l">of STEM-intending college students who still need pre-calculus when they arrive go on to earn a STEM bachelor's degree</div>
       </div>
-      <div class="estat">
-        <div class="n" style="color:var(--coral-dark);">&lt;40%</div>
+      <div class="earn-stat">
+        <div class="n">&lt;40%</div>
         <div class="l">chance of earning any four-year degree at all for students who never got past Algebra II in high school</div>
       </div>
     </div>
 
-    <div class="external-note">
+    <div class="methodology-note">
       <b>About this data:</b> these figures are national education research, not NYC's own school-report numbers used everywhere else on this page. The earnings estimates come from a long-term study of California students (Rose &amp; Betts, <i>The Review of Economics and Statistics</i>); the STEM-completion figures are cited via The 74 and the Pioneer Institute. They show a strong association between advanced math coursework and later outcomes — not a guarantee for any individual student. Research is also clear this benefit depends on real support alongside access, not placement alone: a series of causal studies on the "Algebra for All" movement found that pushing students into accelerated math without adequate support increased failure rates for those who weren't ready, while Chicago's "double-dose" model (two class periods instead of one) improved both test scores and long-run graduation and college-enrollment rates.
     </div>
   </div>
 </section>
 
 <section id="start">
-  <div class="wrap">
-    <div class="eyebrow">Start Here</div>
-    <h2 class="section-head">Does your school open the door?</h2>
-    <p class="section-sub">Search for a school, or start with the borough you know. Every result translates a number into plain language — without assigning a school a grade.</p>
+  <div class="eyebrow">Start here</div>
+  <h2 class="section-head">Does your school open the door?</h2>
+  <p class="section-sub">Search for a school, or start with the borough you know. Every result translates a number into plain language — without assigning a school a grade.</p>
 
-    <div class="finder">
-      <input type="text" id="schoolSearch" placeholder="Search a school name or DBN" oninput="doSearch()">
-      <div class="demo-note" id="searchDemoNote"></div>
-      <div id="searchResults"></div>
-    </div>
+  <div class="search-row">
+    <input type="text" id="schoolSearch" placeholder="Search a school by name or DBN…" oninput="doSearch()">
+    <div class="search-btn" onclick="doSearch()">Search</div>
+  </div>
 
-    <div class="borough-picker">
-      <div class="note">Click a borough to see its <span id="boroughYearNote">—</span> access snapshot. Shown at borough level for now — neighborhood-level pins would require joining an address dataset this endpoint doesn't include.</div>
-      <div class="btile" id="tile-X" onclick="showBorough('X')">Bronx</div>
-      <div class="btile" id="tile-M" onclick="showBorough('M')">Manhattan</div>
-      <div class="btile" id="tile-Q" onclick="showBorough('Q')">Queens</div>
-      <div class="btile" id="tile-K" onclick="showBorough('K')">Brooklyn</div>
-      <div class="btile" id="tile-R" onclick="showBorough('R')">Staten Island</div>
+  <div id="searchResults"></div>
+
+  <div class="start-split">
+    <div>
+      <div class="start-note">Click a borough to see its access snapshot.</div>
+      <div class="borough-rows" id="boroughRows"></div>
+      <div class="start-footnote">Shown at borough level — neighborhood-level pins would require joining an address dataset this endpoint doesn't include.</div>
     </div>
 
     <div class="snapshot" id="snapshot">
-      <div class="tag">Borough Snapshot</div>
-      <h3 id="snapTitle">Pick a borough above</h3>
-      <div class="bar-outer"><div class="bar-inner" id="snapBar"></div></div>
-      <div class="plain" id="snapPlain">Click a borough to see how this explanation works.</div>
+      <div class="tag">Borough snapshot</div>
+      <h3 id="snapName">—</h3>
+      <div class="plain" id="snapPlain">—</div>
+      <div class="stat-grid cols-2 compact">
+        <div><div class="num accent" id="snapRate">—</div><div class="lbl">take accelerated math</div></div>
+        <div><div class="num" id="snapPass">—</div><div class="lbl">of participants pass</div></div>
+      </div>
+      <div class="snapshot-row"><span>Schools reporting</span><span id="snapSchools">—</span></div>
+      <div class="snapshot-row"><span>Citywide rank</span><span id="snapRank">—</span></div>
+      <div class="snapshot-row"><span>Access band</span><span id="snapBand" style="color:var(--primary)">—</span></div>
     </div>
   </div>
 </section>
 
 <section id="pathway">
   <div class="wrap">
-    <div class="eyebrow">Read the Pathway</div>
+    <div class="eyebrow">Read the pathway</div>
     <h2 class="section-head">A percentage can tell you who gets a chance.</h2>
     <p class="section-sub">These are participation bands, not school grades. They describe entry into accelerated math — not a student's ability or a school's worth. Counts below are the real distribution across all reporting schools, pulled live from NYC Open Data.</p>
-
-    <div id="bandsContainer" style="margin-top:20px;"></div>
-
-    <div class="callout-flag" id="zeroCallout"></div>
+    <div class="bands-grid" id="bandsGrid"></div>
   </div>
 </section>
 
 <section id="gap">
   <div class="wrap">
-    <div class="eyebrow">The Opportunity Gap</div>
-    <h2 class="section-head">Nearly everyone who gets in passes.<br>So why do so few get a seat?</h2>
+    <div class="eyebrow">The opportunity gap</div>
+    <h2 class="section-head">Nearly everyone who gets in passes. <span class="accent">So why do so few get a seat?</span></h2>
     <p class="section-sub">The data points to an access question: participation is low, while success among reported participants is extremely high.</p>
-    <div class="gap-box">
-      <div class="gap-stat entry">
+
+    <div class="gap-row">
+      <div class="gap-card entry">
         <div class="tag">Entry</div>
-        <div><div class="num" id="gapEntry">—</div><div class="desc">of eighth graders take accelerated math</div></div>
+        <div class="num" id="gapEntry">—</div>
+        <div class="desc">of eighth graders take accelerated math</div>
+        <div class="dot-grid" id="entryDots"></div>
       </div>
-      <div class="gap-arrow">↓</div>
-      <div class="gap-stat outcome">
+      <div class="gap-arrow">→</div>
+      <div class="gap-card outcome">
         <div class="tag">Outcome</div>
-        <div><div class="num" id="gapOutcome">—</div><div class="desc">of reported participants pass</div></div>
+        <div class="num" id="gapOutcome">—</div>
+        <div class="desc">of reported participants pass</div>
+        <div class="dot-grid" id="passDots"></div>
       </div>
     </div>
   </div>
@@ -152,78 +164,77 @@
 
 <section id="borough">
   <div class="wrap">
-    <div class="eyebrow">Same City, Five Different Doors</div>
+    <div class="eyebrow">Same city, five different doors</div>
     <h2 class="section-head">Where you live predicts access more than how you'd do.</h2>
     <p class="section-sub">Queens has posted the highest participation rate every year since 2018. The Bronx has posted the lowest every year since 2018. This is not a one-year snapshot.</p>
-    <div class="chart-box"><canvas id="boroughChart"></canvas></div>
-    <div class="methodology">Enrollment-weighted average across Middle and K–8 schools, pulled live from NYC DOE School Quality Reports Data (dnpx-dfnc).</div>
-  </div>
-</section>
 
-<section id="charter">
-  <div class="wrap">
-    <div class="eyebrow">A Wider Gap</div>
-    <h2 class="section-head">The biggest gap on this site isn't between boroughs.</h2>
-    <p class="section-sub" id="charterSub"></p>
-    <div class="chart-box"><canvas id="charterChart"></canvas></div>
-    <div class="caveat">This compares reported participation, not school quality. Charter schools are not zoned, operate under different admissions rules, and often run different course sequences than district schools — so this gap describes a pattern in the data, not a verdict on either system.</div>
-  </div>
-</section>
+    <div class="borough-cards" id="boroughCards"></div>
 
-<section id="trend">
-  <div class="wrap">
-    <div class="eyebrow">The Recent Trend</div>
-    <h2 class="section-head">Access hasn't recovered — it's fallen again.</h2>
-    <p class="section-sub" id="trendSub"></p>
-    <div class="chart-box"><canvas id="trendChart"></canvas></div>
-    <div class="methodology">2019–20 is blank because state testing and reporting were disrupted that spring, not because access was zero.</div>
+    <div class="split-2">
+      <div>
+        <div class="eyebrow">A wider gap</div>
+        <h3>The biggest gap on this site isn't between boroughs.</h3>
+        <div class="compare-bars" id="compareBars"></div>
+        <div class="caption">Charter schools are not zoned and often run different course sequences — this gap describes a pattern in the data, not a verdict on either system.</div>
+      </div>
+
+      <div>
+        <div class="eyebrow">The recent trend</div>
+        <h3>Access hasn't recovered — it's fallen again.</h3>
+        <div class="trend-bars" id="trendBars"></div>
+        <div class="trend-years" id="trendYears"></div>
+        <div class="caption" style="margin-top:14px">2019–20 is blank because state testing and reporting were disrupted that spring, not because access was zero.</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="casestudy">
   <div class="wrap">
-    <div class="eyebrow">Same City. Different Door.</div>
+    <div class="eyebrow">Same city. Different door.</div>
     <h2 class="section-head">Two Brooklyn middle schools. Two very different doors.</h2>
     <p class="section-sub">Real, named, verified records from the live directory — not an average.</p>
-    <div class="pair" id="caseStudyPair"></div>
+    <div class="case-grid" id="caseStudyPair"></div>
     <div class="disclaim">Both are zoned district middle schools in Brooklyn. This shows a pattern, not a cause — Open Doors doesn't know why these two doors look so different, only that they do.</div>
   </div>
 </section>
 
 <section id="unknown">
   <div class="wrap">
-    <div class="eyebrow">Question for Further Investigation</div>
+    <div class="eyebrow">Question for further investigation</div>
     <h2 class="section-head">The city grades outcomes. It has never graded access.</h2>
-    <div class="benchmark-box">
-      <p style="font-size:16px;">NYC DOE benchmarks whether a school's students perform well against similar schools — a "comparison group average" attached to most performance metrics.</p>
-      <div class="stat-pair">
-        <div><div class="n" style="color:var(--teal-dark);" id="benchProf">—</div><div class="l">of math-proficiency-rating records include a peer-comparison benchmark</div></div>
-        <div><div class="n" style="color:var(--coral-dark);" id="benchAccess">—</div><div class="l">of accelerated-math access records have ever included one — across all <span id="benchAccessTotal">—</span> records since 2015</div></div>
+    <p class="section-sub">NYC DOE benchmarks whether a school's students perform well against similar schools — a "comparison group average" attached to most performance metrics.</p>
+    <div class="unknown-grid">
+      <div class="unknown-stat">
+        <div class="num" id="benchProf">—</div>
+        <div class="l">of math-proficiency-rating records include a peer-comparison benchmark</div>
       </div>
-      <div class="support-list">
-        This doesn't tell us <i>why</i> access differs — a school's rate may reflect course availability, placement rules, staffing, scheduling, counseling, or what families are told. It tells us the city has the tools to ask that question and hasn't pointed them at access.
+      <div class="unknown-stat flag">
+        <div class="num" id="benchAccess">—</div>
+        <div class="l">of accelerated-math access records have ever included one — across all <span id="benchAccessTotal">—</span> records since 2015</div>
       </div>
-      <div class="qtag">Open question — not yet a FOIL request</div>
     </div>
+    <p class="unknown-body">This doesn't tell us <em>why</em> access differs — a school's rate may reflect course availability, placement rules, staffing, scheduling, counseling, or what families are told. It tells us the city has the tools to ask that question and hasn't pointed them at access.</p>
+    <div class="qtag">Open question — not yet a FOIL request</div>
   </div>
 </section>
 
 <section id="audience">
   <div class="wrap">
-    <div class="eyebrow">Built for the Public</div>
-    <h2>Clear pathways. Clear questions.</h2>
+    <div class="eyebrow">Built for the public</div>
+    <h2 class="section-head">Clear pathways. Clear questions.</h2>
     <p class="section-sub">Open Doors is for NYC students, families, educators, advocates, journalists, and researchers who want to understand whether advanced-math opportunity is available — not just who succeeds after receiving it.</p>
     <a href="#start" class="cta">Find a school ↑</a>
   </div>
 </section>
 
 <footer>
-  <div class="wrap fgrid">
+  <div class="wrap">
     <div>
       <div class="fbrand">Open Doors</div>
-      <div>Public school-report data, made easier to read.</div>
+      <div class="ftag">Public school-report data, made easier to read.</div>
     </div>
-    <div id="footerMeta">
+    <div class="fmeta" id="footerMeta">
       Source: <a href="https://data.cityofnewyork.us/Education/School-Quality-Reports-Data/dnpx-dfnc" target="_blank">NYC DOE School Quality Reports Data</a>
     </div>
   </div>
