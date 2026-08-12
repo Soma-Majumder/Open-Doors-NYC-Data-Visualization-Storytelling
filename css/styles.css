@@ -160,14 +160,42 @@ h2.section-head{font-size:42px;line-height:1.14;letter-spacing:-.015em;max-width
 .chain-card.outline .tag{color:var(--faint);}
 .chain-card.outline .name{color:var(--muted-soft);}
 
-.earn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-.earn-stat{padding-top:18px;border-top:2px solid var(--pastel);}
-.earn-stat .n{font-family:Fraunces,Georgia,serif;font-size:38px;line-height:1;color:var(--ink);}
-.earn-stat .l{font-size:13.5px;line-height:1.5;color:var(--muted);margin-top:10px;}
-.earn-stat--1{border-top-color:var(--primary);}
-.earn-stat--1 .n{color:var(--primary);}
-.earn-stat--2{border-top-color:var(--apricot);}
-.earn-stat--2 .n{color:var(--primary);}
+.earn-card{background:var(--page);border:1px solid var(--rule);border-radius:8px;padding:40px 44px 36px;}
+.earn-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin-bottom:34px;}
+.earn-head h3{font-size:30px;line-height:1.15;max-width:20ch;}
+.earn-head .caption{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--faint);
+  text-transform:uppercase;text-align:right;line-height:1.6;
+}
+
+.ladder{display:flex;flex-direction:column;gap:14px;margin-bottom:14px;}
+.ladder-row{display:grid;grid-template-columns:230px minmax(0,1fr) 250px;gap:20px;align-items:center;}
+.ladder-row .label .name{font-size:14.5px;font-weight:500;color:var(--ink);}
+.ladder-row .label .sub{font-size:12.5px;color:var(--muted-soft);margin-top:2px;}
+.ladder-row .bar-wrap{min-width:0;}
+.ladder-row .bar{height:52px;border-radius:4px;}
+.ladder-row .money{display:flex;align-items:baseline;gap:12px;}
+.ladder-row .money .fig{font-family:Fraunces,Georgia,serif;font-size:34px;line-height:1;}
+.ladder-row .money .gain{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--primary);white-space:nowrap;}
+
+.payoff{
+  display:flex;align-items:center;gap:20px;background:var(--primary);color:var(--page);
+  border-radius:6px;padding:26px 32px;margin-top:26px;flex-wrap:wrap;
+}
+.payoff .left{flex:1 1 260px;}
+.payoff .mini-eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;opacity:.8;margin-bottom:10px;
+  text-transform:uppercase;
+}
+.payoff .amount{font-family:Fraunces,Georgia,serif;font-size:62px;line-height:1;letter-spacing:-.02em;}
+.payoff .right{flex:1 1 260px;font-size:15px;line-height:1.55;opacity:.9;}
+
+.earn-secondary{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:34px;padding-top:30px;border-top:1px solid var(--rule);}
+.earn-secondary .item{display:flex;gap:18px;align-items:flex-start;}
+.earn-secondary .item .num{font-family:Fraunces,Georgia,serif;font-size:44px;line-height:1;color:var(--ink);flex-shrink:0;}
+.earn-secondary .item .cap{font-size:13.5px;line-height:1.55;color:var(--muted);padding-top:6px;}
+
+.earn-footnote{font-size:12px;line-height:1.6;color:var(--faint);margin-top:22px;max-width:88ch;}
 
 .methodology-note{
   margin-top:40px;background:var(--page);border-left:3px solid var(--apricot);

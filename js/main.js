@@ -12,6 +12,16 @@ const BAND_HEAD = { zero: 'None reported', low: 'Limited', mid: 'Some access', h
 // given rate always occupies the same visual proportion wherever it appears.
 const AXIS_MAX = 45;
 
+// "Why this matters" salary ladder — the research gives percentage effects, not
+// salaries. We apply them to one illustrative baseline so the payoff is legible
+// in dollars; everything below recomputes from BASELINE, not from the data feed.
+const EARN_BASELINE = 65000;
+const EARN_ALGEBRA_GEO_PCT = 0.08;
+const EARN_CALCULUS_PCT = 0.195;
+const EARN_TEN_YEAR_YEARS = 10;
+const roundTo = (n, step) => Math.round(n / step) * step;
+const fmtUSD = n => '$' + Math.round(n).toLocaleString('en-US');
+
 function tierFor(pct) {
   if (pct === null || pct === undefined) return null;
   if (pct <= 0) return 0;
@@ -59,6 +69,7 @@ async function loadData() {
 
 function renderAll(data) {
   renderHero(data);
+  renderEarnLadder();
   BOROUGHS = buildBoroughs(data);
   renderBoroughRows();
   selectBorough(0);
@@ -75,6 +86,19 @@ function renderAll(data) {
 function renderHero(data) {
   document.getElementById('factSchools').textContent = data.citywide.schoolCount;
   document.getElementById('factAccess').textContent = fmtPct(data.citywide.accessPct);
+}
+
+function renderEarnLadder() {
+  const algebraSalary = roundTo(EARN_BASELINE * (1 + EARN_ALGEBRA_GEO_PCT), 100);
+  const calcSalary = roundTo(EARN_BASELINE * (1 + EARN_CALCULUS_PCT), 100);
+  const tenYearValue = roundTo(EARN_BASELINE * EARN_CALCULUS_PCT * EARN_TEN_YEAR_YEARS, 1000);
+
+  document.getElementById('ladderBaseline').textContent = fmtUSD(EARN_BASELINE);
+  document.getElementById('ladderAlgebraFig').textContent = fmtUSD(algebraSalary);
+  document.getElementById('ladderAlgebraGain').textContent = '+' + fmtUSD(algebraSalary - EARN_BASELINE) + '/yr';
+  document.getElementById('ladderCalcFig').textContent = fmtUSD(calcSalary);
+  document.getElementById('ladderCalcGain').textContent = '+' + fmtUSD(calcSalary - EARN_BASELINE) + '/yr';
+  document.getElementById('payoffAmount').textContent = fmtUSD(tenYearValue);
 }
 
 function buildBoroughs(data) {

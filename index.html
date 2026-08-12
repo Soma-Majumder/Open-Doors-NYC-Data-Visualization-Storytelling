@@ -70,23 +70,67 @@
       </div>
     </div>
 
-    <div class="earn-grid">
-      <div class="earn-stat earn-stat--1">
-        <div class="n">+19.5%</div>
-        <div class="l">predicted earnings boost per additional year of calculus taken in high school — still measurable a decade later</div>
+    <div class="earn-card">
+      <div class="earn-head">
+        <h3>What one math class is worth, in dollars.</h3>
+        <div class="caption">Annual earnings, age&nbsp;30<br>Starting from a $65,000 baseline</div>
       </div>
-      <div class="earn-stat earn-stat--2">
-        <div class="n">+8.0%</div>
-        <div class="l">predicted earnings boost per additional year of algebra/geometry coursework</div>
+
+      <div class="ladder">
+        <div class="ladder-row">
+          <div class="label">
+            <div class="name">Never got past Algebra II</div>
+            <div class="sub">baseline</div>
+          </div>
+          <div class="bar-wrap"><div class="bar" style="width:84%;background:var(--ramp-0)"></div></div>
+          <div class="money"><div class="fig" id="ladderBaseline" style="color:var(--muted-soft)">—</div></div>
+        </div>
+
+        <div class="ladder-row">
+          <div class="label">
+            <div class="name">+1 year of algebra / geometry</div>
+            <div class="sub">+8.0% predicted</div>
+          </div>
+          <div class="bar-wrap"><div class="bar" style="width:90%;background:var(--ramp-2)"></div></div>
+          <div class="money">
+            <div class="fig" id="ladderAlgebraFig" style="color:var(--ink)">—</div>
+            <div class="gain" id="ladderAlgebraGain">—</div>
+          </div>
+        </div>
+
+        <div class="ladder-row">
+          <div class="label">
+            <div class="name">+1 year of calculus</div>
+            <div class="sub">+19.5% predicted</div>
+          </div>
+          <div class="bar-wrap"><div class="bar" style="width:100%;background:var(--ramp-4)"></div></div>
+          <div class="money">
+            <div class="fig" id="ladderCalcFig" style="color:var(--primary)">—</div>
+            <div class="gain" id="ladderCalcGain">—</div>
+          </div>
+        </div>
       </div>
-      <div class="earn-stat">
-        <div class="n">2%</div>
-        <div class="l">of STEM-intending college students who still need pre-calculus when they arrive go on to earn a STEM bachelor's degree</div>
+
+      <div class="payoff">
+        <div class="left">
+          <div class="mini-eyebrow">The door is worth roughly</div>
+          <div class="amount" id="payoffAmount">—</div>
+        </div>
+        <div class="right">over the first ten years of a career — the calculus effect applied to a $65,000 salary, and the research finds it still measurable a decade after graduation.</div>
       </div>
-      <div class="earn-stat">
-        <div class="n">&lt;40%</div>
-        <div class="l">chance of earning any four-year degree at all for students who never got past Algebra II in high school</div>
+
+      <div class="earn-secondary">
+        <div class="item">
+          <div class="num">2%</div>
+          <div class="cap">of STEM-intending college students who arrive needing pre-calculus go on to earn a STEM bachelor's degree</div>
+        </div>
+        <div class="item">
+          <div class="num">&lt;40%</div>
+          <div class="cap">chance of earning any four-year degree for students who never got past Algebra II in high school</div>
+        </div>
       </div>
+
+      <div class="earn-footnote">Dollar figures are illustrative: the research reports percentage effects, not salaries. We apply them to a $65,000 baseline to make the scale legible — your mileage, and any individual student's, will differ.</div>
     </div>
 
     <div class="methodology-note">
