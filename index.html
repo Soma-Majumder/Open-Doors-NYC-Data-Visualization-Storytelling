@@ -234,6 +234,7 @@
   }
   .chart-box canvas{max-height:320px;}
   .methodology{font-size:12.5px;color:var(--navy-2);opacity:0.75;margin-top:10px;}
+  .chart-fallback{font-size:14px;font-style:italic;color:var(--navy-2);padding:20px 4px;}
 
   #charter{background:var(--cream-2);}
   .caveat{
@@ -511,17 +512,47 @@
   let DATA = null;
 
   async function loadData(){
+    // Step 1: fetch and parse the data file. Only THIS step's failures
+    // should show the "couldn't load the data file" message.
+    let data;
     try{
       const res = await fetch('./data/open-doors-data.json', { cache: 'no-store' });
       if(!res.ok) throw new Error('HTTP ' + res.status);
-      DATA = await res.json();
-      document.getElementById('loadState').style.display = 'none';
-      document.getElementById('siteContent').style.display = 'block';
-      renderAll(DATA);
+      data = await res.json();
     }catch(err){
       console.error('Failed to load open-doors-data.json', err);
       document.getElementById('loadState').style.display = 'none';
       document.getElementById('errorState').style.display = 'block';
+      return;
+    }
+
+    // Step 2: the data loaded fine — show the page no matter what happens
+    // next. A rendering problem (e.g. a blocked third-party script) should
+    // never hide real content that already loaded successfully.
+    DATA = data;
+    document.getElementById('loadState').style.display = 'none';
+    document.getElementById('siteContent').style.display = 'block';
+    try{
+      renderAll(data);
+    }catch(err){
+      console.error('Error while rendering the page', err);
+    }
+  }
+
+  // Wraps a Chart.js call so a blocked/failed charting library (common with
+  // ad blockers, since Chart.js loads from a third-party CDN) degrades to a
+  // plain-text note instead of breaking the rest of the page.
+  function safeChart(canvasId, config){
+    const canvas = document.getElementById(canvasId);
+    if(typeof Chart === 'undefined'){
+      canvas.outerHTML = '<div class="chart-fallback">Chart couldn\'t load — this is usually a content/ad blocker blocking the charting library from its CDN. The numbers on this page are accurate either way.</div>';
+      return;
+    }
+    try{
+      new Chart(canvas, config);
+    }catch(err){
+      console.error('Chart render failed for', canvasId, err);
+      canvas.outerHTML = '<div class="chart-fallback">This chart couldn\'t render, but the numbers elsewhere on this page are accurate.</div>';
     }
   }
 
@@ -567,7 +598,7 @@
     document.getElementById('gapOutcome').textContent = fmtPct(data.citywide.passPct);
 
     // Borough chart
-    new Chart(document.getElementById('boroughChart'), {
+    safeChart('boroughChart', {
       type: 'bar',
       data: {
         labels: data.boroughs.map(b => b.name),
@@ -589,7 +620,7 @@
     const cd = data.charterVsDistrict;
     document.getElementById('charterSub').textContent =
       `Charter schools average ${fmtPct(cd.charter.pct)} accelerated-math participation. District schools average ${fmtPct(cd.district.pct)} — more than double.`;
-    new Chart(document.getElementById('charterChart'), {
+    safeChart('charterChart', {
       type: 'bar',
       data: {
         labels: [`Charter schools (${cd.charter.schoolCount} schools)`, `District schools (${cd.district.schoolCount} schools)`],
@@ -611,7 +642,7 @@
     const lastYear = data.trend[data.trend.length - 1];
     document.getElementById('trendSub').textContent =
       `Citywide participation was ${fmtPct(data.trend[0]?.pct)} in ${firstYear}. It collapsed during remote learning, rebounded to a peak, and has fallen since — to ${fmtPct(lastYear?.pct)} in ${lastYear?.schoolYear}.`;
-    new Chart(document.getElementById('trendChart'), {
+    safeChart('trendChart', {
       type: 'line',
       data: {
         labels: data.trend.map(t => t.schoolYear),
