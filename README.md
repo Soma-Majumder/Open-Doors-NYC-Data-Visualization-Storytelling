@@ -1,7 +1,7 @@
 # Open-Doors-NYC-Data-Visualization-Storytelling
 This is the final project of where I go and explore NYC Data from schools and see that there is a gap of access to advanced math across 633 middle schools in NYC
 
-# Open Doors App
+## Open Doors App
 
 **NYC middle-school math access guide.** Open Doors turns NYC DOE's public school-report data into a plain-language view of which middle schools give eighth graders a real shot at accelerated math — not just who succeeds after getting in.
 
