@@ -1,0 +1,14 @@
+{
+  "name": "open-doors-nyc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NYC middle-school math access guide, built on NYC DOE School Quality Reports Data (dnpx-dfnc).",
+  "type": "module",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "start": "npx --yes serve ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,5835 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-12T18:37:14.110Z",
+    "reportYear": 2025,
+    "schoolYearLabel": "2024–25",
+    "source": "https://data.cityofnewyork.us/resource/dnpx-dfnc.json",
+    "dataset": "NYC DOE School Quality Reports Data (dnpx-dfnc)"
+  },
+  "citywide": {
+    "accessPct": 31.4,
+    "passPct": 97.4,
+    "schoolCount": 633
+  },
+  "boroughs": [
+    {
+      "code": "Q",
+      "name": "Queens",
+      "pct": 40.8
+    },
+    {
+      "code": "M",
+      "name": "Manhattan",
+      "pct": 36.2
+    },
+    {
+      "code": "K",
+      "name": "Brooklyn",
+      "pct": 29.9
+    },
+    {
+      "code": "R",
+      "name": "Staten Island",
+      "pct": 27.2
+    },
+    {
+      "code": "X",
+      "name": "Bronx",
+      "pct": 19.2
+    }
+  ],
+  "charterVsDistrict": {
+    "charter": {
+      "pct": 15.5,
+      "schoolCount": 165
+    },
+    "district": {
+      "pct": 34.9,
+      "schoolCount": 468
+    }
+  },
+  "trend": [
+    {
+      "reportYear": 2018,
+      "schoolYear": "2017–18",
+      "pct": 32.8
+    },
+    {
+      "reportYear": 2019,
+      "schoolYear": "2018–19",
+      "pct": 36
+    },
+    {
+      "reportYear": 2020,
+      "schoolYear": "2019–20",
+      "pct": 0
+    },
+    {
+      "reportYear": 2021,
+      "schoolYear": "2020–21",
+      "pct": 9.6
+    },
+    {
+      "reportYear": 2022,
+      "schoolYear": "2021–22",
+      "pct": 33.9
+    },
+    {
+      "reportYear": 2023,
+      "schoolYear": "2022–23",
+      "pct": 38
+    },
+    {
+      "reportYear": 2024,
+      "schoolYear": "2023–24",
+      "pct": 32.1
+    },
+    {
+      "reportYear": 2025,
+      "schoolYear": "2024–25",
+      "pct": 31.4
+    }
+  ],
+  "bandsTotal": 633,
+  "bands": [
+    {
+      "key": "zero",
+      "range": "0%",
+      "label": "No accelerated-math participation reported",
+      "count": 144
+    },
+    {
+      "key": "low",
+      "range": "1–20%",
+      "label": "Limited participation",
+      "count": 161
+    },
+    {
+      "key": "mid",
+      "range": "21–50%",
+      "label": "Some students are participating",
+      "count": 210
+    },
+    {
+      "key": "high",
+      "range": "51–80%",
+      "label": "Broad participation",
+      "count": 82
+    },
+    {
+      "key": "top",
+      "range": "81–100%",
+      "label": "Accelerated math reaches most eighth graders",
+      "count": 32
+    }
+  ],
+  "benchmarkGap": {
+    "access": {
+      "totalRecords": 8552,
+      "withBenchmark": 0
+    },
+    "proficiency": {
+      "totalRecords": 1367,
+      "withBenchmark": 1358
+    }
+  },
+  "schools": [
+    {
+      "dbn": "01M034",
+      "name": "P.S. 034 Franklin D. Roosevelt",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 22,
+      "pct": 36.4
+    },
+    {
+      "dbn": "01M140",
+      "name": "P.S. 140 Nathan Straus",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 42,
+      "pct": 16.7
+    },
+    {
+      "dbn": "01M184",
+      "name": "P.S. 184m Shuang Wen",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 84,
+      "pct": 94
+    },
+    {
+      "dbn": "01M188",
+      "name": "P.S. 188 The Island School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 52,
+      "pct": 78.8
+    },
+    {
+      "dbn": "01M332",
+      "name": "University Neighborhood Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 47,
+      "pct": 27.7
+    },
+    {
+      "dbn": "01M378",
+      "name": "School for Global Leaders",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 41,
+      "pct": 22
+    },
+    {
+      "dbn": "01M450",
+      "name": "East Side Community School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 99,
+      "pct": 3
+    },
+    {
+      "dbn": "01M539",
+      "name": "New Explorations into Science, Technology and Math High School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 119,
+      "pct": 97.5
+    },
+    {
+      "dbn": "01M839",
+      "name": "Tompkins Square Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 1,
+      "students": 100,
+      "pct": 16
+    },
+    {
+      "dbn": "02M104",
+      "name": "J.H.S. 104 Simon Baruch",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 306,
+      "pct": 46.4
+    },
+    {
+      "dbn": "02M114",
+      "name": "East Side Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 137,
+      "pct": 90.5
+    },
+    {
+      "dbn": "02M126",
+      "name": "P.S. 126 Jacob August Riis",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 111,
+      "pct": 86.5
+    },
+    {
+      "dbn": "02M131",
+      "name": "M.S. 131",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 94,
+      "pct": 69.1
+    },
+    {
+      "dbn": "02M167",
+      "name": "J.H.S. 167 Robert F. Wagner",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 271,
+      "pct": 33.6
+    },
+    {
+      "dbn": "02M177",
+      "name": "Yorkville East Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 85,
+      "pct": 72.9
+    },
+    {
+      "dbn": "02M217",
+      "name": "P.S./I.S. 217 Roosevelt Island",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 28,
+      "pct": 75
+    },
+    {
+      "dbn": "02M225",
+      "name": "Ella Baker School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 19,
+      "pct": 0
+    },
+    {
+      "dbn": "02M255",
+      "name": "M.S. 255 Salk School of Science",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 119,
+      "pct": 77.3
+    },
+    {
+      "dbn": "02M260",
+      "name": "The Clinton School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 98,
+      "pct": 90.8
+    },
+    {
+      "dbn": "02M276",
+      "name": "Battery Park City School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 75,
+      "pct": 64
+    },
+    {
+      "dbn": "02M289",
+      "name": "I.S. 289",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 88,
+      "pct": 50
+    },
+    {
+      "dbn": "02M297",
+      "name": "M.S. 297",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 107,
+      "pct": 18.7
+    },
+    {
+      "dbn": "02M303",
+      "name": "Facing History School, The",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 43,
+      "pct": 0
+    },
+    {
+      "dbn": "02M312",
+      "name": "New York City Lab Middle School for Collaborative Studies",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 176,
+      "pct": 95.5
+    },
+    {
+      "dbn": "02M347",
+      "name": "The 47 American Sign Language & English Lower School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 8,
+      "pct": 0
+    },
+    {
+      "dbn": "02M397",
+      "name": "Spruce Street School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 57,
+      "pct": 73.7
+    },
+    {
+      "dbn": "02M407",
+      "name": "Institute for Collaborative Education",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 65,
+      "pct": null
+    },
+    {
+      "dbn": "02M408",
+      "name": "Professional Performing Arts High School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 32,
+      "pct": 84.4
+    },
+    {
+      "dbn": "02M413",
+      "name": "School of the Future High School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 85,
+      "pct": 22.4
+    },
+    {
+      "dbn": "02M422",
+      "name": "Quest to Learn",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 82,
+      "pct": 19.5
+    },
+    {
+      "dbn": "02M442",
+      "name": "Ballet Tech, NYC Public School for Dance",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 24,
+      "pct": 91.7
+    },
+    {
+      "dbn": "02M896",
+      "name": "Lower Manhattan Community Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 2,
+      "students": 104,
+      "pct": 52.9
+    },
+    {
+      "dbn": "03M054",
+      "name": "J.H.S. 054 Booker T. Washington",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 218,
+      "pct": 89.4
+    },
+    {
+      "dbn": "03M076",
+      "name": "P.S. 076 A. Philip Randolph",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 40,
+      "pct": 2.5
+    },
+    {
+      "dbn": "03M149",
+      "name": "P.S. 149 Sojourner Truth",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 45,
+      "pct": 0
+    },
+    {
+      "dbn": "03M180",
+      "name": "P.S. 180 Hugo Newman",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 31,
+      "pct": 6.5
+    },
+    {
+      "dbn": "03M191",
+      "name": "The Riverside School for Makers and Artists",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 48,
+      "pct": 10.4
+    },
+    {
+      "dbn": "03M243",
+      "name": "M.S. 243 Center School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 58,
+      "pct": 100
+    },
+    {
+      "dbn": "03M245",
+      "name": "M.S. M245 The Computer School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 124,
+      "pct": 90.3
+    },
+    {
+      "dbn": "03M247",
+      "name": "M.S. M247 Dual Language Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 64,
+      "pct": 42.2
+    },
+    {
+      "dbn": "03M256",
+      "name": "Lafayette Academy",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 73,
+      "pct": 23.3
+    },
+    {
+      "dbn": "03M258",
+      "name": "Community Action School - MS 258",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 23,
+      "pct": 52.2
+    },
+    {
+      "dbn": "03M291",
+      "name": "West End Secondary School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 95,
+      "pct": 72.6
+    },
+    {
+      "dbn": "03M333",
+      "name": "P.S. 333 Manhattan School for Children",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 55,
+      "pct": 18.2
+    },
+    {
+      "dbn": "03M334",
+      "name": "The Anderson School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 44,
+      "pct": 95.5
+    },
+    {
+      "dbn": "03M415",
+      "name": "Wadleigh Secondary School for the Performing & Visual Arts",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 11,
+      "pct": 36.4
+    },
+    {
+      "dbn": "03M421",
+      "name": "West Prep Academy",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 65,
+      "pct": 44.6
+    },
+    {
+      "dbn": "03M610",
+      "name": "Young Women's Leadership School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 30,
+      "pct": 36.7
+    },
+    {
+      "dbn": "03M859",
+      "name": "Special Music School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 16,
+      "pct": 93.8
+    },
+    {
+      "dbn": "03M860",
+      "name": "Frederick Douglass Academy II Secondary School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 19,
+      "pct": 21.1
+    },
+    {
+      "dbn": "03M862",
+      "name": "Mott Hall II",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 3,
+      "students": 130,
+      "pct": 48.5
+    },
+    {
+      "dbn": "04M007",
+      "name": "P.S. 007 Samuel Stern",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 36,
+      "pct": 0
+    },
+    {
+      "dbn": "04M012",
+      "name": "Tag Young Scholars",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 60,
+      "pct": 98.3
+    },
+    {
+      "dbn": "04M057",
+      "name": "James Weldon Johnson",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 62,
+      "pct": 0
+    },
+    {
+      "dbn": "04M072",
+      "name": "The Lexington Academy",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 50,
+      "pct": 0
+    },
+    {
+      "dbn": "04M096",
+      "name": "P.S. 096 Joseph Lanzetta",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 54,
+      "pct": 0
+    },
+    {
+      "dbn": "04M108",
+      "name": "P.S. 108 Assemblyman Angelo Del Toro Educational Complex",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 46,
+      "pct": 0
+    },
+    {
+      "dbn": "04M171",
+      "name": "P.S. 171 Patrick Henry",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 89,
+      "pct": 31.5
+    },
+    {
+      "dbn": "04M206",
+      "name": "P.S. 206 Jose Celso Barbosa",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 62,
+      "pct": 30.6
+    },
+    {
+      "dbn": "04M224",
+      "name": "M.S. 224 Manhattan East School for Arts & Academics",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 68,
+      "pct": 26.5
+    },
+    {
+      "dbn": "04M372",
+      "name": "Esperanza Preparatory Academy",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 47,
+      "pct": 6.4
+    },
+    {
+      "dbn": "04M377",
+      "name": "Renaissance School of the Arts",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 43,
+      "pct": 20.9
+    },
+    {
+      "dbn": "04M825",
+      "name": "Isaac Newton Middle School for Math & Science",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 109,
+      "pct": 31.2
+    },
+    {
+      "dbn": "04M964",
+      "name": "Central Park East II",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 4,
+      "students": 48,
+      "pct": 0
+    },
+    {
+      "dbn": "05M046",
+      "name": "P.S. 046 Arthur Tappan",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 52,
+      "pct": 0
+    },
+    {
+      "dbn": "05M123",
+      "name": "P.S. 123 Mahalia Jackson",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 50,
+      "pct": 0
+    },
+    {
+      "dbn": "05M148",
+      "name": "Eagle Academy for Young Men of Harlem",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 21,
+      "pct": 47.6
+    },
+    {
+      "dbn": "05M161",
+      "name": "P.S. 161 Pedro Albizu Campos",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 75,
+      "pct": 9.3
+    },
+    {
+      "dbn": "05M286",
+      "name": "Urban Assembly Academy for Future Leaders",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 26,
+      "pct": 23.1
+    },
+    {
+      "dbn": "05M362",
+      "name": "Columbia Secondary School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 98,
+      "pct": 58.2
+    },
+    {
+      "dbn": "05M371",
+      "name": "School of Earth Exploration and Discovery Harlem (SEED Harlem)",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 33,
+      "pct": 18.2
+    },
+    {
+      "dbn": "05M499",
+      "name": "Frederick Douglass Academy",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 39,
+      "pct": 48.7
+    },
+    {
+      "dbn": "05M514",
+      "name": "New Design Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 30,
+      "pct": 3.3
+    },
+    {
+      "dbn": "05M517",
+      "name": "Teachers College Community School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 45,
+      "pct": 26.7
+    },
+    {
+      "dbn": "05M670",
+      "name": "Thurgood Marshall Academy for Learning and Social Change",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 5,
+      "students": 45,
+      "pct": 26.7
+    },
+    {
+      "dbn": "06M018",
+      "name": "P.S. 018 Park Terrace",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 35,
+      "pct": 25.7
+    },
+    {
+      "dbn": "06M052",
+      "name": "Harold O. Levy School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 64,
+      "pct": 28.1
+    },
+    {
+      "dbn": "06M143",
+      "name": "J.H.S. 143 Eleanor Roosevelt",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 59,
+      "pct": 20.3
+    },
+    {
+      "dbn": "06M173",
+      "name": "P.S./I.S. 173 Fort Washington School in the Heights",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 27,
+      "pct": 0
+    },
+    {
+      "dbn": "06M187",
+      "name": "P.S./I.S. 187 Hudson Cliffs",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 83,
+      "pct": 36.1
+    },
+    {
+      "dbn": "06M209",
+      "name": "Hamilton Grange Middle School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 110,
+      "pct": 45.5
+    },
+    {
+      "dbn": "06M210",
+      "name": "P.S./I.S. 210 - Twenty-first Century Academy for Community Leadership",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 43,
+      "pct": 55.8
+    },
+    {
+      "dbn": "06M223",
+      "name": "The Mott Hall School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 84,
+      "pct": 61.9
+    },
+    {
+      "dbn": "06M278",
+      "name": "Paula Hedbavny School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 39,
+      "pct": 35.9
+    },
+    {
+      "dbn": "06M293",
+      "name": "City College Magnet School of the Arts",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 71,
+      "pct": 38
+    },
+    {
+      "dbn": "06M311",
+      "name": "Amistad Dual Language School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 47,
+      "pct": 63.8
+    },
+    {
+      "dbn": "06M319",
+      "name": "M.S. 319 - Maria Teresa",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 88,
+      "pct": 4.5
+    },
+    {
+      "dbn": "06M322",
+      "name": "Middle School 322",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 103,
+      "pct": 0
+    },
+    {
+      "dbn": "06M324",
+      "name": "M.S. 324 - Patria Mirabal",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 63,
+      "pct": 12.7
+    },
+    {
+      "dbn": "06M328",
+      "name": "Community Math & Science Prep",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 53,
+      "pct": 0
+    },
+    {
+      "dbn": "06M346",
+      "name": "Community Health Academy of the Heights",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 78,
+      "pct": 35.9
+    },
+    {
+      "dbn": "06M348",
+      "name": "Washington Heights Expeditionary Learning School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 80,
+      "pct": 0
+    },
+    {
+      "dbn": "06M366",
+      "name": "Washington Heights Academy",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 50,
+      "pct": 30
+    },
+    {
+      "dbn": "06M528",
+      "name": "I.S. 528 Bea Fuller Rodgers School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 6,
+      "students": 79,
+      "pct": 0
+    },
+    {
+      "dbn": "07X005",
+      "name": "P.S. 5 Port Morris",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 97,
+      "pct": 8.2
+    },
+    {
+      "dbn": "07X029",
+      "name": "P.S./M.S. 029 Melrose School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 76,
+      "pct": 0
+    },
+    {
+      "dbn": "07X031",
+      "name": "P.S./M.S. 031 The William Lloyd Garrison",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 74,
+      "pct": 0
+    },
+    {
+      "dbn": "07X221",
+      "name": "South Bronx Preparatory: A College Board School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 73,
+      "pct": 0
+    },
+    {
+      "dbn": "07X223",
+      "name": "The Laboratory School of Finance and Technology: X223",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 88,
+      "pct": 37.5
+    },
+    {
+      "dbn": "07X224",
+      "name": "P.S./I.S. 224",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 61,
+      "pct": 0
+    },
+    {
+      "dbn": "07X296",
+      "name": "South Bronx Academy for Applied Media",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 56,
+      "pct": 17.9
+    },
+    {
+      "dbn": "07X298",
+      "name": "Academy of Public Relations",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 45,
+      "pct": 2.2
+    },
+    {
+      "dbn": "07X343",
+      "name": "Academy of Applied Mathematics and Technology",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 95,
+      "pct": 36.8
+    },
+    {
+      "dbn": "07X500",
+      "name": "Hostos-Lincoln Academy of Science",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 48,
+      "pct": 31.3
+    },
+    {
+      "dbn": "07X551",
+      "name": "The Urban Assembly Bronx Academy of Letters",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 40,
+      "pct": 0
+    },
+    {
+      "dbn": "07X584",
+      "name": "I.S. 584",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 7,
+      "students": 57,
+      "pct": 8.8
+    },
+    {
+      "dbn": "08X071",
+      "name": "P.S. 071 Rose E. Scala",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 123,
+      "pct": 22.8
+    },
+    {
+      "dbn": "08X101",
+      "name": "M.S. X101 Edward R. Byrne",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 168,
+      "pct": 47
+    },
+    {
+      "dbn": "08X123",
+      "name": "J.H.S. 123 James M. Kieran",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 172,
+      "pct": 0
+    },
+    {
+      "dbn": "08X131",
+      "name": "J.H.S. 131 Albert Einstein",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 101,
+      "pct": 0
+    },
+    {
+      "dbn": "08X269",
+      "name": "Bronx Studio School for Writers and Artists",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 86,
+      "pct": 0
+    },
+    {
+      "dbn": "08X301",
+      "name": "M.S. 301 Paul L. Dunbar",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 56,
+      "pct": 0
+    },
+    {
+      "dbn": "08X302",
+      "name": "M.S. 302 Luisa Dessus Cruz",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 112,
+      "pct": 11.6
+    },
+    {
+      "dbn": "08X337",
+      "name": "The School for Inquiry and Social Justice",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 138,
+      "pct": 20.3
+    },
+    {
+      "dbn": "08X367",
+      "name": "Archimedes Academy for Math, Science and Technology Applications",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 61,
+      "pct": 13.1
+    },
+    {
+      "dbn": "08X371",
+      "name": "Urban Institute of Mathematics",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 127,
+      "pct": 23.6
+    },
+    {
+      "dbn": "08X375",
+      "name": "The Bronx Mathematics Preparatory School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 45,
+      "pct": 0
+    },
+    {
+      "dbn": "08X376",
+      "name": "Antonia Pantoja Preparatory Academy: A College Board School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 42,
+      "pct": 11.9
+    },
+    {
+      "dbn": "08X424",
+      "name": "Bronx Academy for Multi-Media",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 56,
+      "pct": 12.5
+    },
+    {
+      "dbn": "08X448",
+      "name": "Soundview Academy for Culture and Scholarship",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 77,
+      "pct": 10.4
+    },
+    {
+      "dbn": "08X467",
+      "name": "Mott Hall Community School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 90,
+      "pct": 12.2
+    },
+    {
+      "dbn": "08X562",
+      "name": "Pugsley Preparatory Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 8,
+      "students": 190,
+      "pct": 25.3
+    },
+    {
+      "dbn": "09X004",
+      "name": "P.S./M.S. 004 Crotona Park West",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 27,
+      "pct": 22.2
+    },
+    {
+      "dbn": "09X022",
+      "name": "J.H.S. 022 Jordan L. Mott",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 86,
+      "pct": 0
+    },
+    {
+      "dbn": "09X117",
+      "name": "I.S. 117 Joseph H. Wade",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 122,
+      "pct": 27.9
+    },
+    {
+      "dbn": "09X128",
+      "name": "Mott Hall III",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 86,
+      "pct": 26.7
+    },
+    {
+      "dbn": "09X215",
+      "name": "Kappa",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 69,
+      "pct": 31.9
+    },
+    {
+      "dbn": "09X218",
+      "name": "P.S./I.S. 218 Rafael Hernandez Dual Language Magnet School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 100,
+      "pct": 29
+    },
+    {
+      "dbn": "09X219",
+      "name": "I.S. 219 New Venture School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 82,
+      "pct": 9.8
+    },
+    {
+      "dbn": "09X229",
+      "name": "I.S. 229 Roland Patterson",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 53,
+      "pct": 0
+    },
+    {
+      "dbn": "09X231",
+      "name": "Eagle Academy for Young Men",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 31,
+      "pct": 67.7
+    },
+    {
+      "dbn": "09X232",
+      "name": "I.S. 232",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 101,
+      "pct": 0
+    },
+    {
+      "dbn": "09X241",
+      "name": "Urban Assembly School for Applied Math and Science, The",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 63,
+      "pct": 44.4
+    },
+    {
+      "dbn": "09X303",
+      "name": "I.S. X303 Leadership & Community Service",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 114,
+      "pct": 49.1
+    },
+    {
+      "dbn": "09X313",
+      "name": "I.S. 313 School of Leadership Development",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 40,
+      "pct": 5
+    },
+    {
+      "dbn": "09X323",
+      "name": "Bronx Writing Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 74,
+      "pct": 0
+    },
+    {
+      "dbn": "09X324",
+      "name": "Bronx Early College Academy for Teaching & Learning",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 33,
+      "pct": 48.5
+    },
+    {
+      "dbn": "09X327",
+      "name": "Comprehensive Model School Project M.S. 327",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 100,
+      "pct": 0
+    },
+    {
+      "dbn": "09X328",
+      "name": "New Millennium Bronx Academy of the Arts",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 44,
+      "pct": 0
+    },
+    {
+      "dbn": "09X339",
+      "name": "I.S. 339",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 61,
+      "pct": 0
+    },
+    {
+      "dbn": "09X361",
+      "name": "The Highbridge Green School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 127,
+      "pct": 15.7
+    },
+    {
+      "dbn": "09X413",
+      "name": "Bronx High School for Medical Science",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 48,
+      "pct": 33.3
+    },
+    {
+      "dbn": "09X454",
+      "name": "Science and Technology Academy: A Mott Hall School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 128,
+      "pct": 23.4
+    },
+    {
+      "dbn": "09X505",
+      "name": "Bronx School for Law, Government and Justice",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 74,
+      "pct": 0
+    },
+    {
+      "dbn": "09X568",
+      "name": "Young Women's Leadership School of the Bronx",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 71,
+      "pct": 31
+    },
+    {
+      "dbn": "09X593",
+      "name": "South Bronx International Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 67,
+      "pct": 13.4
+    },
+    {
+      "dbn": "09X594",
+      "name": "New Pathways Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 9,
+      "students": 72,
+      "pct": 6.9
+    },
+    {
+      "dbn": "10X003",
+      "name": "P.S. 3 Raul Julia Micro Society",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 33,
+      "pct": 63.6
+    },
+    {
+      "dbn": "10X015",
+      "name": "P.S. X015 Institute for Environmental Learning",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 55,
+      "pct": 0
+    },
+    {
+      "dbn": "10X020",
+      "name": "PS/MS 20 P.O.George J. Werdann, III",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 121,
+      "pct": 0
+    },
+    {
+      "dbn": "10X037",
+      "name": "P.S. X037 - Multiple Intelligence School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 50,
+      "pct": 0
+    },
+    {
+      "dbn": "10X045",
+      "name": "Thomas C. Giordano Middle School 45",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 148,
+      "pct": 12.2
+    },
+    {
+      "dbn": "10X080",
+      "name": "J.H.S. 080 The Mosholu Parkway",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 223,
+      "pct": 4.9
+    },
+    {
+      "dbn": "10X095",
+      "name": "P.S. 095 Sheila Mencher",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 127,
+      "pct": 28.3
+    },
+    {
+      "dbn": "10X118",
+      "name": "J.H.S. 118 William W. Niles",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 186,
+      "pct": 33.3
+    },
+    {
+      "dbn": "10X141",
+      "name": "Riverdale / Kingsbridge Academy (Middle School / High School 141)",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 218,
+      "pct": 45
+    },
+    {
+      "dbn": "10X206",
+      "name": "I.S. 206 Ann Mersereau",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 74,
+      "pct": 0
+    },
+    {
+      "dbn": "10X225",
+      "name": "Theatre Arts Production Company School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 29,
+      "pct": 65.5
+    },
+    {
+      "dbn": "10X228",
+      "name": "Jonas Bronck Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 81,
+      "pct": 14.8
+    },
+    {
+      "dbn": "10X243",
+      "name": "West Bronx Academy for the Future",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 71,
+      "pct": 7
+    },
+    {
+      "dbn": "10X244",
+      "name": "The New School for Leadership and Journalism",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 212,
+      "pct": 32.5
+    },
+    {
+      "dbn": "10X254",
+      "name": "I.S. 254",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 145,
+      "pct": 42.1
+    },
+    {
+      "dbn": "10X279",
+      "name": "P.S. 279 Captain Manuel Rivera, Jr.",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 119,
+      "pct": 0
+    },
+    {
+      "dbn": "10X280",
+      "name": "P.S./M.S. 280 Mosholu Parkway",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 70,
+      "pct": 24.3
+    },
+    {
+      "dbn": "10X308",
+      "name": "Bronx Dance Academy School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 84,
+      "pct": 0
+    },
+    {
+      "dbn": "10X315",
+      "name": "P.S. 315 Lab School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 28,
+      "pct": 0
+    },
+    {
+      "dbn": "10X331",
+      "name": "The Bronx School of Young Leaders",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 119,
+      "pct": 0
+    },
+    {
+      "dbn": "10X342",
+      "name": "International School for Liberal Arts",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 46,
+      "pct": 0
+    },
+    {
+      "dbn": "10X363",
+      "name": "Academy For Personal Leadership And Excellence",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 251,
+      "pct": 6.8
+    },
+    {
+      "dbn": "10X368",
+      "name": "In-Tech Academy (M.S. / High School 368)",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 139,
+      "pct": 24.5
+    },
+    {
+      "dbn": "10X390",
+      "name": "M.S. 390",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 113,
+      "pct": 23.9
+    },
+    {
+      "dbn": "10X391",
+      "name": "The Angelo Patri Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 133,
+      "pct": 0
+    },
+    {
+      "dbn": "10X447",
+      "name": "Creston Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 10,
+      "students": 133,
+      "pct": 0
+    },
+    {
+      "dbn": "11X019",
+      "name": "P.S. 019 Judith K. Weiss",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 79,
+      "pct": 35.4
+    },
+    {
+      "dbn": "11X083",
+      "name": "P.S. 083 Donald Hertz",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 207,
+      "pct": 14
+    },
+    {
+      "dbn": "11X089",
+      "name": "P.S. 089 Bronx",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 145,
+      "pct": 33.1
+    },
+    {
+      "dbn": "11X127",
+      "name": "J.H.S. 127 The Castle Hill",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 241,
+      "pct": 31.1
+    },
+    {
+      "dbn": "11X144",
+      "name": "J.H.S. 144 Michelangelo",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 127,
+      "pct": 64.6
+    },
+    {
+      "dbn": "11X175",
+      "name": "P.S. 175 City Island",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 27,
+      "pct": 0
+    },
+    {
+      "dbn": "11X180",
+      "name": "M.S. 180 Dr. Daniel Hale Williams",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 250,
+      "pct": 45.2
+    },
+    {
+      "dbn": "11X181",
+      "name": "I.S. 181 Pablo Casals",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 164,
+      "pct": 54.9
+    },
+    {
+      "dbn": "11X194",
+      "name": "P.S./M.S. 194",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 159,
+      "pct": 18.9
+    },
+    {
+      "dbn": "11X287",
+      "name": "North Bronx School of Empowerment",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 118,
+      "pct": 13.6
+    },
+    {
+      "dbn": "11X326",
+      "name": "Bronx Green Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 115,
+      "pct": 38.3
+    },
+    {
+      "dbn": "11X355",
+      "name": "Bronx Alliance Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 53,
+      "pct": 17
+    },
+    {
+      "dbn": "11X370",
+      "name": "Leaders of Tomorrow",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 138,
+      "pct": 29
+    },
+    {
+      "dbn": "11X462",
+      "name": "Cornerstone Academy for Social Action Middle School (CASA)",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 60,
+      "pct": 33.3
+    },
+    {
+      "dbn": "11X468",
+      "name": "Pelham Academy of Academics and Community Engagement",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 89,
+      "pct": 27
+    },
+    {
+      "dbn": "11X498",
+      "name": "P.S./M.S. 11X498 - Van Nest Academy",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 91,
+      "pct": 0
+    },
+    {
+      "dbn": "11X529",
+      "name": "One World Middle School at Edenwald",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 102,
+      "pct": 35.3
+    },
+    {
+      "dbn": "11X532",
+      "name": "Baychester Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 104,
+      "pct": 18.3
+    },
+    {
+      "dbn": "11X556",
+      "name": "Bronx Park Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 108,
+      "pct": 23.1
+    },
+    {
+      "dbn": "11X566",
+      "name": "Pelham Gardens Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 11,
+      "students": 87,
+      "pct": 55.2
+    },
+    {
+      "dbn": "12X129",
+      "name": "M.S. 129 Academy for Independent Learning and Leadership",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 69,
+      "pct": 21.7
+    },
+    {
+      "dbn": "12X190",
+      "name": "E.S.M.T- I.S. 190",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 90,
+      "pct": 7.8
+    },
+    {
+      "dbn": "12X214",
+      "name": "P.S. 214",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 133,
+      "pct": 7.5
+    },
+    {
+      "dbn": "12X217",
+      "name": "School of Performing Arts",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 45,
+      "pct": 0
+    },
+    {
+      "dbn": "12X242",
+      "name": "Mott Hall V",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 83,
+      "pct": 27.7
+    },
+    {
+      "dbn": "12X267",
+      "name": "Bronx Latin",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 43,
+      "pct": 39.5
+    },
+    {
+      "dbn": "12X271",
+      "name": "East Bronx Academy for the Future",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 69,
+      "pct": 29
+    },
+    {
+      "dbn": "12X273",
+      "name": "Frederick Douglass Academy V. Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 59,
+      "pct": 20.3
+    },
+    {
+      "dbn": "12X286",
+      "name": "Fannie Lou Hamer Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 81,
+      "pct": 9.9
+    },
+    {
+      "dbn": "12X316",
+      "name": "Kappa III",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 74,
+      "pct": 0
+    },
+    {
+      "dbn": "12X318",
+      "name": "I.S. X318 Math, Science & Technology Through Arts",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 97,
+      "pct": 5.2
+    },
+    {
+      "dbn": "12X341",
+      "name": "Accion Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 77,
+      "pct": 11.7
+    },
+    {
+      "dbn": "12X383",
+      "name": "Emolior Academy",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 12,
+      "students": 113,
+      "pct": 44.2
+    },
+    {
+      "dbn": "13K113",
+      "name": "M.S. 113 Ronald Edmonds Learning Center",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 76,
+      "pct": 0
+    },
+    {
+      "dbn": "13K266",
+      "name": "M.S. K266 - Park Place Community Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 17,
+      "pct": 0
+    },
+    {
+      "dbn": "13K301",
+      "name": "Restoration Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 33,
+      "pct": 0
+    },
+    {
+      "dbn": "13K313",
+      "name": "Dock Street School for STEAM Studies",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 90,
+      "pct": 27.8
+    },
+    {
+      "dbn": "13K351",
+      "name": "The Urban Assembly Unison School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 45,
+      "pct": 4.4
+    },
+    {
+      "dbn": "13K492",
+      "name": "Academy of Arts and Letters",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 83,
+      "pct": 50.6
+    },
+    {
+      "dbn": "13K527",
+      "name": "Urban Assembly Institute of Math and Science for Young Women",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 42,
+      "pct": 28.6
+    },
+    {
+      "dbn": "13K691",
+      "name": "Fort Greene Preparatory Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 60,
+      "pct": 35
+    },
+    {
+      "dbn": "13K915",
+      "name": "Bridges: A School for Exploration and Equity",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 13,
+      "students": 86,
+      "pct": 30.2
+    },
+    {
+      "dbn": "14K050",
+      "name": "J.H.S. 050 John D. Wells",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 140,
+      "pct": 57.1
+    },
+    {
+      "dbn": "14K071",
+      "name": "Juan Morel Campos Secondary School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 42,
+      "pct": 47.6
+    },
+    {
+      "dbn": "14K084",
+      "name": "P.S. 084 Jose De Diego",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 61,
+      "pct": 42.6
+    },
+    {
+      "dbn": "14K126",
+      "name": "John Ericsson Middle School 126",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 63,
+      "pct": 12.7
+    },
+    {
+      "dbn": "14K157",
+      "name": "P.S./I.S. 157 The Benjamin Franklin Health & Science Academy",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 40,
+      "pct": 15
+    },
+    {
+      "dbn": "14K318",
+      "name": "I.S. 318 Eugenio Maria De Hostos",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 315,
+      "pct": 40.6
+    },
+    {
+      "dbn": "14K577",
+      "name": "Conselyea Preparatory School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 144,
+      "pct": 65.3
+    },
+    {
+      "dbn": "14K582",
+      "name": "M.S. 582",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 109,
+      "pct": 47.7
+    },
+    {
+      "dbn": "14K586",
+      "name": "Lyons Community School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 35,
+      "pct": 0
+    },
+    {
+      "dbn": "14K614",
+      "name": "Young Women's Leadership School of Brooklyn",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 14,
+      "students": 28,
+      "pct": 17.9
+    },
+    {
+      "dbn": "15K051",
+      "name": "M.S. 51 William Alexander",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 328,
+      "pct": 77.1
+    },
+    {
+      "dbn": "15K088",
+      "name": "J.H.S. 088 Peter Rouget",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 264,
+      "pct": 62.9
+    },
+    {
+      "dbn": "15K136",
+      "name": "I.S. 136 Charles O. Dewey",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 169,
+      "pct": 29
+    },
+    {
+      "dbn": "15K442",
+      "name": "M.S. 442 Carroll Gardens School for Innovation",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 113,
+      "pct": 83.2
+    },
+    {
+      "dbn": "15K443",
+      "name": "New Voices School of Academic & Creative Arts",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 182,
+      "pct": 69.8
+    },
+    {
+      "dbn": "15K447",
+      "name": "The Exploratory School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 171,
+      "pct": 76
+    },
+    {
+      "dbn": "15K448",
+      "name": "Brooklyn Collaborative Studies",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 88,
+      "pct": 46.6
+    },
+    {
+      "dbn": "15K464",
+      "name": "Park Slope Collegiate",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 67,
+      "pct": 44.8
+    },
+    {
+      "dbn": "15K497",
+      "name": "The Boerum Hill School for International Studies",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 151,
+      "pct": 58.3
+    },
+    {
+      "dbn": "15K676",
+      "name": "Red Hook Neighborhood School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 33,
+      "pct": 30.3
+    },
+    {
+      "dbn": "15K821",
+      "name": "Sunset Park Prep",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 148,
+      "pct": 27.7
+    },
+    {
+      "dbn": "15K839",
+      "name": "M.S. 839",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 15,
+      "students": 97,
+      "pct": 70.1
+    },
+    {
+      "dbn": "16K035",
+      "name": "M.S. 035 Stephen Decatur",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 58,
+      "pct": 37.9
+    },
+    {
+      "dbn": "16K057",
+      "name": "Whitelaw Reid Academy of Arts and Business",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 19,
+      "pct": 0
+    },
+    {
+      "dbn": "16K267",
+      "name": "M.S. 267 Math, Science & Technology",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 33,
+      "pct": 24.2
+    },
+    {
+      "dbn": "16K308",
+      "name": "P.S. 308 Clara Cardwell",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 22,
+      "pct": 0
+    },
+    {
+      "dbn": "16K681",
+      "name": "Madiba Prep Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 69,
+      "pct": 30.4
+    },
+    {
+      "dbn": "16K898",
+      "name": "The Brooklyn Green School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 16,
+      "students": 68,
+      "pct": 22.1
+    },
+    {
+      "dbn": "17K002",
+      "name": "Parkside Preparatory Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 87,
+      "pct": 23
+    },
+    {
+      "dbn": "17K061",
+      "name": "M.S. 061 Dr. Gladstone H. Atwell",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 101,
+      "pct": 8.9
+    },
+    {
+      "dbn": "17K138",
+      "name": "P.S. 138 Brooklyn",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 42,
+      "pct": 31
+    },
+    {
+      "dbn": "17K181",
+      "name": "P.S. 181 Brooklyn",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 58,
+      "pct": 27.6
+    },
+    {
+      "dbn": "17K189",
+      "name": "P.S. 189 The Bilingual Center",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 140,
+      "pct": 19.3
+    },
+    {
+      "dbn": "17K246",
+      "name": "M.S. 246 Walt Whitman",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 135,
+      "pct": 0.7
+    },
+    {
+      "dbn": "17K340",
+      "name": "I.S. 340",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 48,
+      "pct": 12.5
+    },
+    {
+      "dbn": "17K352",
+      "name": "Ebbets Field Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 50,
+      "pct": 0
+    },
+    {
+      "dbn": "17K353",
+      "name": "Elijah Stroud Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 40,
+      "pct": 0
+    },
+    {
+      "dbn": "17K354",
+      "name": "The School of Integrated Learning",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 56,
+      "pct": 21.4
+    },
+    {
+      "dbn": "17K382",
+      "name": "Academy for College Preparation and Career Exploration: A College Board School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 52,
+      "pct": 0
+    },
+    {
+      "dbn": "17K394",
+      "name": "M.S. K394",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 26,
+      "pct": 0
+    },
+    {
+      "dbn": "17K484",
+      "name": "Ronald Edmonds Learning Center II",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 39,
+      "pct": 43.6
+    },
+    {
+      "dbn": "17K543",
+      "name": "Science, Technology and Research Early College High School at Erasmus",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 47,
+      "pct": 36.2
+    },
+    {
+      "dbn": "17K590",
+      "name": "Medgar Evers College Preparatory School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 126,
+      "pct": 17.5
+    },
+    {
+      "dbn": "17K722",
+      "name": "New Heights Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 17,
+      "students": 78,
+      "pct": 14.1
+    },
+    {
+      "dbn": "18K066",
+      "name": "P.S. 66",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 70,
+      "pct": 0
+    },
+    {
+      "dbn": "18K068",
+      "name": "I.S. 068 Isaac Bildersee",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 98,
+      "pct": 0
+    },
+    {
+      "dbn": "18K211",
+      "name": "I.S. 211 John Wilson",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 65,
+      "pct": 23.1
+    },
+    {
+      "dbn": "18K285",
+      "name": "I.S. 285 Meyer Levin",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 173,
+      "pct": 25.4
+    },
+    {
+      "dbn": "18K366",
+      "name": "The Science And Medicine Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 76,
+      "pct": 0
+    },
+    {
+      "dbn": "18K581",
+      "name": "The Middle School of Media, Law and Fine Arts",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 62,
+      "pct": 1.6
+    },
+    {
+      "dbn": "18K588",
+      "name": "Middle School for Art and Philosophy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 46,
+      "pct": 8.7
+    },
+    {
+      "dbn": "18K763",
+      "name": "Brooklyn Science and Engineering Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 135,
+      "pct": 19.3
+    },
+    {
+      "dbn": "18K961",
+      "name": "Lenox Academy M. S. 961",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 18,
+      "students": 73,
+      "pct": 47.9
+    },
+    {
+      "dbn": "19K089",
+      "name": "P.S. 089 Cypress Hills",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 57,
+      "pct": 0
+    },
+    {
+      "dbn": "19K171",
+      "name": "I.S. 171 Abraham Lincoln",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 82,
+      "pct": 23.2
+    },
+    {
+      "dbn": "19K218",
+      "name": "J.H.S. 218 James P. Sinnott",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 108,
+      "pct": 27.8
+    },
+    {
+      "dbn": "19K292",
+      "name": "J.H.S. 292 Margaret S. Douglas",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 91,
+      "pct": 34.1
+    },
+    {
+      "dbn": "19K404",
+      "name": "Academy for Young Writers",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 41,
+      "pct": 31.7
+    },
+    {
+      "dbn": "19K409",
+      "name": "East New York Family Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 80,
+      "pct": 36.3
+    },
+    {
+      "dbn": "19K422",
+      "name": "Spring Creek Community School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 34,
+      "pct": 0
+    },
+    {
+      "dbn": "19K452",
+      "name": "Frederick Douglass Academy VIII Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 109,
+      "pct": 13.8
+    },
+    {
+      "dbn": "19K654",
+      "name": "Van Siclen Community Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 53,
+      "pct": 0
+    },
+    {
+      "dbn": "19K661",
+      "name": "Vista Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 146,
+      "pct": 18.5
+    },
+    {
+      "dbn": "19K662",
+      "name": "Liberty Avenue Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 144,
+      "pct": 15.3
+    },
+    {
+      "dbn": "19K663",
+      "name": "School of the Future Brooklyn",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 47,
+      "pct": 0
+    },
+    {
+      "dbn": "19K678",
+      "name": "East New York Middle School of Excellence",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 77,
+      "pct": 0
+    },
+    {
+      "dbn": "19K760",
+      "name": "Highland Park Community School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 77,
+      "pct": 10.4
+    },
+    {
+      "dbn": "19K907",
+      "name": "Legacy School of the Arts",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 59,
+      "pct": 10.2
+    },
+    {
+      "dbn": "19K935",
+      "name": "M.S. 935",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 19,
+      "students": 87,
+      "pct": 0
+    },
+    {
+      "dbn": "20K030",
+      "name": "P.S./I.S. 30 Mary White Ovington",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 122,
+      "pct": 37.7
+    },
+    {
+      "dbn": "20K062",
+      "name": "J.H.S. 062 Ditmas",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 320,
+      "pct": 17.2
+    },
+    {
+      "dbn": "20K104",
+      "name": "P.S./I.S. 104 The Fort Hamilton School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 156,
+      "pct": 19.2
+    },
+    {
+      "dbn": "20K163",
+      "name": "P.S. 163 Bath Beach",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 77,
+      "pct": 29.9
+    },
+    {
+      "dbn": "20K180",
+      "name": "The SEEALL Academy",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 145,
+      "pct": 40.7
+    },
+    {
+      "dbn": "20K187",
+      "name": "The Christa McAuliffe School\\I.S. 187",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 282,
+      "pct": 75.9
+    },
+    {
+      "dbn": "20K192",
+      "name": "P.S. 192 - The Magnet School for Math and Science Inquiry",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 61,
+      "pct": 31.1
+    },
+    {
+      "dbn": "20K201",
+      "name": "The Madeleine Brennan School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 506,
+      "pct": 39.3
+    },
+    {
+      "dbn": "20K220",
+      "name": "J.H.S. 220 John J. Pershing",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 437,
+      "pct": 34.1
+    },
+    {
+      "dbn": "20K223",
+      "name": "J.H.S. 223 The Montauk",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 214,
+      "pct": 33.6
+    },
+    {
+      "dbn": "20K227",
+      "name": "J.H.S. 227 Edward B. Shallow",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 463,
+      "pct": 28.5
+    },
+    {
+      "dbn": "20K229",
+      "name": "P.S. 229 Dyker",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 120,
+      "pct": 27.5
+    },
+    {
+      "dbn": "20K259",
+      "name": "J.H.S. 259 William McKinley",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 625,
+      "pct": 31.8
+    },
+    {
+      "dbn": "20K609",
+      "name": "Urban Assembly School for Leadership and Empowerment",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 51,
+      "pct": 66.7
+    },
+    {
+      "dbn": "20K686",
+      "name": "Brooklyn School of Inquiry",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 56,
+      "pct": 96.4
+    },
+    {
+      "dbn": "20K936",
+      "name": "MS 936 Arts Off 3rd",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 20,
+      "students": 145,
+      "pct": 39.3
+    },
+    {
+      "dbn": "21K095",
+      "name": "P.S. 095 The Gravesend",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 61,
+      "pct": 41
+    },
+    {
+      "dbn": "21K096",
+      "name": "I.S. 096 Seth Low",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 307,
+      "pct": 55.7
+    },
+    {
+      "dbn": "21K098",
+      "name": "I.S. 98 Bay Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 452,
+      "pct": 26.8
+    },
+    {
+      "dbn": "21K099",
+      "name": "P.S. 099 Isaac Asimov",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 89,
+      "pct": 30.3
+    },
+    {
+      "dbn": "21K121",
+      "name": "P.S. 121 Nelson A. Rockefeller",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 48,
+      "pct": 0
+    },
+    {
+      "dbn": "21K209",
+      "name": "P.S. 209 Margaret Mead",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 65,
+      "pct": 44.6
+    },
+    {
+      "dbn": "21K225",
+      "name": "P.S. K225 - The Eileen E. Zaglin",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 150,
+      "pct": 48.7
+    },
+    {
+      "dbn": "21K226",
+      "name": "P.S. 226 Alfred De B. Mason",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 98,
+      "pct": 44.9
+    },
+    {
+      "dbn": "21K228",
+      "name": "I.S. 228 David A. Boody",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 478,
+      "pct": 51
+    },
+    {
+      "dbn": "21K238",
+      "name": "P.S. 238 Anne Sullivan",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 60,
+      "pct": 6.7
+    },
+    {
+      "dbn": "21K239",
+      "name": "Mark Twain I.S. 239 for the Gifted & Talented",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 386,
+      "pct": 65.3
+    },
+    {
+      "dbn": "21K281",
+      "name": "I.S. 281 Joseph B Cavallaro",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 413,
+      "pct": 35.8
+    },
+    {
+      "dbn": "21K288",
+      "name": "P.S. 288 The Shirley Tanyhill",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 52,
+      "pct": 0
+    },
+    {
+      "dbn": "21K303",
+      "name": "I.S. 303 Herbert S. Eisenberg",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 139,
+      "pct": 33.1
+    },
+    {
+      "dbn": "21K468",
+      "name": "Kingsborough Early College School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 104,
+      "pct": 29.8
+    },
+    {
+      "dbn": "21K690",
+      "name": "Brooklyn Studio Secondary School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 21,
+      "students": 113,
+      "pct": 23
+    },
+    {
+      "dbn": "22K014",
+      "name": "J.H.S. 014 Shell Bank",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 146,
+      "pct": 16.4
+    },
+    {
+      "dbn": "22K078",
+      "name": "J.H.S. 078 Roy H. Mann",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 207,
+      "pct": 26.6
+    },
+    {
+      "dbn": "22K109",
+      "name": "P.S. 109",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 78,
+      "pct": 0
+    },
+    {
+      "dbn": "22K206",
+      "name": "P.S. 206 Joseph F Lamb",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 145,
+      "pct": 53.8
+    },
+    {
+      "dbn": "22K207",
+      "name": "P.S. 207 Elizabeth G. Leary",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 100,
+      "pct": 30
+    },
+    {
+      "dbn": "22K234",
+      "name": "J.H.S. 234 Arthur W. Cunningham",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 461,
+      "pct": 30.2
+    },
+    {
+      "dbn": "22K240",
+      "name": "Andries Hudde",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 139,
+      "pct": 11.5
+    },
+    {
+      "dbn": "22K278",
+      "name": "J.H.S. 278 Marine Park",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 322,
+      "pct": 24.8
+    },
+    {
+      "dbn": "22K381",
+      "name": "I. S. 381",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 85,
+      "pct": 11.8
+    },
+    {
+      "dbn": "22K890",
+      "name": "M.S. 890",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 22,
+      "students": 103,
+      "pct": 46.6
+    },
+    {
+      "dbn": "23K155",
+      "name": "P.S./ I.S. 155 Nicholas Herkimer",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 27,
+      "pct": 40.7
+    },
+    {
+      "dbn": "23K178",
+      "name": "P.S. 178 Saint Clair Mckelway",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 33,
+      "pct": 27.3
+    },
+    {
+      "dbn": "23K184",
+      "name": "P.S. 184 Newport",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 45,
+      "pct": 0
+    },
+    {
+      "dbn": "23K363",
+      "name": "Brownsville Collaborative Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 83,
+      "pct": 28.9
+    },
+    {
+      "dbn": "23K392",
+      "name": "I.S. 392",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 84,
+      "pct": 46.4
+    },
+    {
+      "dbn": "23K518",
+      "name": "Kappa V (Knowledge and Power Preparatory Academy)",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 36,
+      "pct": 2.8
+    },
+    {
+      "dbn": "23K522",
+      "name": "Mott Hall IV",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 34,
+      "pct": 14.7
+    },
+    {
+      "dbn": "23K644",
+      "name": "Eagle Academy for Young Men II",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 78,
+      "pct": 67.9
+    },
+    {
+      "dbn": "23K664",
+      "name": "Brooklyn Environmental Exploration School (BEES)",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 56,
+      "pct": 7.1
+    },
+    {
+      "dbn": "23K668",
+      "name": "Riverdale Avenue Middle School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 41,
+      "pct": 41.5
+    },
+    {
+      "dbn": "23K671",
+      "name": "Mott Hall Bridges Academy",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 23,
+      "students": 77,
+      "pct": 0
+    },
+    {
+      "dbn": "24Q005",
+      "name": "I.S. 5 - The Walter Crowley Intermediate School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 391,
+      "pct": 38.9
+    },
+    {
+      "dbn": "24Q049",
+      "name": "P.S. 049 Dorothy Bonawit Kole",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 132,
+      "pct": 78
+    },
+    {
+      "dbn": "24Q061",
+      "name": "I.S. 061 Leonardo Da Vinci",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 744,
+      "pct": 17.6
+    },
+    {
+      "dbn": "24Q073",
+      "name": "I.S. 73 - The Frank Sansivieri Intermediate School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 541,
+      "pct": 28.7
+    },
+    {
+      "dbn": "24Q077",
+      "name": "Joseph F. Quinn Intermediate School 77",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 195,
+      "pct": 13.8
+    },
+    {
+      "dbn": "24Q087",
+      "name": "P.S./I.S. 087 Middle Village",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 62,
+      "pct": 0
+    },
+    {
+      "dbn": "24Q093",
+      "name": "I.S. 093 Ridgewood",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 363,
+      "pct": 45.2
+    },
+    {
+      "dbn": "24Q102",
+      "name": "P.S. 102 Bayview",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 117,
+      "pct": 23.9
+    },
+    {
+      "dbn": "24Q113",
+      "name": "P.S./I.S. 113 Anthony J. Pranzo",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 99,
+      "pct": 32.3
+    },
+    {
+      "dbn": "24Q119",
+      "name": "P.S./I.S. 119 The Glendale",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 211,
+      "pct": 52.6
+    },
+    {
+      "dbn": "24Q125",
+      "name": "I.S. 125 Thom J. McCann Woodside",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 504,
+      "pct": 37.5
+    },
+    {
+      "dbn": "24Q128",
+      "name": "P.S. 128 The Lorraine Tuzzo, Juniper Valley Elementary School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 24,
+      "students": 98,
+      "pct": 67.3
+    },
+    {
+      "dbn": "24Q311",
+      "name": "Corona Arts & Sciences Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 250,
+      "pct": 6.4
+    },
+    {
+      "dbn": "24Q419",
+      "name": "MS 419",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 174,
+      "pct": 14.9
+    },
+    {
+      "dbn": "24Q560",
+      "name": "Robert F. Wagner, Jr. Secondary School for Arts and Technology",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 24,
+      "students": 51,
+      "pct": 64.7
+    },
+    {
+      "dbn": "25Q025",
+      "name": "I.S. 025 Adrien Block",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 347,
+      "pct": 75.8
+    },
+    {
+      "dbn": "25Q164",
+      "name": "P.S. 164 Queens Valley",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 25,
+      "students": 75,
+      "pct": 64
+    },
+    {
+      "dbn": "25Q185",
+      "name": "J.H.S. 185 Edward Bleeker",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 485,
+      "pct": 43.3
+    },
+    {
+      "dbn": "25Q189",
+      "name": "J.H.S. 189 Daniel Carter Beard",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 217,
+      "pct": 26.7
+    },
+    {
+      "dbn": "25Q194",
+      "name": "J.H.S. 194 William Carr",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 359,
+      "pct": 48.7
+    },
+    {
+      "dbn": "25Q200",
+      "name": "P.S./M.S. 200 - The Magnet School of Global Studies and Leadership",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 25,
+      "students": 55,
+      "pct": 0
+    },
+    {
+      "dbn": "25Q219",
+      "name": "P.S. 219 Paul Klapper",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 25,
+      "students": 69,
+      "pct": 88.4
+    },
+    {
+      "dbn": "25Q237",
+      "name": "I.S. 237",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 427,
+      "pct": 40.7
+    },
+    {
+      "dbn": "25Q250",
+      "name": "I.S. 250 The Robert F. Kennedy Community Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 94,
+      "pct": 25.5
+    },
+    {
+      "dbn": "25Q252",
+      "name": "Queens School of Inquiry, The",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 66,
+      "pct": 72.7
+    },
+    {
+      "dbn": "25Q281",
+      "name": "East-West School of International Studies",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 110,
+      "pct": 87.3
+    },
+    {
+      "dbn": "25Q285",
+      "name": "World Journalism Preparatory: A College Board School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 81,
+      "pct": 81.5
+    },
+    {
+      "dbn": "25Q294",
+      "name": "BELL Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 99,
+      "pct": 88.9
+    },
+    {
+      "dbn": "25Q379",
+      "name": "College Point Collaborative",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 25,
+      "students": 148,
+      "pct": 34.5
+    },
+    {
+      "dbn": "25Q499",
+      "name": "The Queens College School for Math, Science and Technology",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 25,
+      "students": 67,
+      "pct": 80.6
+    },
+    {
+      "dbn": "26Q067",
+      "name": "J.H.S. 067 Louis Pasteur",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 26,
+      "students": 300,
+      "pct": 60.7
+    },
+    {
+      "dbn": "26Q074",
+      "name": "J.H.S. 074 Nathaniel Hawthorne",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 26,
+      "students": 373,
+      "pct": 35.1
+    },
+    {
+      "dbn": "26Q158",
+      "name": "M.S. 158 Marie Curie",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 26,
+      "students": 268,
+      "pct": 68.3
+    },
+    {
+      "dbn": "26Q172",
+      "name": "Irwin Altman Middle School 172",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 26,
+      "students": 249,
+      "pct": 39
+    },
+    {
+      "dbn": "26Q178",
+      "name": "P.S./ IS 178 Holliswood",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 26,
+      "students": 64,
+      "pct": 71.9
+    },
+    {
+      "dbn": "26Q216",
+      "name": "J.H.S. 216 George J. Ryan",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 26,
+      "students": 513,
+      "pct": 31.2
+    },
+    {
+      "dbn": "26Q266",
+      "name": "P.S./I.S. 266",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 26,
+      "students": 75,
+      "pct": 66.7
+    },
+    {
+      "dbn": "27Q042",
+      "name": "P.S./M.S 042 R. Vernam",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 51,
+      "pct": 0
+    },
+    {
+      "dbn": "27Q043",
+      "name": "P.S. 043",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 46,
+      "pct": 41.3
+    },
+    {
+      "dbn": "27Q047",
+      "name": "P.S. 047 Chris Galas",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 26,
+      "pct": 69.2
+    },
+    {
+      "dbn": "27Q053",
+      "name": "M.S. 053 Brian Piccolo",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 81,
+      "pct": 45.7
+    },
+    {
+      "dbn": "27Q105",
+      "name": "P.S. 105 The Bay School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 56,
+      "pct": 0
+    },
+    {
+      "dbn": "27Q114",
+      "name": "P.S./M.S. 114 Belle Harbor",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 43,
+      "pct": 72.1
+    },
+    {
+      "dbn": "27Q124",
+      "name": "P.S. 124 Osmond A Church",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 140,
+      "pct": 16.4
+    },
+    {
+      "dbn": "27Q137",
+      "name": "M.S. 137 America's School of Heroes",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 554,
+      "pct": 60.6
+    },
+    {
+      "dbn": "27Q146",
+      "name": "P.S. 146 Howard Beach",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 52,
+      "pct": 69.2
+    },
+    {
+      "dbn": "27Q183",
+      "name": "P.S. 183 Dr. Richard R. Green",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 42,
+      "pct": 0
+    },
+    {
+      "dbn": "27Q202",
+      "name": "J.H.S. 202 Robert H. Goddard",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 307,
+      "pct": 19.5
+    },
+    {
+      "dbn": "27Q207",
+      "name": "P.S. 207 Rockwood Park",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 61,
+      "pct": 26.2
+    },
+    {
+      "dbn": "27Q210",
+      "name": "J.H.S. 210 Elizabeth Blackwell",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 521,
+      "pct": 51.6
+    },
+    {
+      "dbn": "27Q226",
+      "name": "J.H.S. 226 Virgil I. Grissom",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 247,
+      "pct": 19.8
+    },
+    {
+      "dbn": "27Q232",
+      "name": "P.S. 232 Lindenwood",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 101,
+      "pct": 48.5
+    },
+    {
+      "dbn": "27Q262",
+      "name": "Channel View School for Research",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 131,
+      "pct": 51.9
+    },
+    {
+      "dbn": "27Q282",
+      "name": "Knowledge and Power Preparatory Academy VI",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 81,
+      "pct": 32.1
+    },
+    {
+      "dbn": "27Q297",
+      "name": "Hawtree Creek Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 126,
+      "pct": 26.2
+    },
+    {
+      "dbn": "27Q309",
+      "name": "Academy of Medical Technology: A College Board School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 66,
+      "pct": 19.7
+    },
+    {
+      "dbn": "27Q318",
+      "name": "Waterside School For Leadership",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 59,
+      "pct": 23.7
+    },
+    {
+      "dbn": "27Q319",
+      "name": "Village Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 82,
+      "pct": 31.7
+    },
+    {
+      "dbn": "27Q323",
+      "name": "Scholars' Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 27,
+      "students": 187,
+      "pct": 87.2
+    },
+    {
+      "dbn": "27Q333",
+      "name": "Goldie Maple Academy",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 27,
+      "students": 22,
+      "pct": 0
+    },
+    {
+      "dbn": "28Q008",
+      "name": "J.H.S. 008 Richard S. Grossley",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 92,
+      "pct": 20.7
+    },
+    {
+      "dbn": "28Q072",
+      "name": "Catherine & Count Basie Middle School 72",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 93,
+      "pct": 16.1
+    },
+    {
+      "dbn": "28Q157",
+      "name": "J.H.S. 157 Stephen A. Halsey",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 490,
+      "pct": 66.9
+    },
+    {
+      "dbn": "28Q167",
+      "name": "Metropolitan Expeditionary Learning School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 113,
+      "pct": 49.6
+    },
+    {
+      "dbn": "28Q190",
+      "name": "J.H.S. 190 Russell Sage",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 330,
+      "pct": 59.7
+    },
+    {
+      "dbn": "28Q217",
+      "name": "J.H.S. 217 Robert A. Van Wyck",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 418,
+      "pct": 44.3
+    },
+    {
+      "dbn": "28Q284",
+      "name": "York Early College Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 91,
+      "pct": 56
+    },
+    {
+      "dbn": "28Q287",
+      "name": "The Emerson School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 90,
+      "pct": 21.1
+    },
+    {
+      "dbn": "28Q310",
+      "name": "Queens Collegiate: A College Board School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 86,
+      "pct": 16.3
+    },
+    {
+      "dbn": "28Q332",
+      "name": "Redwood Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 73,
+      "pct": 64.4
+    },
+    {
+      "dbn": "28Q358",
+      "name": "M.S. 358",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 120,
+      "pct": 73.3
+    },
+    {
+      "dbn": "28Q680",
+      "name": "Queens Gateway to Health Sciences Secondary School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 84,
+      "pct": 64.3
+    },
+    {
+      "dbn": "28Q896",
+      "name": "Young Women's Leadership School, Queens",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 28,
+      "students": 76,
+      "pct": 44.7
+    },
+    {
+      "dbn": "29Q059",
+      "name": "I.S. 059 Springfield Gardens",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 145,
+      "pct": 19.3
+    },
+    {
+      "dbn": "29Q109",
+      "name": "Jean Nuzzi Intermediate School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 291,
+      "pct": 32
+    },
+    {
+      "dbn": "29Q116",
+      "name": "P.S./I.S. 116 William C. Hughley",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 69,
+      "pct": 21.7
+    },
+    {
+      "dbn": "29Q138",
+      "name": "P.S./M.S. 138 Sunrise",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 92,
+      "pct": 0
+    },
+    {
+      "dbn": "29Q147",
+      "name": "P.S./M.S. 147 Ronald McNair",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 59,
+      "pct": 23.7
+    },
+    {
+      "dbn": "29Q192",
+      "name": "I.S. 192 The Linden",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 95,
+      "pct": 15.8
+    },
+    {
+      "dbn": "29Q208",
+      "name": "P.S./I.S. 208",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 103,
+      "pct": 20.4
+    },
+    {
+      "dbn": "29Q238",
+      "name": "I.S. 238 - Susan B. Anthony Academy",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 314,
+      "pct": 25.2
+    },
+    {
+      "dbn": "29Q259",
+      "name": "Pathways College Preparatory School: A College Board School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 97,
+      "pct": 35.1
+    },
+    {
+      "dbn": "29Q268",
+      "name": "P.S./I.S. 268",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 61,
+      "pct": 32.8
+    },
+    {
+      "dbn": "29Q270",
+      "name": "The Gordon Parks School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 93,
+      "pct": 21.5
+    },
+    {
+      "dbn": "29Q283",
+      "name": "Preparatory Academy for Writers: A College Board School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 60,
+      "pct": 35
+    },
+    {
+      "dbn": "29Q289",
+      "name": "Queens United Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 69,
+      "pct": 27.5
+    },
+    {
+      "dbn": "29Q295",
+      "name": "P.S./I.S. 295",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 29,
+      "students": 66,
+      "pct": 56.1
+    },
+    {
+      "dbn": "29Q327",
+      "name": "Eagle Academy for Young Men III",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 64,
+      "pct": 45.3
+    },
+    {
+      "dbn": "29Q355",
+      "name": "Collaborative Arts Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 103,
+      "pct": 17.5
+    },
+    {
+      "dbn": "29Q356",
+      "name": "Community Voices Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 29,
+      "students": 90,
+      "pct": 20
+    },
+    {
+      "dbn": "30Q010",
+      "name": "I.S. 010 Horace Greeley",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 196,
+      "pct": 19.9
+    },
+    {
+      "dbn": "30Q078",
+      "name": "P.S./I.S. 78Q",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 30,
+      "students": 55,
+      "pct": 50.9
+    },
+    {
+      "dbn": "30Q111",
+      "name": "P.S. 111 Jacob Blackwell",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 30,
+      "students": 44,
+      "pct": 0
+    },
+    {
+      "dbn": "30Q122",
+      "name": "P.S. 122 Mamie Fay",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 30,
+      "students": 88,
+      "pct": 63.6
+    },
+    {
+      "dbn": "30Q126",
+      "name": "Albert Shanker School for Visual and Performing Arts",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 116,
+      "pct": 39.7
+    },
+    {
+      "dbn": "30Q127",
+      "name": "P.S. 127 Aerospace Science Magnet School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 30,
+      "students": 117,
+      "pct": 0
+    },
+    {
+      "dbn": "30Q141",
+      "name": "I.S. 141 The Steinway",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 334,
+      "pct": 58.4
+    },
+    {
+      "dbn": "30Q145",
+      "name": "I.S. 145 Joseph Pulitzer",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 488,
+      "pct": 61.1
+    },
+    {
+      "dbn": "30Q204",
+      "name": "I.S. 204 Oliver W. Holmes",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 121,
+      "pct": 24
+    },
+    {
+      "dbn": "30Q227",
+      "name": "I.S. 227 Louis Armstrong",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 436,
+      "pct": 58.9
+    },
+    {
+      "dbn": "30Q230",
+      "name": "I.S. 230",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 315,
+      "pct": 60.3
+    },
+    {
+      "dbn": "30Q235",
+      "name": "Academy for New Americans",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 19,
+      "pct": 0
+    },
+    {
+      "dbn": "30Q286",
+      "name": "Young Women's Leadership School, Astoria",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 76,
+      "pct": 76.3
+    },
+    {
+      "dbn": "30Q291",
+      "name": "Hunters Point Community Middle School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 134,
+      "pct": 63.4
+    },
+    {
+      "dbn": "30Q300",
+      "name": "The 30th Avenue School (G&T Citywide)",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 30,
+      "students": 53,
+      "pct": 92.5
+    },
+    {
+      "dbn": "30Q580",
+      "name": "Baccalaureate School for Global Education",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 30,
+      "students": 65,
+      "pct": 93.8
+    },
+    {
+      "dbn": "31R002",
+      "name": "I.S. R002 George L. Egbert",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 335,
+      "pct": 23
+    },
+    {
+      "dbn": "31R007",
+      "name": "I.S. 007 Elias Bernstein",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 406,
+      "pct": 25.6
+    },
+    {
+      "dbn": "31R024",
+      "name": "I.S. 024 Myra S. Barnes",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 438,
+      "pct": 29.7
+    },
+    {
+      "dbn": "31R027",
+      "name": "I.S. 027 Anning S. Prall",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 285,
+      "pct": 18.6
+    },
+    {
+      "dbn": "31R028",
+      "name": "The Eagle Academy for Young Men of Staten Island",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 65,
+      "pct": 0
+    },
+    {
+      "dbn": "31R034",
+      "name": "I.S. 034 Tottenville",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 379,
+      "pct": 50.4
+    },
+    {
+      "dbn": "31R048",
+      "name": "P.S. 048 William G. Wilcox",
+      "type": "K-8",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 129,
+      "pct": 73.6
+    },
+    {
+      "dbn": "31R049",
+      "name": "I.S. 49 Berta A. Dreyfus",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 122,
+      "pct": 13.1
+    },
+    {
+      "dbn": "31R051",
+      "name": "I.S. 051 Edwin Markham",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 364,
+      "pct": 16.5
+    },
+    {
+      "dbn": "31R061",
+      "name": "I.S. 061 William A Morris",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 287,
+      "pct": 16.4
+    },
+    {
+      "dbn": "31R063",
+      "name": "Marsh Avenue School for Expeditionary Learning",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 122,
+      "pct": 27
+    },
+    {
+      "dbn": "31R072",
+      "name": "I.S. 072 Rocco Laurie",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 521,
+      "pct": 32.1
+    },
+    {
+      "dbn": "31R075",
+      "name": "I.S. 075 Frank D. Paulo",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 518,
+      "pct": 31.5
+    },
+    {
+      "dbn": "31R080",
+      "name": "The Michael J. Petrides School",
+      "type": "K-8",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 127,
+      "pct": 63
+    },
+    {
+      "dbn": "31R085",
+      "name": "The Young Women's Leadership School of Staten Island",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 58,
+      "pct": 0
+    },
+    {
+      "dbn": "31R861",
+      "name": "Staten Island School of Civic Leadership",
+      "type": "K-8",
+      "borough": "Staten Island",
+      "district": 31,
+      "students": 93,
+      "pct": 12.9
+    },
+    {
+      "dbn": "32K045",
+      "name": "P.S./I.S. 045 Horace E. Greene",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 55,
+      "pct": 18.2
+    },
+    {
+      "dbn": "32K162",
+      "name": "J.H.S. 162 The Willoughby",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 93,
+      "pct": 47.3
+    },
+    {
+      "dbn": "32K291",
+      "name": "J.H.S. 291 Roland Hayes",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 92,
+      "pct": 45.7
+    },
+    {
+      "dbn": "32K347",
+      "name": "I.S. 347 School of Humanities",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 64,
+      "pct": 0
+    },
+    {
+      "dbn": "32K349",
+      "name": "I.S. 349 Math, Science & Tech.",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 71,
+      "pct": 8.5
+    },
+    {
+      "dbn": "32K383",
+      "name": "J.H.S. 383 Philippa Schuyler",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 192,
+      "pct": 25
+    },
+    {
+      "dbn": "32K384",
+      "name": "P.S. /I.S. 384 Frances E. Carter",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 28,
+      "pct": 21.4
+    },
+    {
+      "dbn": "32K554",
+      "name": "All City Leadership Secondary School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 58,
+      "pct": 100
+    },
+    {
+      "dbn": "32K562",
+      "name": "Evergreen Middle School for Urban Exploration",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 32,
+      "students": 116,
+      "pct": 45.7
+    },
+    {
+      "dbn": "84K037",
+      "name": "Beginning with Children Charter School II",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 79,
+      "pct": 45.6
+    },
+    {
+      "dbn": "84K355",
+      "name": "Uncommon Williamsburg Charter School NYC",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 69,
+      "pct": 5.8
+    },
+    {
+      "dbn": "84K356",
+      "name": "Achievement First Crown Heights Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 84,
+      "pct": 3.6
+    },
+    {
+      "dbn": "84K357",
+      "name": "KIPP Always Mentally Prepared Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 105,
+      "pct": 2.9
+    },
+    {
+      "dbn": "84K358",
+      "name": "Achievement First East New York Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 55,
+      "pct": 74.5
+    },
+    {
+      "dbn": "84K360",
+      "name": "Launch Expeditionary Learning Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 86,
+      "pct": 1.2
+    },
+    {
+      "dbn": "84K362",
+      "name": "Hellenic Classical Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 54,
+      "pct": 29.6
+    },
+    {
+      "dbn": "84K367",
+      "name": "Success Academy Charter School - Bed Stuy 1",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 71,
+      "pct": 1.4
+    },
+    {
+      "dbn": "84K379",
+      "name": "Explore Excel Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 72,
+      "pct": 29.2
+    },
+    {
+      "dbn": "84K406",
+      "name": "EMBER Charter School for Mindful Education, Innovation and Transformation",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 35,
+      "pct": 2.9
+    },
+    {
+      "dbn": "84K508",
+      "name": "Achievement First Endeavor Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 86,
+      "pct": 1.2
+    },
+    {
+      "dbn": "84K517",
+      "name": "Uncommon Bed-Stuy West Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 82,
+      "pct": 3.7
+    },
+    {
+      "dbn": "84K536",
+      "name": "Community Roots Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 49,
+      "pct": 51
+    },
+    {
+      "dbn": "84K538",
+      "name": "Achievement First Bushwick Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 102,
+      "pct": 45.1
+    },
+    {
+      "dbn": "84K593",
+      "name": "Uncommon Excellence Boys Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 74,
+      "pct": 1.4
+    },
+    {
+      "dbn": "84K608",
+      "name": "Uncommon Kings Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 81,
+      "pct": 2.5
+    },
+    {
+      "dbn": "84K626",
+      "name": "Achievement First Brownsville Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 93,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84K648",
+      "name": "Uncommon Bed-Stuy East Charter School NYC",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 81,
+      "pct": 1.2
+    },
+    {
+      "dbn": "84K651",
+      "name": "PAVE Academy Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 49,
+      "pct": 0
+    },
+    {
+      "dbn": "84K652",
+      "name": "Brooklyn Ascend Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 85,
+      "pct": 0
+    },
+    {
+      "dbn": "84K680",
+      "name": "Achievement First Aspire Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 68,
+      "pct": 36.8
+    },
+    {
+      "dbn": "84K702",
+      "name": "Community Partnership Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 51,
+      "pct": 54.9
+    },
+    {
+      "dbn": "84K704",
+      "name": "Explore Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 71,
+      "pct": 39.4
+    },
+    {
+      "dbn": "84K710",
+      "name": "Brownsville Collegiate Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 19,
+      "pct": 0
+    },
+    {
+      "dbn": "84K711",
+      "name": "Uncommon Brownsville South Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 74,
+      "pct": 1.4
+    },
+    {
+      "dbn": "84K712",
+      "name": "Uncommon Excellence Girls Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 42,
+      "pct": 2.4
+    },
+    {
+      "dbn": "84K724",
+      "name": "Uncommon Canarsie Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 88,
+      "pct": 2.3
+    },
+    {
+      "dbn": "84K730",
+      "name": "Summit Academy Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 33,
+      "pct": 3
+    },
+    {
+      "dbn": "84K731",
+      "name": "Brooklyn Excelsior Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 63,
+      "pct": 1.6
+    },
+    {
+      "dbn": "84K737",
+      "name": "Brownsville Ascend Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 79,
+      "pct": 1.3
+    },
+    {
+      "dbn": "84K740",
+      "name": "Brooklyn Scholars Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 83,
+      "pct": 0
+    },
+    {
+      "dbn": "84K741",
+      "name": "Success Academy Charter School - Crown Heights",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 73,
+      "pct": 4.1
+    },
+    {
+      "dbn": "84K742",
+      "name": "Explore Empower Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 81,
+      "pct": 22.2
+    },
+    {
+      "dbn": "84K744",
+      "name": "Coney Island Preparatory Public Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 112,
+      "pct": 0
+    },
+    {
+      "dbn": "84K746",
+      "name": "Hebrew Language Academy Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 93,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84K757",
+      "name": "Unity Preparatory Charter School of Brooklyn",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 89,
+      "pct": 31.5
+    },
+    {
+      "dbn": "84K758",
+      "name": "Brooklyn Urban Garden Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 110,
+      "pct": 84.5
+    },
+    {
+      "dbn": "84K759",
+      "name": "Canarsie Ascend Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 88,
+      "pct": 0
+    },
+    {
+      "dbn": "84K769",
+      "name": "Hyde Leadership Charter School - Brooklyn",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 46,
+      "pct": 0
+    },
+    {
+      "dbn": "84K774",
+      "name": "Achievement First Apollo Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 98,
+      "pct": 28.6
+    },
+    {
+      "dbn": "84K775",
+      "name": "Uncommon Brownsville North Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 90,
+      "pct": 3.3
+    },
+    {
+      "dbn": "84K777",
+      "name": "Uncommon Crown Heights Charter School NYC",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 67,
+      "pct": 1.5
+    },
+    {
+      "dbn": "84K781",
+      "name": "Success Academy Charter School - Bergen Beach",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 95,
+      "pct": 3.2
+    },
+    {
+      "dbn": "84K782",
+      "name": "Bedford Stuyvesant New Beginnings Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 90,
+      "pct": 0
+    },
+    {
+      "dbn": "84K784",
+      "name": "Achievement First North Brooklyn Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 84,
+      "pct": 0
+    },
+    {
+      "dbn": "84K785",
+      "name": "Imagine Me Leadership Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 31,
+      "pct": 12.9
+    },
+    {
+      "dbn": "84K788",
+      "name": "Achievement First Linden Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 63,
+      "pct": 3.2
+    },
+    {
+      "dbn": "84K790",
+      "name": "Central Brooklyn Ascend Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 86,
+      "pct": 3.5
+    },
+    {
+      "dbn": "84K791",
+      "name": "Brooklyn Dreams Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 82,
+      "pct": 1.2
+    },
+    {
+      "dbn": "84K793",
+      "name": "Bushwick Ascend Charter School",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 87,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84K803",
+      "name": "Brooklyn Laboratory Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 7,
+      "pct": null
+    },
+    {
+      "dbn": "84K807",
+      "name": "Collegiate Academy for Mathematics and Personal Awareness Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 29,
+      "pct": 0
+    },
+    {
+      "dbn": "84K876",
+      "name": "Achievement First Voyager Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 51,
+      "pct": 94.1
+    },
+    {
+      "dbn": "84K879",
+      "name": "Brooklyn Prospect Charter School - CSD 13",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 115,
+      "pct": 1.7
+    },
+    {
+      "dbn": "84K883",
+      "name": "Success Academy Charter School - Bed Stuy 3",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 55,
+      "pct": 3.6
+    },
+    {
+      "dbn": "84K911",
+      "name": "Edmund W. Gordon Brooklyn Laboratory Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 67,
+      "pct": 3
+    },
+    {
+      "dbn": "84K928",
+      "name": "Brooklyn Prospect Charter School - CSD 15.2",
+      "type": "K-8",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 115,
+      "pct": 4.3
+    },
+    {
+      "dbn": "84K956",
+      "name": "Lamad Academy Charter School",
+      "type": "Middle",
+      "borough": "Brooklyn",
+      "district": 84,
+      "students": 64,
+      "pct": 0
+    },
+    {
+      "dbn": "84M068",
+      "name": "KIPP NYC Washington Heights Academy Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 101,
+      "pct": 0
+    },
+    {
+      "dbn": "84M085",
+      "name": "Global Community Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 36,
+      "pct": 0
+    },
+    {
+      "dbn": "84M100",
+      "name": "Neighborhood Charter School of Harlem",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 57,
+      "pct": 15.8
+    },
+    {
+      "dbn": "84M168",
+      "name": "East Harlem Scholars Academy Charter School II",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 53,
+      "pct": 0
+    },
+    {
+      "dbn": "84M174",
+      "name": "Success Academy Charter School - Union Square",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 100,
+      "pct": 1
+    },
+    {
+      "dbn": "84M202",
+      "name": "Great Oaks Kathleen Sherry Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 56,
+      "pct": 0
+    },
+    {
+      "dbn": "84M204",
+      "name": "Capital Preparatory Harlem Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 20,
+      "pct": 35
+    },
+    {
+      "dbn": "84M263",
+      "name": "New York City Charter School of the Arts",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 87,
+      "pct": 3.4
+    },
+    {
+      "dbn": "84M279",
+      "name": "Opportunity Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 65,
+      "pct": 12.3
+    },
+    {
+      "dbn": "84M284",
+      "name": "Harlem Children's Zone Promise Academy Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 83,
+      "pct": 0
+    },
+    {
+      "dbn": "84M295",
+      "name": "School in the Square Public Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 100,
+      "pct": 0
+    },
+    {
+      "dbn": "84M335",
+      "name": "Harlem Village Academy East Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 26,
+      "pct": 0
+    },
+    {
+      "dbn": "84M336",
+      "name": "KIPP Infinity Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 106,
+      "pct": 0
+    },
+    {
+      "dbn": "84M338",
+      "name": "WHIN Music Community Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 25,
+      "pct": 0
+    },
+    {
+      "dbn": "84M341",
+      "name": "Harlem Children's Zone Promise Academy II Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 86,
+      "pct": 41.9
+    },
+    {
+      "dbn": "84M350",
+      "name": "Democracy Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 77,
+      "pct": 63.6
+    },
+    {
+      "dbn": "84M351",
+      "name": "Success Academy Charter School - Harlem 1",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 50,
+      "pct": 2
+    },
+    {
+      "dbn": "84M353",
+      "name": "New Heights Academy Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 93,
+      "pct": 24.7
+    },
+    {
+      "dbn": "84M382",
+      "name": "DREAM Charter School East Harlem",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 60,
+      "pct": 0
+    },
+    {
+      "dbn": "84M385",
+      "name": "Success Academy Charter School - Harlem 3",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 95,
+      "pct": 0
+    },
+    {
+      "dbn": "84M388",
+      "name": "St. HOPE Leadership Academy Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 64,
+      "pct": 0
+    },
+    {
+      "dbn": "84M389",
+      "name": "KIPP Beyond Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 111,
+      "pct": 2.7
+    },
+    {
+      "dbn": "84M430",
+      "name": "The Equity Project Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 120,
+      "pct": 72.5
+    },
+    {
+      "dbn": "84M478",
+      "name": "Inwood Academy for Leadership Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 133,
+      "pct": 75.9
+    },
+    {
+      "dbn": "84M481",
+      "name": "Democracy Preparatory Harlem Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 102,
+      "pct": 81.4
+    },
+    {
+      "dbn": "84M482",
+      "name": "Success Academy Charter School - Harlem 5",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 108,
+      "pct": 0.9
+    },
+    {
+      "dbn": "84M483",
+      "name": "New York French-American Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 32,
+      "pct": 0
+    },
+    {
+      "dbn": "84M518",
+      "name": "East Harlem Scholars Academy Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 59,
+      "pct": 0
+    },
+    {
+      "dbn": "84M523",
+      "name": "Success Academy Charter School - Upper West",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 142,
+      "pct": 2.8
+    },
+    {
+      "dbn": "84M704",
+      "name": "Harbor Science and Arts Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 40,
+      "pct": 0
+    },
+    {
+      "dbn": "84M708",
+      "name": "Harlem Prep Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 80,
+      "pct": 63.8
+    },
+    {
+      "dbn": "84M709",
+      "name": "Harlem Village Academy North Charter School",
+      "type": "Middle",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 41,
+      "pct": 0
+    },
+    {
+      "dbn": "84M726",
+      "name": "KIPP S.T.A.R. College Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 96,
+      "pct": 1
+    },
+    {
+      "dbn": "84M861",
+      "name": "Future Leaders Institute Charter School",
+      "type": "K-8",
+      "borough": "Manhattan",
+      "district": 84,
+      "students": 48,
+      "pct": 0
+    },
+    {
+      "dbn": "84Q083",
+      "name": "Central Queens Academy Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 96,
+      "pct": 100
+    },
+    {
+      "dbn": "84Q298",
+      "name": "Middle Village Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 84,
+      "students": 112,
+      "pct": 10.7
+    },
+    {
+      "dbn": "84Q304",
+      "name": "VOICE Charter School of New York",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 105,
+      "pct": 1.9
+    },
+    {
+      "dbn": "84Q321",
+      "name": "Growing Up Green Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 90,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84Q337",
+      "name": "Success Academy Charter School - Rosedale",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 84,
+      "pct": 11.9
+    },
+    {
+      "dbn": "84Q339",
+      "name": "Success Academy Charter School - Springfield Gardens - New York 6",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 82,
+      "pct": 1.2
+    },
+    {
+      "dbn": "84Q340",
+      "name": "Challenge Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 91,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84Q341",
+      "name": "Riverton Street Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 118,
+      "pct": 3.4
+    },
+    {
+      "dbn": "84Q342",
+      "name": "Rochdale Early Advantage Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 48,
+      "pct": 0
+    },
+    {
+      "dbn": "84Q359",
+      "name": "Academy of the City Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 90,
+      "pct": 7.8
+    },
+    {
+      "dbn": "84Q372",
+      "name": "Growing Up Green Charter School II",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 85,
+      "pct": 28.2
+    },
+    {
+      "dbn": "84Q375",
+      "name": "Success Academy Charter School - Far Rockaway",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 39,
+      "pct": 2.6
+    },
+    {
+      "dbn": "84Q380",
+      "name": "Forte Preparatory Academy Charter School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 84,
+      "students": 91,
+      "pct": 38.5
+    },
+    {
+      "dbn": "84Q387",
+      "name": "Valence College Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Queens",
+      "district": 84,
+      "students": 115,
+      "pct": 44.3
+    },
+    {
+      "dbn": "84Q705",
+      "name": "Renaissance Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 57,
+      "pct": 1.8
+    },
+    {
+      "dbn": "84Q706",
+      "name": "Our World Neighborhood Charter School",
+      "type": "K-8",
+      "borough": "Queens",
+      "district": 84,
+      "students": 71,
+      "pct": 2.8
+    },
+    {
+      "dbn": "84R067",
+      "name": "John W. Lavelle Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Staten Island",
+      "district": 84,
+      "students": 109,
+      "pct": 0.9
+    },
+    {
+      "dbn": "84R073",
+      "name": "New World Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Staten Island",
+      "district": 84,
+      "students": 112,
+      "pct": 2.7
+    },
+    {
+      "dbn": "84R083",
+      "name": "Richmond Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Staten Island",
+      "district": 84,
+      "students": 102,
+      "pct": 9.8
+    },
+    {
+      "dbn": "84X124",
+      "name": "Children's Aid College Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 42,
+      "pct": 2.4
+    },
+    {
+      "dbn": "84X133",
+      "name": "Icahn Charter School 6",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 36,
+      "pct": 0
+    },
+    {
+      "dbn": "84X165",
+      "name": "Grand Concourse Academy Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 70,
+      "pct": 0
+    },
+    {
+      "dbn": "84X177",
+      "name": "Mott Hall Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 67,
+      "pct": 0
+    },
+    {
+      "dbn": "84X185",
+      "name": "Pharos Academy Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 49,
+      "pct": 0
+    },
+    {
+      "dbn": "84X233",
+      "name": "Family Life Academy Charter School II",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 201,
+      "pct": 1
+    },
+    {
+      "dbn": "84X255",
+      "name": "Bronx Charter School for Excellence",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 79,
+      "pct": 0
+    },
+    {
+      "dbn": "84X309",
+      "name": "South Bronx Charter School for International Cultures and the Arts",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 41,
+      "pct": 0
+    },
+    {
+      "dbn": "84X345",
+      "name": "Leaders In Our Neighborhood Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 76,
+      "pct": 76.3
+    },
+    {
+      "dbn": "84X346",
+      "name": "South Bronx Classical Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 49,
+      "pct": 0
+    },
+    {
+      "dbn": "84X362",
+      "name": "Icahn Charter School 7",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 32,
+      "pct": 6.3
+    },
+    {
+      "dbn": "84X364",
+      "name": "South Bronx Classical Charter School II",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 30,
+      "pct": 0
+    },
+    {
+      "dbn": "84X378",
+      "name": "Icahn Charter School 2",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 33,
+      "pct": 0
+    },
+    {
+      "dbn": "84X380",
+      "name": "Success Academy Charter School - Bronx 3",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 108,
+      "pct": 2.8
+    },
+    {
+      "dbn": "84X387",
+      "name": "Brilla College Preparatory Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 89,
+      "pct": 1.1
+    },
+    {
+      "dbn": "84X389",
+      "name": "Bronx Global Learning Institute for Girls Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 37,
+      "pct": 2.7
+    },
+    {
+      "dbn": "84X394",
+      "name": "Mott Haven Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 46,
+      "pct": 32.6
+    },
+    {
+      "dbn": "84X398",
+      "name": "Bronx Community Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 50,
+      "pct": 38
+    },
+    {
+      "dbn": "84X407",
+      "name": "Access Bronx Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 45,
+      "pct": 0
+    },
+    {
+      "dbn": "84X419",
+      "name": "Bronx Academy of Promise Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 67,
+      "pct": 0
+    },
+    {
+      "dbn": "84X422",
+      "name": "Icahn Charter School 3",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 33,
+      "pct": 0
+    },
+    {
+      "dbn": "84X460",
+      "name": "Atmosphere Academy Public Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 280,
+      "pct": 0.4
+    },
+    {
+      "dbn": "84X461",
+      "name": "Nuasin Next Generation Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 53,
+      "pct": 73.6
+    },
+    {
+      "dbn": "84X465",
+      "name": "Boys Preparatory Charter School of New York",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 56,
+      "pct": 0
+    },
+    {
+      "dbn": "84X471",
+      "name": "American Dream Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 85,
+      "pct": 0
+    },
+    {
+      "dbn": "84X482",
+      "name": "Dr. Richard Izquierdo Health and Science Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 92,
+      "pct": 0
+    },
+    {
+      "dbn": "84X487",
+      "name": "Girls Preparatory Charter School of the Bronx",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 1,
+      "pct": null
+    },
+    {
+      "dbn": "84X488",
+      "name": "The Equality Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 85,
+      "pct": 25.9
+    },
+    {
+      "dbn": "84X489",
+      "name": "South Bronx Classical Charter School III",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 39,
+      "pct": 0
+    },
+    {
+      "dbn": "84X491",
+      "name": "Academic Leadership Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 49,
+      "pct": 2
+    },
+    {
+      "dbn": "84X492",
+      "name": "South Bronx Early College Academy Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 94,
+      "pct": 74.5
+    },
+    {
+      "dbn": "84X494",
+      "name": "Success Academy Charter School - Bronx 2",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 91,
+      "pct": 0
+    },
+    {
+      "dbn": "84X496",
+      "name": "Icahn Charter School 4",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 38,
+      "pct": 0
+    },
+    {
+      "dbn": "84X538",
+      "name": "Icahn Charter School 5",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 31,
+      "pct": 0
+    },
+    {
+      "dbn": "84X579",
+      "name": "Bronx Charter School for Excellence 2",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 43,
+      "pct": 0
+    },
+    {
+      "dbn": "84X585",
+      "name": "Legacy College Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 92,
+      "pct": 34.8
+    },
+    {
+      "dbn": "84X588",
+      "name": "South Bronx Classical Charter School IV",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 13,
+      "pct": 0
+    },
+    {
+      "dbn": "84X589",
+      "name": "Bronx Charter School for Excellence 3",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 32,
+      "pct": 0
+    },
+    {
+      "dbn": "84X592",
+      "name": "Amber Charter School Kingsbridge",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 60,
+      "pct": 1.7
+    },
+    {
+      "dbn": "84X598",
+      "name": "KIPP Freedom Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 100,
+      "pct": 0
+    },
+    {
+      "dbn": "84X606",
+      "name": "Emblaze Academy Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 73,
+      "pct": 0
+    },
+    {
+      "dbn": "84X612",
+      "name": "Creo College Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 83,
+      "pct": 0
+    },
+    {
+      "dbn": "84X614",
+      "name": "Dream Charter School Mott Haven",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 89,
+      "pct": 93.3
+    },
+    {
+      "dbn": "84X615",
+      "name": "University Prep Charter Middle School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 119,
+      "pct": 0.8
+    },
+    {
+      "dbn": "84X616",
+      "name": "KIPP Bronx Charter School II",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 87,
+      "pct": 0
+    },
+    {
+      "dbn": "84X617",
+      "name": "KIPP Bronx Charter School III",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 109,
+      "pct": 0.9
+    },
+    {
+      "dbn": "84X627",
+      "name": "Capital Preparatory Bronx Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 104,
+      "pct": 96.2
+    },
+    {
+      "dbn": "84X630",
+      "name": "Girls Preparatory Charter School of the Bronx II",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 65,
+      "pct": 0
+    },
+    {
+      "dbn": "84X648",
+      "name": "Girls Preparatory Charter School of New York",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 8,
+      "pct": null
+    },
+    {
+      "dbn": "84X703",
+      "name": "Bronx Preparatory Charter School",
+      "type": "Middle",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 135,
+      "pct": 51.1
+    },
+    {
+      "dbn": "84X704",
+      "name": "KIPP Academy Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 97,
+      "pct": 1
+    },
+    {
+      "dbn": "84X706",
+      "name": "Harriet Tubman Charter School",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 55,
+      "pct": 0
+    },
+    {
+      "dbn": "84X717",
+      "name": "Icahn Charter School 1",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 36,
+      "pct": 50
+    },
+    {
+      "dbn": "84X730",
+      "name": "Bronx Charter School for the Arts",
+      "type": "K-8",
+      "borough": "Bronx",
+      "district": 84,
+      "students": 97,
+      "pct": 85.6
+    }
+  ]
+}

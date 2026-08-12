@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Doors — NYC Middle-School Math Access Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --cream:#f6f0e3;
+    --cream-2:#faf6ec;
+    --sage:#dfe9e1;
+    --sage-2:#cfe0d6;
+    --navy:#1c2f45;
+    --navy-2:#365070;
+    --coral:#e2775a;
+    --coral-dark:#c65f42;
+    --teal:#4f8d76;
+    --teal-dark:#3a6c5a;
+    --line:#cdbfa4;
+    --gold:#f2dfa1;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Nunito Sans', sans-serif;
+    color:var(--navy);
+    background:var(--cream);
+    line-height:1.5;
+  }
+  h1,h2,h3,.display{
+    font-family:'Baloo 2', sans-serif;
+    font-weight:700;
+    line-height:1.05;
+    margin:0;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:12.5px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--coral-dark);
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px;
+    height:2px;
+    background:var(--coral);
+    display:inline-block;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
+  section{padding:72px 0;}
+  a{color:inherit;}
+
+  /* NAV */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:16px;padding-bottom:16px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;font-family:'Baloo 2',sans-serif;}
+  .brand .mark{
+    width:36px;height:36px;border-radius:50%;
+    border:2px solid var(--coral);
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;font-weight:800;color:var(--coral-dark);
+  }
+  .navlinks{display:flex;gap:28px;font-size:14px;font-weight:700;}
+  .navlinks a{text-decoration:none;opacity:0.8;}
+  .navlinks a:hover{opacity:1;color:var(--coral-dark);}
+
+  /* LOAD / ERROR STATES */
+  #loadState{
+    max-width:1080px;margin:0 auto;padding:60px 32px;font-size:15px;color:var(--navy-2);
+  }
+  #errorState{
+    display:none;max-width:1080px;margin:0 auto;padding:24px 32px;
+    background:#fff6f1;border:1px solid var(--coral);border-radius:10px;color:var(--navy);font-size:14.5px;
+  }
+  #siteContent{display:none;}
+
+  /* HERO */
+  #hero{
+    background:radial-gradient(circle at 78% 20%, var(--sage) 0%, var(--sage) 35%, var(--cream) 70%);
+    padding-top:64px;padding-bottom:0;
+  }
+  .hero-head{font-size:64px;letter-spacing:-1px;}
+  .hero-head .accent{
+    color:var(--coral);
+    text-decoration:underline;
+    text-decoration-color:var(--coral);
+    text-decoration-thickness:5px;
+    text-underline-offset:8px;
+  }
+  .hero-sub{
+    font-size:19px;max-width:560px;margin-top:22px;color:var(--navy-2);
+  }
+  .cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--coral);color:#fff;border:none;
+    font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;
+    padding:16px 26px;border-radius:10px;margin-top:32px;cursor:pointer;
+    text-decoration:none;
+  }
+  .cta:hover{background:var(--coral-dark);}
+  .facts-rail{
+    margin-top:56px;border-top:1px solid rgba(28,47,69,0.15);
+    display:grid;grid-template-columns:repeat(3,1fr);
+  }
+  .facts-rail div{padding:26px 0;border-right:1px solid rgba(28,47,69,0.15);}
+  .facts-rail div:last-child{border-right:none;}
+  .facts-rail .tag{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;opacity:0.65;}
+  .facts-rail .num{font-family:'Baloo 2',sans-serif;font-size:40px;font-weight:800;color:var(--teal-dark);margin:6px 0 2px;}
+  .facts-rail .lbl{font-size:14px;color:var(--navy-2);}
+
+  /* WHY IT MATTERS */
+  #why{background:var(--cream-2);}
+  .pathway-chain{display:flex;align-items:center;gap:10px;margin-top:28px;flex-wrap:wrap;}
+  .pathway-chain .step{background:var(--sage);border:1px solid var(--line);border-radius:8px;padding:11px 16px;font-weight:700;font-size:14px;white-space:nowrap;}
+  .pathway-chain .step.grade8{background:var(--coral);color:#fff;border-color:var(--coral-dark);}
+  .pathway-chain .arrow{opacity:0.45;font-size:16px;}
+  .earn-stats{display:flex;gap:24px;margin-top:22px;flex-wrap:wrap;}
+  .earn-stats .estat{flex:1;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;}
+  .earn-stats .estat .n{font-family:'Baloo 2',sans-serif;font-size:40px;font-weight:800;color:var(--teal-dark);}
+  .earn-stats .estat .l{font-size:14px;color:var(--navy-2);margin-top:8px;}
+  .external-note{
+    margin-top:22px;border:1px dashed var(--navy-2);border-radius:10px;
+    padding:16px 20px;font-size:13.5px;color:var(--navy-2);background:#fff;
+  }
+  .external-note b{color:var(--navy);}
+
+  /* START HERE */
+  #start{background:var(--cream-2);}
+  h2.section-head{font-size:38px;max-width:640px;}
+  .section-sub{font-size:17px;color:var(--navy-2);max-width:620px;margin-top:14px;}
+
+  .finder{
+    margin-top:36px;border:1px solid var(--line);border-radius:14px;
+    background:#fff;padding:28px;
+  }
+  .finder input, .finder select{
+    width:100%;padding:14px 16px;border:1px solid var(--line);
+    border-radius:8px;font-size:15px;font-family:inherit;margin-bottom:12px;
+    background:var(--cream-2);
+  }
+  .finder .demo-note{font-size:13px;color:var(--navy-2);opacity:0.8;margin-top:6px;}
+  #searchResults{margin-top:14px;}
+  .school-card{
+    border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-top:10px;background:var(--cream-2);
+  }
+  .school-card .sname{font-weight:800;font-size:15.5px;}
+  .school-card .smeta{font-size:13px;color:var(--navy-2);margin:2px 0 8px;}
+  .school-card .spct{font-family:'Baloo 2',sans-serif;font-size:26px;font-weight:800;color:var(--coral-dark);}
+  .school-card .splain{font-size:14px;color:var(--navy);margin-top:4px;}
+
+  .borough-picker{
+    margin-top:26px;border:1px solid var(--line);border-radius:14px;
+    background:var(--sage);padding:30px;position:relative;min-height:340px;
+  }
+  .borough-picker .note{font-size:13.5px;color:var(--navy-2);margin-bottom:18px;}
+  .btile{
+    position:absolute;
+    background:var(--gold);
+    border:1px solid rgba(28,47,69,0.25);
+    border-radius:8px;
+    padding:10px 16px;
+    font-weight:800;font-size:14px;
+    cursor:pointer;
+    box-shadow:2px 3px 0 rgba(28,47,69,0.12);
+    transition:transform .12s ease;
+  }
+  .btile:hover, .btile.active{transform:translateY(-3px);background:var(--coral);color:#fff;}
+  #tile-X{top:14%;left:44%;}
+  #tile-M{top:38%;left:30%;}
+  #tile-Q{top:42%;left:62%;}
+  #tile-K{top:66%;left:44%;}
+  #tile-R{top:80%;left:14%;}
+
+  .snapshot{
+    margin-top:22px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:24px;
+  }
+  .snapshot .tag{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;opacity:0.6;}
+  .snapshot h3{font-size:24px;margin-top:6px;}
+  .snapshot .bar-outer{background:var(--sage-2);height:14px;border-radius:7px;margin:14px 0;overflow:hidden;}
+  .snapshot .bar-inner{background:var(--teal);height:100%;border-radius:7px;width:0%;transition:width .5s ease;}
+  .snapshot .plain{font-size:15px;color:var(--navy-2);}
+
+  /* PATHWAY */
+  #pathway{background:var(--cream);}
+  .band-row{
+    display:grid;grid-template-columns:110px 1fr 220px;gap:20px;align-items:center;
+    padding:16px 0;border-top:1px solid var(--line);
+  }
+  .band-row:last-child{border-bottom:1px solid var(--line);}
+  .band-row .range{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;color:var(--teal-dark);}
+  .band-row .label{font-size:15px;color:var(--navy);}
+  .band-row .count-wrap{display:flex;align-items:center;gap:10px;}
+  .band-row .count-bar-outer{flex:1;background:var(--sage-2);height:10px;border-radius:5px;overflow:hidden;}
+  .band-row .count-bar-inner{background:var(--coral);height:100%;border-radius:5px;}
+  .band-row .count-num{font-size:13px;font-weight:700;white-space:nowrap;}
+  .callout-flag{
+    margin-top:22px;border:1px solid var(--coral);background:#fff6f1;border-radius:10px;
+    padding:16px 20px;font-size:15px;
+  }
+  .callout-flag b{color:var(--coral-dark);}
+
+  /* OPPORTUNITY GAP */
+  #gap{background:var(--sage);}
+  .gap-box{
+    margin-top:30px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:34px;
+  }
+  .gap-stat{display:flex;align-items:center;gap:26px;}
+  .gap-stat .tag{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;opacity:0.6;width:90px;}
+  .gap-stat .num{font-family:'Baloo 2',sans-serif;font-size:64px;font-weight:800;}
+  .gap-stat.entry .num{color:var(--coral);}
+  .gap-stat.outcome .num{color:var(--teal-dark);}
+  .gap-stat .desc{font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:700;}
+  .gap-arrow{text-align:center;font-size:22px;opacity:0.5;padding:6px 0;}
+
+  /* CHART SECTIONS */
+  .chart-box{
+    margin-top:26px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:26px;
+  }
+  .chart-box canvas{max-height:320px;}
+  .methodology{font-size:12.5px;color:var(--navy-2);opacity:0.75;margin-top:10px;}
+
+  #charter{background:var(--cream-2);}
+  .caveat{
+    margin-top:16px;font-size:14px;color:var(--navy-2);background:var(--cream);
+    border-left:3px solid var(--coral);padding:12px 16px;border-radius:4px;
+  }
+
+  #trend{background:var(--gold);}
+
+  /* CASE STUDY */
+  #casestudy{background:var(--navy);color:#fdf9f0;}
+  #casestudy .eyebrow{color:var(--coral);}
+  #casestudy .section-sub{color:#c9d3de;}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px;}
+  .pcard{background:#243a56;border-radius:14px;padding:26px;border:1px solid #33496a;}
+  .pcard .tag{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#93a6bd;}
+  .pcard h3{font-size:22px;margin:8px 0 4px;font-family:'Baloo 2',sans-serif;}
+  .pcard .meta{font-size:13.5px;color:#93a6bd;margin-bottom:16px;}
+  .pcard .bignum{font-family:'Baloo 2',sans-serif;font-size:52px;font-weight:800;}
+  .pcard.zero .bignum{color:#ef8f76;}
+  .pcard.high .bignum{color:#7fd1ae;}
+  .pcard .sub{font-size:14px;color:#c9d3de;margin-top:4px;}
+  .disclaim{font-size:13.5px;color:#93a6bd;margin-top:20px;border-top:1px solid #33496a;padding-top:16px;}
+
+  /* WHAT DATA CANNOT TELL */
+  #unknown{background:var(--cream-2);}
+  .benchmark-box{
+    margin-top:26px;border:2px solid var(--coral);border-radius:14px;background:#fff;padding:30px;
+  }
+  .benchmark-box .stat-pair{display:flex;gap:40px;margin:20px 0;flex-wrap:wrap;}
+  .benchmark-box .stat-pair div{flex:1;min-width:200px;}
+  .benchmark-box .stat-pair .n{font-family:'Baloo 2',sans-serif;font-size:34px;font-weight:800;}
+  .benchmark-box .stat-pair .l{font-size:13.5px;color:var(--navy-2);}
+  .support-list{margin-top:18px;font-size:14.5px;color:var(--navy-2);}
+  .qtag{
+    display:inline-block;background:var(--sage);color:var(--teal-dark);font-size:12px;font-weight:800;
+    padding:4px 10px;border-radius:20px;letter-spacing:0.5px;margin-top:18px;
+  }
+
+  /* AUDIENCE */
+  #audience{background:var(--sage-2);}
+  #audience h2{font-size:44px;max-width:600px;}
+  #audience .section-sub{font-size:18px;max-width:680px;}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#c9d3de;padding:44px 0;font-size:13.5px;}
+  footer .fbrand{font-family:'Baloo 2',sans-serif;font-weight:800;color:#fff;font-size:18px;margin-bottom:10px;}
+  footer a{color:#c9d3de;text-decoration:underline;}
+  footer .fgrid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+</style>
+</head>
+<body>
+
+<div id="loadState">Loading Open Doors data from <code>data/open-doors-data.json</code>…</div>
+<div id="errorState" class="wrap">
+  <b>Couldn't load the data file.</b> If you opened this file directly (file://), your browser is blocking the local fetch — serve the folder instead, e.g. run <code>npx serve</code> or <code>python3 -m http.server</code> in this project folder and open the printed localhost URL. If the file is genuinely missing, run <code>npm run fetch-data</code> first.
+</div>
+
+<div id="siteContent">
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="mark">OD</span> Open Doors</div>
+    <div class="navlinks">
+      <a href="#why">Why it matters</a>
+      <a href="#start">Find a school</a>
+      <a href="#gap">Understand access</a>
+      <a href="#casestudy">Same city, different door</a>
+      <a href="#unknown">The open question</a>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="eyebrow">NYC MIDDLE-SCHOOL MATH ACCESS GUIDE</div>
+    <h1 class="hero-head">Not every NYC middle school<br><span class="accent">opens the door</span><br>to advanced math.</h1>
+    <p class="hero-sub">Open Doors shows which NYC middle schools give eighth graders a real shot at accelerated math — and which don't — using the city's own public school-report data.</p>
+    <a href="#start" class="cta">Find a school ↓</a>
+    <div class="facts-rail">
+      <div><div class="tag">Explore</div><div class="num" id="factSchools">—</div><div class="lbl">schools reporting</div></div>
+      <div><div class="tag">Understand</div><div class="num" id="factAccess">—</div><div class="lbl">citywide participation, <span id="factYearA">—</span></div></div>
+      <div><div class="tag">Compare</div><div class="num">5</div><div class="lbl">boroughs</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why This Matters</div>
+    <h2 class="section-head">A seat in 8th-grade math can be worth real money later.</h2>
+    <p class="section-sub">Advanced math in middle school isn't just a harder class — it's the first link in a course chain. Skip it, and calculus by senior year becomes very hard to reach.</p>
+
+    <div class="pathway-chain">
+      <div class="step grade8">8th grade: Algebra I</div>
+      <div class="arrow">→</div>
+      <div class="step">9th: Geometry</div>
+      <div class="arrow">→</div>
+      <div class="step">10th: Algebra II</div>
+      <div class="arrow">→</div>
+      <div class="step">11th–12th: Calculus</div>
+    </div>
+
+    <div class="earn-stats">
+      <div class="estat">
+        <div class="n">+19.5%</div>
+        <div class="l">predicted earnings boost per additional year of calculus taken in high school — still measurable a decade later</div>
+      </div>
+      <div class="estat">
+        <div class="n">+8.0%</div>
+        <div class="l">predicted earnings boost per additional year of algebra/geometry coursework</div>
+      </div>
+    </div>
+
+    <div class="earn-stats">
+      <div class="estat">
+        <div class="n" style="color:var(--coral-dark);">2%</div>
+        <div class="l">of STEM-intending college students who still need pre-calculus when they arrive go on to earn a STEM bachelor's degree</div>
+      </div>
+      <div class="estat">
+        <div class="n" style="color:var(--coral-dark);">&lt;40%</div>
+        <div class="l">chance of earning any four-year degree at all for students who never got past Algebra II in high school</div>
+      </div>
+    </div>
+
+    <div class="external-note">
+      <b>About this data:</b> these figures are national education research, not NYC's own school-report numbers used everywhere else on this page. The earnings estimates come from a long-term study of California students (Rose &amp; Betts, <i>The Review of Economics and Statistics</i>); the STEM-completion figures are cited via The 74 and the Pioneer Institute. They show a strong association between advanced math coursework and later outcomes — not a guarantee for any individual student. Research is also clear this benefit depends on real support alongside access, not placement alone: a series of causal studies on the "Algebra for All" movement found that pushing students into accelerated math without adequate support increased failure rates for those who weren't ready, while Chicago's "double-dose" model (two class periods instead of one) improved both test scores and long-run graduation and college-enrollment rates.
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="eyebrow">Start Here</div>
+    <h2 class="section-head">Does your school open the door?</h2>
+    <p class="section-sub">Search for a school, or start with the borough you know. Every result translates a number into plain language — without assigning a school a grade.</p>
+
+    <div class="finder">
+      <input type="text" id="schoolSearch" placeholder="Search a school name or DBN" oninput="doSearch()">
+      <div class="demo-note" id="searchDemoNote"></div>
+      <div id="searchResults"></div>
+    </div>
+
+    <div class="borough-picker">
+      <div class="note">Click a borough to see its <span id="boroughYearNote">—</span> access snapshot. Shown at borough level for now — neighborhood-level pins would require joining an address dataset this endpoint doesn't include.</div>
+      <div class="btile" id="tile-X" onclick="showBorough('X')">Bronx</div>
+      <div class="btile" id="tile-M" onclick="showBorough('M')">Manhattan</div>
+      <div class="btile" id="tile-Q" onclick="showBorough('Q')">Queens</div>
+      <div class="btile" id="tile-K" onclick="showBorough('K')">Brooklyn</div>
+      <div class="btile" id="tile-R" onclick="showBorough('R')">Staten Island</div>
+    </div>
+
+    <div class="snapshot" id="snapshot">
+      <div class="tag">Borough Snapshot</div>
+      <h3 id="snapTitle">Pick a borough above</h3>
+      <div class="bar-outer"><div class="bar-inner" id="snapBar"></div></div>
+      <div class="plain" id="snapPlain">Click a borough to see how this explanation works.</div>
+    </div>
+  </div>
+</section>
+
+<section id="pathway">
+  <div class="wrap">
+    <div class="eyebrow">Read the Pathway</div>
+    <h2 class="section-head">A percentage can tell you who gets a chance.</h2>
+    <p class="section-sub">These are participation bands, not school grades. They describe entry into accelerated math — not a student's ability or a school's worth. Counts below are the real distribution across all reporting schools, pulled live from NYC Open Data.</p>
+
+    <div id="bandsContainer" style="margin-top:20px;"></div>
+
+    <div class="callout-flag" id="zeroCallout"></div>
+  </div>
+</section>
+
+<section id="gap">
+  <div class="wrap">
+    <div class="eyebrow">The Opportunity Gap</div>
+    <h2 class="section-head">Nearly everyone who gets in passes.<br>So why do so few get a seat?</h2>
+    <p class="section-sub">The data points to an access question: participation is low, while success among reported participants is extremely high.</p>
+    <div class="gap-box">
+      <div class="gap-stat entry">
+        <div class="tag">Entry</div>
+        <div><div class="num" id="gapEntry">—</div><div class="desc">of eighth graders take accelerated math</div></div>
+      </div>
+      <div class="gap-arrow">↓</div>
+      <div class="gap-stat outcome">
+        <div class="tag">Outcome</div>
+        <div><div class="num" id="gapOutcome">—</div><div class="desc">of reported participants pass</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="borough">
+  <div class="wrap">
+    <div class="eyebrow">Same City, Five Different Doors</div>
+    <h2 class="section-head">Where you live predicts access more than how you'd do.</h2>
+    <p class="section-sub">Queens has posted the highest participation rate every year since 2018. The Bronx has posted the lowest every year since 2018. This is not a one-year snapshot.</p>
+    <div class="chart-box"><canvas id="boroughChart"></canvas></div>
+    <div class="methodology">Enrollment-weighted average across Middle and K–8 schools, pulled live from NYC DOE School Quality Reports Data (dnpx-dfnc).</div>
+  </div>
+</section>
+
+<section id="charter">
+  <div class="wrap">
+    <div class="eyebrow">A Wider Gap</div>
+    <h2 class="section-head">The biggest gap on this site isn't between boroughs.</h2>
+    <p class="section-sub" id="charterSub"></p>
+    <div class="chart-box"><canvas id="charterChart"></canvas></div>
+    <div class="caveat">This compares reported participation, not school quality. Charter schools are not zoned, operate under different admissions rules, and often run different course sequences than district schools — so this gap describes a pattern in the data, not a verdict on either system.</div>
+  </div>
+</section>
+
+<section id="trend">
+  <div class="wrap">
+    <div class="eyebrow">The Recent Trend</div>
+    <h2 class="section-head">Access hasn't recovered — it's fallen again.</h2>
+    <p class="section-sub" id="trendSub"></p>
+    <div class="chart-box"><canvas id="trendChart"></canvas></div>
+    <div class="methodology">2019–20 is blank because state testing and reporting were disrupted that spring, not because access was zero.</div>
+  </div>
+</section>
+
+<section id="casestudy">
+  <div class="wrap">
+    <div class="eyebrow">Same City. Different Door.</div>
+    <h2 class="section-head">Two Brooklyn middle schools. Two very different doors.</h2>
+    <p class="section-sub">Real, named, verified records from the live directory — not an average.</p>
+    <div class="pair" id="caseStudyPair"></div>
+    <div class="disclaim">Both are zoned district middle schools in Brooklyn. This shows a pattern, not a cause — Open Doors doesn't know why these two doors look so different, only that they do.</div>
+  </div>
+</section>
+
+<section id="unknown">
+  <div class="wrap">
+    <div class="eyebrow">Question for Further Investigation</div>
+    <h2 class="section-head">The city grades outcomes. It has never graded access.</h2>
+    <div class="benchmark-box">
+      <p style="font-size:16px;">NYC DOE benchmarks whether a school's students perform well against similar schools — a "comparison group average" attached to most performance metrics.</p>
+      <div class="stat-pair">
+        <div><div class="n" style="color:var(--teal-dark);" id="benchProf">—</div><div class="l">of math-proficiency-rating records include a peer-comparison benchmark</div></div>
+        <div><div class="n" style="color:var(--coral-dark);" id="benchAccess">—</div><div class="l">of accelerated-math access records have ever included one — across all <span id="benchAccessTotal">—</span> records since 2015</div></div>
+      </div>
+      <div class="support-list">
+        This doesn't tell us <i>why</i> access differs — a school's rate may reflect course availability, placement rules, staffing, scheduling, counseling, or what families are told. It tells us the city has the tools to ask that question and hasn't pointed them at access.
+      </div>
+      <div class="qtag">Open question — not yet a FOIL request</div>
+    </div>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="wrap">
+    <div class="eyebrow">Built for the Public</div>
+    <h2>Clear pathways. Clear questions.</h2>
+    <p class="section-sub">Open Doors is for NYC students, families, educators, advocates, journalists, and researchers who want to understand whether advanced-math opportunity is available — not just who succeeds after receiving it.</p>
+    <a href="#start" class="cta">Find a school ↑</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="fbrand">Open Doors</div>
+      <div>Public school-report data, made easier to read.</div>
+    </div>
+    <div id="footerMeta">
+      Source: <a href="https://data.cityofnewyork.us/Education/School-Quality-Reports-Data/dnpx-dfnc" target="_blank">NYC DOE School Quality Reports Data</a>
+    </div>
+  </div>
+</footer>
+
+</div><!-- #siteContent -->
+
+<script>
+  let DATA = null;
+
+  async function loadData(){
+    try{
+      const res = await fetch('./data/open-doors-data.json', { cache: 'no-store' });
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      DATA = await res.json();
+      document.getElementById('loadState').style.display = 'none';
+      document.getElementById('siteContent').style.display = 'block';
+      renderAll(DATA);
+    }catch(err){
+      console.error('Failed to load open-doors-data.json', err);
+      document.getElementById('loadState').style.display = 'none';
+      document.getElementById('errorState').style.display = 'block';
+    }
+  }
+
+  function fmtPct(n){
+    return (n === null || n === undefined) ? '—' : n.toFixed(1).replace(/\.0$/, '') + '%';
+  }
+
+  function renderAll(data){
+    // Hero facts
+    document.getElementById('factSchools').textContent = data.citywide.schoolCount;
+    document.getElementById('factAccess').textContent = fmtPct(data.citywide.accessPct);
+    document.getElementById('factYearA').textContent = data.meta.schoolYearLabel;
+    document.getElementById('boroughYearNote').textContent = data.meta.schoolYearLabel;
+
+    // Search
+    const note = document.getElementById('searchDemoNote');
+    if(data.schools.length < data.citywide.schoolCount){
+      note.textContent = `Searching ${data.schools.length} of ${data.citywide.schoolCount} schools — the live directory hasn't been fully synced yet. Run "npm run fetch-data" with real network access to pull all schools.`;
+    } else {
+      note.textContent = `Searching all ${data.schools.length} reporting schools.`;
+    }
+
+    // Bands
+    const bandsBox = document.getElementById('bandsContainer');
+    const maxCount = Math.max(...data.bands.map(b => b.count), 1);
+    bandsBox.innerHTML = data.bands.map(b => `
+      <div class="band-row">
+        <div class="range">${b.range}</div>
+        <div class="label">${b.label}</div>
+        <div class="count-wrap">
+          <div class="count-bar-outer"><div class="count-bar-inner" style="width:${Math.round((b.count/maxCount)*100)}%;${b.key==='zero'?'background:var(--coral-dark);':''}"></div></div>
+          <div class="count-num">${b.count} schools</div>
+        </div>
+      </div>
+    `).join('');
+    const zeroBand = data.bands.find(b => b.key === 'zero');
+    const topBand = data.bands.find(b => b.key === 'top');
+    document.getElementById('zeroCallout').innerHTML =
+      `<b>${Math.round((zeroBand.count/data.bandsTotal)*100)}% of NYC middle schools</b> — ${zeroBand.count} out of ${data.bandsTotal} — reported zero eighth graders taking accelerated math in ${data.meta.schoolYearLabel}. Only <b>${Math.round((topBand.count/data.bandsTotal)*100)}%</b> reached the 81–100% band.`;
+
+    // Opportunity gap
+    document.getElementById('gapEntry').textContent = fmtPct(data.citywide.accessPct);
+    document.getElementById('gapOutcome').textContent = fmtPct(data.citywide.passPct);
+
+    // Borough chart
+    new Chart(document.getElementById('boroughChart'), {
+      type: 'bar',
+      data: {
+        labels: data.boroughs.map(b => b.name),
+        datasets: [{
+          data: data.boroughs.map(b => b.pct),
+          backgroundColor: data.boroughs.map(b => b.name === 'Bronx' ? '#e2775a' : '#4f8d76'),
+          borderRadius: 6,
+          barThickness: 28
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.x + '%' } } },
+        scales: { x: { max: 50, ticks: { callback: v => v + '%' } }, y: { grid: { display: false } } }
+      }
+    });
+
+    // Charter vs district
+    const cd = data.charterVsDistrict;
+    document.getElementById('charterSub').textContent =
+      `Charter schools average ${fmtPct(cd.charter.pct)} accelerated-math participation. District schools average ${fmtPct(cd.district.pct)} — more than double.`;
+    new Chart(document.getElementById('charterChart'), {
+      type: 'bar',
+      data: {
+        labels: [`Charter schools (${cd.charter.schoolCount} schools)`, `District schools (${cd.district.schoolCount} schools)`],
+        datasets: [{
+          data: [cd.charter.pct, cd.district.pct],
+          backgroundColor: ['#e2775a', '#4f8d76'],
+          borderRadius: 6,
+          barThickness: 44
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.y + '%' } } },
+        scales: { y: { max: 45, ticks: { callback: v => v + '%' } } }
+      }
+    });
+
+    // Trend
+    const firstYear = data.trend[0]?.schoolYear;
+    const lastYear = data.trend[data.trend.length - 1];
+    document.getElementById('trendSub').textContent =
+      `Citywide participation was ${fmtPct(data.trend[0]?.pct)} in ${firstYear}. It collapsed during remote learning, rebounded to a peak, and has fallen since — to ${fmtPct(lastYear?.pct)} in ${lastYear?.schoolYear}.`;
+    new Chart(document.getElementById('trendChart'), {
+      type: 'line',
+      data: {
+        labels: data.trend.map(t => t.schoolYear),
+        datasets: [{
+          data: data.trend.map(t => t.pct),
+          borderColor: '#4f8d76',
+          backgroundColor: 'rgba(79,141,118,0.12)',
+          pointBackgroundColor: data.trend.map(t => t.pct !== null && t.pct < 15 ? '#e2775a' : '#4f8d76'),
+          pointRadius: 6,
+          spanGaps: false,
+          fill: true,
+          tension: 0.25
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.y === null ? 'No data (COVID disruption)' : c.parsed.y + '%' } } },
+        scales: { y: { min: 0, max: 45, ticks: { callback: v => v + '%' } } }
+      }
+    });
+
+    // Case study — pull two known Brooklyn schools by DBN out of the live directory
+    const caseDbns = ['13K113', '15K442'];
+    const caseSchools = caseDbns.map(dbn => data.schools.find(s => s.dbn === dbn)).filter(Boolean);
+    document.getElementById('caseStudyPair').innerHTML = caseSchools.map(s => `
+      <div class="pcard ${s.pct === 0 ? 'zero' : 'high'}">
+        <div class="tag">District ${s.district} · ${s.borough}</div>
+        <h3>${s.name}</h3>
+        <div class="meta">${s.students} eighth graders reported</div>
+        <div class="bignum">${fmtPct(s.pct)}</div>
+        <div class="sub">took accelerated math in ${data.meta.schoolYearLabel}</div>
+      </div>
+    `).join('');
+
+    // Benchmark gap
+    const bg = data.benchmarkGap;
+    document.getElementById('benchProf').textContent = fmtPct((bg.proficiency.withBenchmark / bg.proficiency.totalRecords) * 100);
+    document.getElementById('benchAccess').textContent = fmtPct((bg.access.withBenchmark / bg.access.totalRecords) * 100);
+    document.getElementById('benchAccessTotal').textContent = bg.access.totalRecords.toLocaleString();
+
+    // Footer
+    const generated = new Date(data.meta.generatedAt);
+    document.getElementById('footerMeta').innerHTML =
+      `Source: <a href="${data.meta.source}" target="_blank">${data.meta.dataset}</a><br>
+       Most recent report year: ${data.meta.schoolYearLabel} · Data last refreshed ${generated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
+  }
+
+  function doSearch(){
+    if(!DATA) return;
+    const q = document.getElementById('schoolSearch').value.toLowerCase().trim();
+    const box = document.getElementById('searchResults');
+    box.innerHTML = '';
+    if(q.length < 2) return;
+    const matches = DATA.schools.filter(s =>
+      (s.name && s.name.toLowerCase().includes(q)) || (s.dbn && s.dbn.toLowerCase().includes(q))
+    ).slice(0, 8);
+    matches.forEach(s => {
+      const el = document.createElement('div');
+      el.className = 'school-card';
+      const plain = s.pct === null ? 'No data reported for this school.'
+        : s.pct === 0 ? 'No eighth graders took accelerated math here.'
+        : `About ${Math.round(s.pct/10)} in 10 eighth graders here took accelerated math.`;
+      el.innerHTML = `<div class="sname">${s.name || s.dbn}</div><div class="smeta">District ${s.district} · ${s.borough || ''} · ${s.students ?? '—'} eighth graders</div><div class="spct">${fmtPct(s.pct)}</div><div class="splain">${plain}</div>`;
+      box.appendChild(el);
+    });
+    if(matches.length === 0){
+      box.innerHTML = `<div class="demo-note">No match in the ${DATA.schools.length}-school directory currently loaded.</div>`;
+    }
+  }
+
+  function showBorough(code){
+    if(!DATA) return;
+    document.querySelectorAll('.btile').forEach(t => t.classList.remove('active'));
+    document.getElementById('tile-' + code).classList.add('active');
+    const b = DATA.boroughs.find(x => x.code === code);
+    if(!b) return;
+    const band = DATA.bands.find(bd => {
+      if(bd.key === 'zero') return b.pct === 0;
+      if(bd.key === 'low') return b.pct > 0 && b.pct <= 20;
+      if(bd.key === 'mid') return b.pct > 20 && b.pct <= 50;
+      if(bd.key === 'high') return b.pct > 50 && b.pct <= 80;
+      return b.pct > 80;
+    });
+    document.getElementById('snapTitle').textContent = b.name + ' — ' + fmtPct(b.pct);
+    document.getElementById('snapBar').style.width = b.pct + '%';
+    document.getElementById('snapPlain').textContent = (band ? band.range + ': ' + band.label + '. ' : '') +
+      `About ${Math.round(b.pct/10)} in 10 eighth graders in ${b.name} get a shot at accelerated math.`;
+  }
+
+  loadData();
+</script>
+
+</body>
+</html>
