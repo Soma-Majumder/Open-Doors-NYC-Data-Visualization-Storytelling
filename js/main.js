@@ -129,25 +129,25 @@ function buildBoroughs(data) {
   return withMeta;
 }
 
+// Fixed hand-set rotation/lift per note so the board reads as scattered
+// paper, not a grid — cycles if there are ever more than 5 boroughs.
+const NOTE_TILT = ['-4deg', '3deg', '-2deg', '4deg', '-3deg'];
+const NOTE_LIFT = ['4px', '-6px', '8px', '-2px', '6px'];
+
 function renderBoroughRows() {
   const box = document.getElementById('boroughRows');
   box.innerHTML = BOROUGHS.map((b, i) => `
-    <div class="borough-row" onclick="selectBorough(${i})">
-      <div class="left">
-        <div class="swatch" style="background:${b.swatch}"></div>
-        <div class="name">${b.name}</div>
-      </div>
-      <div class="right">
-        <div class="track"><div class="fill" style="width:${barPct(b.pct)};background:${b.swatch}"></div></div>
-        <div class="rate">${fmtPct(b.pct)}</div>
-      </div>
+    <div class="sticky-note" style="--r:${NOTE_TILT[i % NOTE_TILT.length]};--y:${NOTE_LIFT[i % NOTE_LIFT.length]}" onclick="selectBorough(${i})">
+      <div class="pin"></div>
+      <div class="name">${b.name}</div>
+      <div class="rate">${fmtPct(b.pct)}</div>
     </div>
   `).join('');
 }
 
 function selectBorough(idx) {
   selectedBoroughIdx = idx;
-  document.querySelectorAll('.borough-row').forEach((el, i) => el.classList.toggle('selected', i === idx));
+  document.querySelectorAll('.sticky-note').forEach((el, i) => el.classList.toggle('selected', i === idx));
   const b = BOROUGHS[idx];
   document.getElementById('snapName').textContent = b.name;
   document.getElementById('snapPlain').textContent =
