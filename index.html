@@ -155,7 +155,7 @@
 
   <div id="searchResults"></div>
 
-  <div class="start-split">
+  <div class="start-split" id="startSplit">
     <div>
       <div class="sticky-board">
         <div class="board-head">
@@ -167,17 +167,24 @@
       <div class="start-footnote">Shown at borough level — neighborhood-level pins would require joining an address dataset this endpoint doesn't include.</div>
     </div>
 
-    <div class="snapshot" id="snapshot">
-      <div class="tag">Borough snapshot</div>
-      <h3 id="snapName">—</h3>
-      <div class="plain" id="snapPlain">—</div>
-      <div class="stat-grid cols-2 compact">
-        <div><div class="num accent" id="snapRate">—</div><div class="lbl">take accelerated math</div></div>
-        <div><div class="num" id="snapPass">—</div><div class="lbl">of participants pass</div></div>
+    <div class="borough-detail" id="boroughDetail">
+      <div class="snapshot" id="snapshot">
+        <div class="tag">Borough snapshot</div>
+        <h3 id="snapName">—</h3>
+        <div class="plain" id="snapPlain">—</div>
+        <div class="stat-grid cols-2 compact">
+          <div><div class="num accent" id="snapRate">—</div><div class="lbl">take accelerated math</div></div>
+          <div><div class="num" id="snapPass">—</div><div class="lbl">of participants pass</div></div>
+        </div>
+        <div class="snapshot-row"><span>Schools reporting</span><span id="snapSchools">—</span></div>
+        <div class="snapshot-row"><span>Citywide rank</span><span id="snapRank">—</span></div>
+        <div class="snapshot-row"><span>Access band</span><span id="snapBand" style="color:var(--primary)">—</span></div>
       </div>
-      <div class="snapshot-row"><span>Schools reporting</span><span id="snapSchools">—</span></div>
-      <div class="snapshot-row"><span>Citywide rank</span><span id="snapRank">—</span></div>
-      <div class="snapshot-row"><span>Access band</span><span id="snapBand" style="color:var(--primary)">—</span></div>
+
+      <div class="school-list-card">
+        <div class="tag">Schools in <span id="schoolListBorough">—</span>, highest access first (<span id="schoolListCount">—</span>)</div>
+        <div class="school-list" id="schoolList"></div>
+      </div>
     </div>
   </div>
 </section>

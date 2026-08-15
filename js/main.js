@@ -80,7 +80,6 @@ function renderAll(data) {
   renderEarnLadder();
   BOROUGHS = buildBoroughs(data);
   renderBoroughRows();
-  selectBorough(0);
   renderBands(data);
   renderGap(data);
   renderBoroughCards();
@@ -159,6 +158,36 @@ function selectBorough(idx) {
   const bandEl = document.getElementById('snapBand');
   bandEl.textContent = b.band.name;
   bandEl.style.color = b.textColor;
+
+  document.getElementById('startSplit').classList.add('has-selection');
+  renderSchoolList(b.name);
+}
+
+function renderSchoolList(boroughName) {
+  const schools = DATA.schools
+    .filter(s => s.borough === boroughName)
+    .slice()
+    .sort((a, b) => (b.pct ?? -1) - (a.pct ?? -1));
+
+  document.getElementById('schoolListBorough').textContent = boroughName;
+  document.getElementById('schoolListCount').textContent = schools.length;
+
+  document.getElementById('schoolList').innerHTML = schools.map((s, i) => {
+    const tier = tierFor(s.pct);
+    const color = tier === null ? 'var(--muted)' : RAMP_TEXT[tier];
+    return `
+    <div class="result-row" onclick="openSchoolDetail('${s.dbn}')">
+      <div class="rleft">
+        <div class="rrank">${i + 1}</div>
+        <div>
+          <div class="rname">${s.name || s.dbn}</div>
+          <div class="rmeta">${s.dbn}${s.type ? ' · ' + s.type : ''}</div>
+        </div>
+      </div>
+      <div class="rrate" style="color:${color}">${fmtPct(s.pct)}</div>
+    </div>
+  `;
+  }).join('');
 }
 
 function renderBands(data) {
