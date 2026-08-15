@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-12T18:37:14.110Z",
+    "generatedAt": "2026-08-15T19:27:40.274Z",
     "reportYear": 2025,
     "schoolYearLabel": "2024–25",
     "source": "https://data.cityofnewyork.us/resource/dnpx-dfnc.json",
@@ -141,7 +141,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 22,
-      "pct": 36.4
+      "pct": 36.4,
+      "passPct": 100
     },
     {
       "dbn": "01M140",
@@ -150,7 +151,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 42,
-      "pct": 16.7
+      "pct": 16.7,
+      "passPct": 100
     },
     {
       "dbn": "01M184",
@@ -159,7 +161,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 84,
-      "pct": 94
+      "pct": 94,
+      "passPct": 100
     },
     {
       "dbn": "01M188",
@@ -168,7 +171,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 52,
-      "pct": 78.8
+      "pct": 78.8,
+      "passPct": 100
     },
     {
       "dbn": "01M332",
@@ -177,7 +181,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 47,
-      "pct": 27.7
+      "pct": 27.7,
+      "passPct": 100
     },
     {
       "dbn": "01M378",
@@ -186,7 +191,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 41,
-      "pct": 22
+      "pct": 22,
+      "passPct": 100
     },
     {
       "dbn": "01M450",
@@ -195,7 +201,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 99,
-      "pct": 3
+      "pct": 3,
+      "passPct": null
     },
     {
       "dbn": "01M539",
@@ -204,7 +211,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 119,
-      "pct": 97.5
+      "pct": 97.5,
+      "passPct": 100
     },
     {
       "dbn": "01M839",
@@ -213,7 +221,8 @@
       "borough": "Manhattan",
       "district": 1,
       "students": 100,
-      "pct": 16
+      "pct": 16,
+      "passPct": 100
     },
     {
       "dbn": "02M104",
@@ -222,7 +231,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 306,
-      "pct": 46.4
+      "pct": 46.4,
+      "passPct": 100
     },
     {
       "dbn": "02M114",
@@ -231,7 +241,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 137,
-      "pct": 90.5
+      "pct": 90.5,
+      "passPct": 100
     },
     {
       "dbn": "02M126",
@@ -240,7 +251,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 111,
-      "pct": 86.5
+      "pct": 86.5,
+      "passPct": 100
     },
     {
       "dbn": "02M131",
@@ -249,7 +261,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 94,
-      "pct": 69.1
+      "pct": 69.1,
+      "passPct": 100
     },
     {
       "dbn": "02M167",
@@ -258,7 +271,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 271,
-      "pct": 33.6
+      "pct": 33.6,
+      "passPct": 100
     },
     {
       "dbn": "02M177",
@@ -267,7 +281,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 85,
-      "pct": 72.9
+      "pct": 72.9,
+      "passPct": 100
     },
     {
       "dbn": "02M217",
@@ -276,7 +291,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 28,
-      "pct": 75
+      "pct": 75,
+      "passPct": 100
     },
     {
       "dbn": "02M225",
@@ -285,7 +301,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 19,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "02M255",
@@ -294,7 +311,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 119,
-      "pct": 77.3
+      "pct": 77.3,
+      "passPct": 100
     },
     {
       "dbn": "02M260",
@@ -303,7 +321,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 98,
-      "pct": 90.8
+      "pct": 90.8,
+      "passPct": 100
     },
     {
       "dbn": "02M276",
@@ -312,7 +331,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 75,
-      "pct": 64
+      "pct": 64,
+      "passPct": 100
     },
     {
       "dbn": "02M289",
@@ -321,7 +341,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 88,
-      "pct": 50
+      "pct": 50,
+      "passPct": 100
     },
     {
       "dbn": "02M297",
@@ -330,7 +351,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 107,
-      "pct": 18.7
+      "pct": 18.7,
+      "passPct": 100
     },
     {
       "dbn": "02M303",
@@ -339,7 +361,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 43,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "02M312",
@@ -348,7 +371,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 176,
-      "pct": 95.5
+      "pct": 95.5,
+      "passPct": 100
     },
     {
       "dbn": "02M347",
@@ -357,7 +381,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 8,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "02M397",
@@ -366,7 +391,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 57,
-      "pct": 73.7
+      "pct": 73.7,
+      "passPct": 100
     },
     {
       "dbn": "02M407",
@@ -375,7 +401,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 65,
-      "pct": null
+      "pct": null,
+      "passPct": null
     },
     {
       "dbn": "02M408",
@@ -384,7 +411,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 32,
-      "pct": 84.4
+      "pct": 84.4,
+      "passPct": 96.3
     },
     {
       "dbn": "02M413",
@@ -393,7 +421,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 85,
-      "pct": 22.4
+      "pct": 22.4,
+      "passPct": 100
     },
     {
       "dbn": "02M422",
@@ -402,7 +431,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 82,
-      "pct": 19.5
+      "pct": 19.5,
+      "passPct": 100
     },
     {
       "dbn": "02M442",
@@ -411,7 +441,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 24,
-      "pct": 91.7
+      "pct": 91.7,
+      "passPct": 100
     },
     {
       "dbn": "02M896",
@@ -420,7 +451,8 @@
       "borough": "Manhattan",
       "district": 2,
       "students": 104,
-      "pct": 52.9
+      "pct": 52.9,
+      "passPct": 100
     },
     {
       "dbn": "03M054",
@@ -429,7 +461,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 218,
-      "pct": 89.4
+      "pct": 89.4,
+      "passPct": 100
     },
     {
       "dbn": "03M076",
@@ -438,7 +471,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 40,
-      "pct": 2.5
+      "pct": 2.5,
+      "passPct": null
     },
     {
       "dbn": "03M149",
@@ -447,7 +481,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 45,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "03M180",
@@ -456,7 +491,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 31,
-      "pct": 6.5
+      "pct": 6.5,
+      "passPct": null
     },
     {
       "dbn": "03M191",
@@ -465,7 +501,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 48,
-      "pct": 10.4
+      "pct": 10.4,
+      "passPct": 100
     },
     {
       "dbn": "03M243",
@@ -474,7 +511,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 58,
-      "pct": 100
+      "pct": 100,
+      "passPct": 100
     },
     {
       "dbn": "03M245",
@@ -483,7 +521,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 124,
-      "pct": 90.3
+      "pct": 90.3,
+      "passPct": 100
     },
     {
       "dbn": "03M247",
@@ -492,7 +531,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 64,
-      "pct": 42.2
+      "pct": 42.2,
+      "passPct": 100
     },
     {
       "dbn": "03M256",
@@ -501,7 +541,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 73,
-      "pct": 23.3
+      "pct": 23.3,
+      "passPct": 100
     },
     {
       "dbn": "03M258",
@@ -510,7 +551,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 23,
-      "pct": 52.2
+      "pct": 52.2,
+      "passPct": 100
     },
     {
       "dbn": "03M291",
@@ -519,7 +561,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 95,
-      "pct": 72.6
+      "pct": 72.6,
+      "passPct": 100
     },
     {
       "dbn": "03M333",
@@ -528,7 +571,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 55,
-      "pct": 18.2
+      "pct": 18.2,
+      "passPct": 100
     },
     {
       "dbn": "03M334",
@@ -537,7 +581,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 44,
-      "pct": 95.5
+      "pct": 95.5,
+      "passPct": 100
     },
     {
       "dbn": "03M415",
@@ -546,7 +591,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 11,
-      "pct": 36.4
+      "pct": 36.4,
+      "passPct": null
     },
     {
       "dbn": "03M421",
@@ -555,7 +601,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 65,
-      "pct": 44.6
+      "pct": 44.6,
+      "passPct": 100
     },
     {
       "dbn": "03M610",
@@ -564,7 +611,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 30,
-      "pct": 36.7
+      "pct": 36.7,
+      "passPct": 100
     },
     {
       "dbn": "03M859",
@@ -573,7 +621,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 16,
-      "pct": 93.8
+      "pct": 93.8,
+      "passPct": 100
     },
     {
       "dbn": "03M860",
@@ -582,7 +631,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 19,
-      "pct": 21.1
+      "pct": 21.1,
+      "passPct": null
     },
     {
       "dbn": "03M862",
@@ -591,7 +641,8 @@
       "borough": "Manhattan",
       "district": 3,
       "students": 130,
-      "pct": 48.5
+      "pct": 48.5,
+      "passPct": 100
     },
     {
       "dbn": "04M007",
@@ -600,7 +651,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 36,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "04M012",
@@ -609,7 +661,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 60,
-      "pct": 98.3
+      "pct": 98.3,
+      "passPct": 98.3
     },
     {
       "dbn": "04M057",
@@ -618,7 +671,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 62,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "04M072",
@@ -627,7 +681,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 50,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "04M096",
@@ -636,7 +691,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 54,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "04M108",
@@ -645,7 +701,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 46,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "04M171",
@@ -654,7 +711,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 89,
-      "pct": 31.5
+      "pct": 31.5,
+      "passPct": 100
     },
     {
       "dbn": "04M206",
@@ -663,7 +721,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 62,
-      "pct": 30.6
+      "pct": 30.6,
+      "passPct": 100
     },
     {
       "dbn": "04M224",
@@ -672,7 +731,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 68,
-      "pct": 26.5
+      "pct": 26.5,
+      "passPct": 100
     },
     {
       "dbn": "04M372",
@@ -681,7 +741,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 47,
-      "pct": 6.4
+      "pct": 6.4,
+      "passPct": null
     },
     {
       "dbn": "04M377",
@@ -690,7 +751,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 43,
-      "pct": 20.9
+      "pct": 20.9,
+      "passPct": 100
     },
     {
       "dbn": "04M825",
@@ -699,7 +761,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 109,
-      "pct": 31.2
+      "pct": 31.2,
+      "passPct": 100
     },
     {
       "dbn": "04M964",
@@ -708,7 +771,8 @@
       "borough": "Manhattan",
       "district": 4,
       "students": 48,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "05M046",
@@ -717,7 +781,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 52,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "05M123",
@@ -726,7 +791,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 50,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "05M148",
@@ -735,7 +801,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 21,
-      "pct": 47.6
+      "pct": 47.6,
+      "passPct": 100
     },
     {
       "dbn": "05M161",
@@ -744,7 +811,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 75,
-      "pct": 9.3
+      "pct": 9.3,
+      "passPct": 85.7
     },
     {
       "dbn": "05M286",
@@ -753,7 +821,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 26,
-      "pct": 23.1
+      "pct": 23.1,
+      "passPct": 100
     },
     {
       "dbn": "05M362",
@@ -762,7 +831,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 98,
-      "pct": 58.2
+      "pct": 58.2,
+      "passPct": 100
     },
     {
       "dbn": "05M371",
@@ -771,7 +841,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 33,
-      "pct": 18.2
+      "pct": 18.2,
+      "passPct": 100
     },
     {
       "dbn": "05M499",
@@ -780,7 +851,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 39,
-      "pct": 48.7
+      "pct": 48.7,
+      "passPct": 84.2
     },
     {
       "dbn": "05M514",
@@ -789,7 +861,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 30,
-      "pct": 3.3
+      "pct": 3.3,
+      "passPct": null
     },
     {
       "dbn": "05M517",
@@ -798,7 +871,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 45,
-      "pct": 26.7
+      "pct": 26.7,
+      "passPct": 100
     },
     {
       "dbn": "05M670",
@@ -807,7 +881,8 @@
       "borough": "Manhattan",
       "district": 5,
       "students": 45,
-      "pct": 26.7
+      "pct": 26.7,
+      "passPct": 100
     },
     {
       "dbn": "06M018",
@@ -816,7 +891,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 35,
-      "pct": 25.7
+      "pct": 25.7,
+      "passPct": 100
     },
     {
       "dbn": "06M052",
@@ -825,7 +901,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 64,
-      "pct": 28.1
+      "pct": 28.1,
+      "passPct": 100
     },
     {
       "dbn": "06M143",
@@ -834,7 +911,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 59,
-      "pct": 20.3
+      "pct": 20.3,
+      "passPct": 100
     },
     {
       "dbn": "06M173",
@@ -843,7 +921,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 27,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "06M187",
@@ -852,7 +931,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 83,
-      "pct": 36.1
+      "pct": 36.1,
+      "passPct": 100
     },
     {
       "dbn": "06M209",
@@ -861,7 +941,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 110,
-      "pct": 45.5
+      "pct": 45.5,
+      "passPct": 100
     },
     {
       "dbn": "06M210",
@@ -870,7 +951,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 43,
-      "pct": 55.8
+      "pct": 55.8,
+      "passPct": 100
     },
     {
       "dbn": "06M223",
@@ -879,7 +961,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 84,
-      "pct": 61.9
+      "pct": 61.9,
+      "passPct": 98.1
     },
     {
       "dbn": "06M278",
@@ -888,7 +971,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 39,
-      "pct": 35.9
+      "pct": 35.9,
+      "passPct": 100
     },
     {
       "dbn": "06M293",
@@ -897,7 +981,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 71,
-      "pct": 38
+      "pct": 38,
+      "passPct": 100
     },
     {
       "dbn": "06M311",
@@ -906,7 +991,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 47,
-      "pct": 63.8
+      "pct": 63.8,
+      "passPct": 100
     },
     {
       "dbn": "06M319",
@@ -915,7 +1001,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 88,
-      "pct": 4.5
+      "pct": 4.5,
+      "passPct": null
     },
     {
       "dbn": "06M322",
@@ -924,7 +1011,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 103,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "06M324",
@@ -933,7 +1021,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 63,
-      "pct": 12.7
+      "pct": 12.7,
+      "passPct": 100
     },
     {
       "dbn": "06M328",
@@ -942,7 +1031,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 53,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "06M346",
@@ -951,7 +1041,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 78,
-      "pct": 35.9
+      "pct": 35.9,
+      "passPct": 100
     },
     {
       "dbn": "06M348",
@@ -960,7 +1051,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 80,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "06M366",
@@ -969,7 +1061,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 50,
-      "pct": 30
+      "pct": 30,
+      "passPct": 100
     },
     {
       "dbn": "06M528",
@@ -978,7 +1071,8 @@
       "borough": "Manhattan",
       "district": 6,
       "students": 79,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X005",
@@ -987,7 +1081,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 97,
-      "pct": 8.2
+      "pct": 8.2,
+      "passPct": 100
     },
     {
       "dbn": "07X029",
@@ -996,7 +1091,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 76,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X031",
@@ -1005,7 +1101,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 74,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X221",
@@ -1014,7 +1111,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 73,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X223",
@@ -1023,7 +1121,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 88,
-      "pct": 37.5
+      "pct": 37.5,
+      "passPct": 100
     },
     {
       "dbn": "07X224",
@@ -1032,7 +1131,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 61,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X296",
@@ -1041,7 +1141,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 56,
-      "pct": 17.9
+      "pct": 17.9,
+      "passPct": 100
     },
     {
       "dbn": "07X298",
@@ -1050,7 +1151,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 45,
-      "pct": 2.2
+      "pct": 2.2,
+      "passPct": null
     },
     {
       "dbn": "07X343",
@@ -1059,7 +1161,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 95,
-      "pct": 36.8
+      "pct": 36.8,
+      "passPct": 100
     },
     {
       "dbn": "07X500",
@@ -1068,7 +1171,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 48,
-      "pct": 31.3
+      "pct": 31.3,
+      "passPct": 100
     },
     {
       "dbn": "07X551",
@@ -1077,7 +1181,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 40,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "07X584",
@@ -1086,7 +1191,8 @@
       "borough": "Bronx",
       "district": 7,
       "students": 57,
-      "pct": 8.8
+      "pct": 8.8,
+      "passPct": 100
     },
     {
       "dbn": "08X071",
@@ -1095,7 +1201,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 123,
-      "pct": 22.8
+      "pct": 22.8,
+      "passPct": 100
     },
     {
       "dbn": "08X101",
@@ -1104,7 +1211,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 168,
-      "pct": 47
+      "pct": 47,
+      "passPct": 100
     },
     {
       "dbn": "08X123",
@@ -1113,7 +1221,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 172,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "08X131",
@@ -1122,7 +1231,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 101,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "08X269",
@@ -1131,7 +1241,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 86,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "08X301",
@@ -1140,7 +1251,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 56,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "08X302",
@@ -1149,7 +1261,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 112,
-      "pct": 11.6
+      "pct": 11.6,
+      "passPct": 100
     },
     {
       "dbn": "08X337",
@@ -1158,7 +1271,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 138,
-      "pct": 20.3
+      "pct": 20.3,
+      "passPct": 100
     },
     {
       "dbn": "08X367",
@@ -1167,7 +1281,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 61,
-      "pct": 13.1
+      "pct": 13.1,
+      "passPct": 100
     },
     {
       "dbn": "08X371",
@@ -1176,7 +1291,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 127,
-      "pct": 23.6
+      "pct": 23.6,
+      "passPct": 100
     },
     {
       "dbn": "08X375",
@@ -1185,7 +1301,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 45,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "08X376",
@@ -1194,7 +1311,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 42,
-      "pct": 11.9
+      "pct": 11.9,
+      "passPct": 80
     },
     {
       "dbn": "08X424",
@@ -1203,7 +1321,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 56,
-      "pct": 12.5
+      "pct": 12.5,
+      "passPct": 100
     },
     {
       "dbn": "08X448",
@@ -1212,7 +1331,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 77,
-      "pct": 10.4
+      "pct": 10.4,
+      "passPct": 100
     },
     {
       "dbn": "08X467",
@@ -1221,7 +1341,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 90,
-      "pct": 12.2
+      "pct": 12.2,
+      "passPct": 100
     },
     {
       "dbn": "08X562",
@@ -1230,7 +1351,8 @@
       "borough": "Bronx",
       "district": 8,
       "students": 190,
-      "pct": 25.3
+      "pct": 25.3,
+      "passPct": 100
     },
     {
       "dbn": "09X004",
@@ -1239,7 +1361,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 27,
-      "pct": 22.2
+      "pct": 22.2,
+      "passPct": 100
     },
     {
       "dbn": "09X022",
@@ -1248,7 +1371,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 86,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X117",
@@ -1257,7 +1381,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 122,
-      "pct": 27.9
+      "pct": 27.9,
+      "passPct": 100
     },
     {
       "dbn": "09X128",
@@ -1266,7 +1391,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 86,
-      "pct": 26.7
+      "pct": 26.7,
+      "passPct": 100
     },
     {
       "dbn": "09X215",
@@ -1275,7 +1401,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 69,
-      "pct": 31.9
+      "pct": 31.9,
+      "passPct": 100
     },
     {
       "dbn": "09X218",
@@ -1284,7 +1411,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 100,
-      "pct": 29
+      "pct": 29,
+      "passPct": 96.6
     },
     {
       "dbn": "09X219",
@@ -1293,7 +1421,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 82,
-      "pct": 9.8
+      "pct": 9.8,
+      "passPct": 100
     },
     {
       "dbn": "09X229",
@@ -1302,7 +1431,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 53,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X231",
@@ -1311,7 +1441,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 31,
-      "pct": 67.7
+      "pct": 67.7,
+      "passPct": 100
     },
     {
       "dbn": "09X232",
@@ -1320,7 +1451,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 101,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X241",
@@ -1329,7 +1461,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 63,
-      "pct": 44.4
+      "pct": 44.4,
+      "passPct": 100
     },
     {
       "dbn": "09X303",
@@ -1338,7 +1471,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 114,
-      "pct": 49.1
+      "pct": 49.1,
+      "passPct": 100
     },
     {
       "dbn": "09X313",
@@ -1347,7 +1481,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 40,
-      "pct": 5
+      "pct": 5,
+      "passPct": null
     },
     {
       "dbn": "09X323",
@@ -1356,7 +1491,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 74,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X324",
@@ -1365,7 +1501,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 33,
-      "pct": 48.5
+      "pct": 48.5,
+      "passPct": 100
     },
     {
       "dbn": "09X327",
@@ -1374,7 +1511,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 100,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X328",
@@ -1383,7 +1521,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 44,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X339",
@@ -1392,7 +1531,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 61,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X361",
@@ -1401,7 +1541,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 127,
-      "pct": 15.7
+      "pct": 15.7,
+      "passPct": 100
     },
     {
       "dbn": "09X413",
@@ -1410,7 +1551,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 48,
-      "pct": 33.3
+      "pct": 33.3,
+      "passPct": 100
     },
     {
       "dbn": "09X454",
@@ -1419,7 +1561,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 128,
-      "pct": 23.4
+      "pct": 23.4,
+      "passPct": 100
     },
     {
       "dbn": "09X505",
@@ -1428,7 +1571,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 74,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "09X568",
@@ -1437,7 +1581,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 71,
-      "pct": 31
+      "pct": 31,
+      "passPct": 100
     },
     {
       "dbn": "09X593",
@@ -1446,7 +1591,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 67,
-      "pct": 13.4
+      "pct": 13.4,
+      "passPct": 100
     },
     {
       "dbn": "09X594",
@@ -1455,7 +1601,8 @@
       "borough": "Bronx",
       "district": 9,
       "students": 72,
-      "pct": 6.9
+      "pct": 6.9,
+      "passPct": 100
     },
     {
       "dbn": "10X003",
@@ -1464,7 +1611,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 33,
-      "pct": 63.6
+      "pct": 63.6,
+      "passPct": 100
     },
     {
       "dbn": "10X015",
@@ -1473,7 +1621,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 55,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X020",
@@ -1482,7 +1631,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 121,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X037",
@@ -1491,7 +1641,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 50,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X045",
@@ -1500,7 +1651,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 148,
-      "pct": 12.2
+      "pct": 12.2,
+      "passPct": 100
     },
     {
       "dbn": "10X080",
@@ -1509,7 +1661,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 223,
-      "pct": 4.9
+      "pct": 4.9,
+      "passPct": 100
     },
     {
       "dbn": "10X095",
@@ -1518,7 +1671,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 127,
-      "pct": 28.3
+      "pct": 28.3,
+      "passPct": 100
     },
     {
       "dbn": "10X118",
@@ -1527,7 +1681,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 186,
-      "pct": 33.3
+      "pct": 33.3,
+      "passPct": 100
     },
     {
       "dbn": "10X141",
@@ -1536,7 +1691,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 218,
-      "pct": 45
+      "pct": 45,
+      "passPct": 100
     },
     {
       "dbn": "10X206",
@@ -1545,7 +1701,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 74,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X225",
@@ -1554,7 +1711,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 29,
-      "pct": 65.5
+      "pct": 65.5,
+      "passPct": 100
     },
     {
       "dbn": "10X228",
@@ -1563,7 +1721,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 81,
-      "pct": 14.8
+      "pct": 14.8,
+      "passPct": 100
     },
     {
       "dbn": "10X243",
@@ -1572,7 +1731,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 71,
-      "pct": 7
+      "pct": 7,
+      "passPct": 100
     },
     {
       "dbn": "10X244",
@@ -1581,7 +1741,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 212,
-      "pct": 32.5
+      "pct": 32.5,
+      "passPct": 100
     },
     {
       "dbn": "10X254",
@@ -1590,7 +1751,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 145,
-      "pct": 42.1
+      "pct": 42.1,
+      "passPct": 100
     },
     {
       "dbn": "10X279",
@@ -1599,7 +1761,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 119,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X280",
@@ -1608,7 +1771,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 70,
-      "pct": 24.3
+      "pct": 24.3,
+      "passPct": 100
     },
     {
       "dbn": "10X308",
@@ -1617,7 +1781,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 84,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X315",
@@ -1626,7 +1791,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 28,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X331",
@@ -1635,7 +1801,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 119,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X342",
@@ -1644,7 +1811,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 46,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X363",
@@ -1653,7 +1821,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 251,
-      "pct": 6.8
+      "pct": 6.8,
+      "passPct": 100
     },
     {
       "dbn": "10X368",
@@ -1662,7 +1831,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 139,
-      "pct": 24.5
+      "pct": 24.5,
+      "passPct": 100
     },
     {
       "dbn": "10X390",
@@ -1671,7 +1841,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 113,
-      "pct": 23.9
+      "pct": 23.9,
+      "passPct": 100
     },
     {
       "dbn": "10X391",
@@ -1680,7 +1851,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 133,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "10X447",
@@ -1689,7 +1861,8 @@
       "borough": "Bronx",
       "district": 10,
       "students": 133,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "11X019",
@@ -1698,7 +1871,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 79,
-      "pct": 35.4
+      "pct": 35.4,
+      "passPct": 100
     },
     {
       "dbn": "11X083",
@@ -1707,7 +1881,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 207,
-      "pct": 14
+      "pct": 14,
+      "passPct": 100
     },
     {
       "dbn": "11X089",
@@ -1716,7 +1891,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 145,
-      "pct": 33.1
+      "pct": 33.1,
+      "passPct": 100
     },
     {
       "dbn": "11X127",
@@ -1725,7 +1901,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 241,
-      "pct": 31.1
+      "pct": 31.1,
+      "passPct": 100
     },
     {
       "dbn": "11X144",
@@ -1734,7 +1911,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 127,
-      "pct": 64.6
+      "pct": 64.6,
+      "passPct": 100
     },
     {
       "dbn": "11X175",
@@ -1743,7 +1921,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 27,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "11X180",
@@ -1752,7 +1931,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 250,
-      "pct": 45.2
+      "pct": 45.2,
+      "passPct": 99.1
     },
     {
       "dbn": "11X181",
@@ -1761,7 +1941,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 164,
-      "pct": 54.9
+      "pct": 54.9,
+      "passPct": 100
     },
     {
       "dbn": "11X194",
@@ -1770,7 +1951,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 159,
-      "pct": 18.9
+      "pct": 18.9,
+      "passPct": 100
     },
     {
       "dbn": "11X287",
@@ -1779,7 +1961,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 118,
-      "pct": 13.6
+      "pct": 13.6,
+      "passPct": 100
     },
     {
       "dbn": "11X326",
@@ -1788,7 +1971,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 115,
-      "pct": 38.3
+      "pct": 38.3,
+      "passPct": 97.7
     },
     {
       "dbn": "11X355",
@@ -1797,7 +1981,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 53,
-      "pct": 17
+      "pct": 17,
+      "passPct": 100
     },
     {
       "dbn": "11X370",
@@ -1806,7 +1991,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 138,
-      "pct": 29
+      "pct": 29,
+      "passPct": 100
     },
     {
       "dbn": "11X462",
@@ -1815,7 +2001,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 60,
-      "pct": 33.3
+      "pct": 33.3,
+      "passPct": 95
     },
     {
       "dbn": "11X468",
@@ -1824,7 +2011,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 89,
-      "pct": 27
+      "pct": 27,
+      "passPct": 100
     },
     {
       "dbn": "11X498",
@@ -1833,7 +2021,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 91,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "11X529",
@@ -1842,7 +2031,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 102,
-      "pct": 35.3
+      "pct": 35.3,
+      "passPct": 100
     },
     {
       "dbn": "11X532",
@@ -1851,7 +2041,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 104,
-      "pct": 18.3
+      "pct": 18.3,
+      "passPct": 100
     },
     {
       "dbn": "11X556",
@@ -1860,7 +2051,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 108,
-      "pct": 23.1
+      "pct": 23.1,
+      "passPct": 96
     },
     {
       "dbn": "11X566",
@@ -1869,7 +2061,8 @@
       "borough": "Bronx",
       "district": 11,
       "students": 87,
-      "pct": 55.2
+      "pct": 55.2,
+      "passPct": 100
     },
     {
       "dbn": "12X129",
@@ -1878,7 +2071,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 69,
-      "pct": 21.7
+      "pct": 21.7,
+      "passPct": 100
     },
     {
       "dbn": "12X190",
@@ -1887,7 +2081,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 90,
-      "pct": 7.8
+      "pct": 7.8,
+      "passPct": 100
     },
     {
       "dbn": "12X214",
@@ -1896,7 +2091,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 133,
-      "pct": 7.5
+      "pct": 7.5,
+      "passPct": 100
     },
     {
       "dbn": "12X217",
@@ -1905,7 +2101,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 45,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "12X242",
@@ -1914,7 +2111,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 83,
-      "pct": 27.7
+      "pct": 27.7,
+      "passPct": 100
     },
     {
       "dbn": "12X267",
@@ -1923,7 +2121,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 43,
-      "pct": 39.5
+      "pct": 39.5,
+      "passPct": 70.6
     },
     {
       "dbn": "12X271",
@@ -1932,7 +2131,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 69,
-      "pct": 29
+      "pct": 29,
+      "passPct": 100
     },
     {
       "dbn": "12X273",
@@ -1941,7 +2141,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 59,
-      "pct": 20.3
+      "pct": 20.3,
+      "passPct": 100
     },
     {
       "dbn": "12X286",
@@ -1950,7 +2151,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 81,
-      "pct": 9.9
+      "pct": 9.9,
+      "passPct": 100
     },
     {
       "dbn": "12X316",
@@ -1959,7 +2161,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 74,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "12X318",
@@ -1968,7 +2171,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 97,
-      "pct": 5.2
+      "pct": 5.2,
+      "passPct": 80
     },
     {
       "dbn": "12X341",
@@ -1977,7 +2181,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 77,
-      "pct": 11.7
+      "pct": 11.7,
+      "passPct": 100
     },
     {
       "dbn": "12X383",
@@ -1986,7 +2191,8 @@
       "borough": "Bronx",
       "district": 12,
       "students": 113,
-      "pct": 44.2
+      "pct": 44.2,
+      "passPct": 100
     },
     {
       "dbn": "13K113",
@@ -1995,7 +2201,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 76,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "13K266",
@@ -2004,7 +2211,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 17,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "13K301",
@@ -2013,7 +2221,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 33,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "13K313",
@@ -2022,7 +2231,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 90,
-      "pct": 27.8
+      "pct": 27.8,
+      "passPct": 100
     },
     {
       "dbn": "13K351",
@@ -2031,7 +2241,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 45,
-      "pct": 4.4
+      "pct": 4.4,
+      "passPct": null
     },
     {
       "dbn": "13K492",
@@ -2040,7 +2251,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 83,
-      "pct": 50.6
+      "pct": 50.6,
+      "passPct": 100
     },
     {
       "dbn": "13K527",
@@ -2049,7 +2261,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 42,
-      "pct": 28.6
+      "pct": 28.6,
+      "passPct": 100
     },
     {
       "dbn": "13K691",
@@ -2058,7 +2271,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 60,
-      "pct": 35
+      "pct": 35,
+      "passPct": 100
     },
     {
       "dbn": "13K915",
@@ -2067,7 +2281,8 @@
       "borough": "Brooklyn",
       "district": 13,
       "students": 86,
-      "pct": 30.2
+      "pct": 30.2,
+      "passPct": 100
     },
     {
       "dbn": "14K050",
@@ -2076,7 +2291,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 140,
-      "pct": 57.1
+      "pct": 57.1,
+      "passPct": 100
     },
     {
       "dbn": "14K071",
@@ -2085,7 +2301,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 42,
-      "pct": 47.6
+      "pct": 47.6,
+      "passPct": 100
     },
     {
       "dbn": "14K084",
@@ -2094,7 +2311,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 61,
-      "pct": 42.6
+      "pct": 42.6,
+      "passPct": 100
     },
     {
       "dbn": "14K126",
@@ -2103,7 +2321,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 63,
-      "pct": 12.7
+      "pct": 12.7,
+      "passPct": 87.5
     },
     {
       "dbn": "14K157",
@@ -2112,7 +2331,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 40,
-      "pct": 15
+      "pct": 15,
+      "passPct": 100
     },
     {
       "dbn": "14K318",
@@ -2121,7 +2341,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 315,
-      "pct": 40.6
+      "pct": 40.6,
+      "passPct": 100
     },
     {
       "dbn": "14K577",
@@ -2130,7 +2351,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 144,
-      "pct": 65.3
+      "pct": 65.3,
+      "passPct": 100
     },
     {
       "dbn": "14K582",
@@ -2139,7 +2361,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 109,
-      "pct": 47.7
+      "pct": 47.7,
+      "passPct": 100
     },
     {
       "dbn": "14K586",
@@ -2148,7 +2371,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 35,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "14K614",
@@ -2157,7 +2381,8 @@
       "borough": "Brooklyn",
       "district": 14,
       "students": 28,
-      "pct": 17.9
+      "pct": 17.9,
+      "passPct": 100
     },
     {
       "dbn": "15K051",
@@ -2166,7 +2391,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 328,
-      "pct": 77.1
+      "pct": 77.1,
+      "passPct": 100
     },
     {
       "dbn": "15K088",
@@ -2175,7 +2401,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 264,
-      "pct": 62.9
+      "pct": 62.9,
+      "passPct": 99.4
     },
     {
       "dbn": "15K136",
@@ -2184,7 +2411,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 169,
-      "pct": 29
+      "pct": 29,
+      "passPct": 98
     },
     {
       "dbn": "15K442",
@@ -2193,7 +2421,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 113,
-      "pct": 83.2
+      "pct": 83.2,
+      "passPct": 98.9
     },
     {
       "dbn": "15K443",
@@ -2202,7 +2431,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 182,
-      "pct": 69.8
+      "pct": 69.8,
+      "passPct": 100
     },
     {
       "dbn": "15K447",
@@ -2211,7 +2441,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 171,
-      "pct": 76
+      "pct": 76,
+      "passPct": 98.5
     },
     {
       "dbn": "15K448",
@@ -2220,7 +2451,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 88,
-      "pct": 46.6
+      "pct": 46.6,
+      "passPct": 97.6
     },
     {
       "dbn": "15K464",
@@ -2229,7 +2461,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 67,
-      "pct": 44.8
+      "pct": 44.8,
+      "passPct": 100
     },
     {
       "dbn": "15K497",
@@ -2238,7 +2471,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 151,
-      "pct": 58.3
+      "pct": 58.3,
+      "passPct": 100
     },
     {
       "dbn": "15K676",
@@ -2247,7 +2481,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 33,
-      "pct": 30.3
+      "pct": 30.3,
+      "passPct": 100
     },
     {
       "dbn": "15K821",
@@ -2256,7 +2491,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 148,
-      "pct": 27.7
+      "pct": 27.7,
+      "passPct": 100
     },
     {
       "dbn": "15K839",
@@ -2265,7 +2501,8 @@
       "borough": "Brooklyn",
       "district": 15,
       "students": 97,
-      "pct": 70.1
+      "pct": 70.1,
+      "passPct": 98.5
     },
     {
       "dbn": "16K035",
@@ -2274,7 +2511,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 58,
-      "pct": 37.9
+      "pct": 37.9,
+      "passPct": 100
     },
     {
       "dbn": "16K057",
@@ -2283,7 +2521,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 19,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "16K267",
@@ -2292,7 +2531,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 33,
-      "pct": 24.2
+      "pct": 24.2,
+      "passPct": 100
     },
     {
       "dbn": "16K308",
@@ -2301,7 +2541,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 22,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "16K681",
@@ -2310,7 +2551,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 69,
-      "pct": 30.4
+      "pct": 30.4,
+      "passPct": 100
     },
     {
       "dbn": "16K898",
@@ -2319,7 +2561,8 @@
       "borough": "Brooklyn",
       "district": 16,
       "students": 68,
-      "pct": 22.1
+      "pct": 22.1,
+      "passPct": 100
     },
     {
       "dbn": "17K002",
@@ -2328,7 +2571,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 87,
-      "pct": 23
+      "pct": 23,
+      "passPct": 100
     },
     {
       "dbn": "17K061",
@@ -2337,7 +2581,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 101,
-      "pct": 8.9
+      "pct": 8.9,
+      "passPct": 100
     },
     {
       "dbn": "17K138",
@@ -2346,7 +2591,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 42,
-      "pct": 31
+      "pct": 31,
+      "passPct": 92.3
     },
     {
       "dbn": "17K181",
@@ -2355,7 +2601,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 58,
-      "pct": 27.6
+      "pct": 27.6,
+      "passPct": 100
     },
     {
       "dbn": "17K189",
@@ -2364,7 +2611,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 140,
-      "pct": 19.3
+      "pct": 19.3,
+      "passPct": 100
     },
     {
       "dbn": "17K246",
@@ -2373,7 +2621,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 135,
-      "pct": 0.7
+      "pct": 0.7,
+      "passPct": null
     },
     {
       "dbn": "17K340",
@@ -2382,7 +2631,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 48,
-      "pct": 12.5
+      "pct": 12.5,
+      "passPct": 100
     },
     {
       "dbn": "17K352",
@@ -2391,7 +2641,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 50,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "17K353",
@@ -2400,7 +2651,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 40,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "17K354",
@@ -2409,7 +2661,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 56,
-      "pct": 21.4
+      "pct": 21.4,
+      "passPct": 100
     },
     {
       "dbn": "17K382",
@@ -2418,7 +2671,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 52,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "17K394",
@@ -2427,7 +2681,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 26,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "17K484",
@@ -2436,7 +2691,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 39,
-      "pct": 43.6
+      "pct": 43.6,
+      "passPct": 100
     },
     {
       "dbn": "17K543",
@@ -2445,7 +2701,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 47,
-      "pct": 36.2
+      "pct": 36.2,
+      "passPct": 100
     },
     {
       "dbn": "17K590",
@@ -2454,7 +2711,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 126,
-      "pct": 17.5
+      "pct": 17.5,
+      "passPct": 86.4
     },
     {
       "dbn": "17K722",
@@ -2463,7 +2721,8 @@
       "borough": "Brooklyn",
       "district": 17,
       "students": 78,
-      "pct": 14.1
+      "pct": 14.1,
+      "passPct": 100
     },
     {
       "dbn": "18K066",
@@ -2472,7 +2731,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 70,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "18K068",
@@ -2481,7 +2741,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 98,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "18K211",
@@ -2490,7 +2751,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 65,
-      "pct": 23.1
+      "pct": 23.1,
+      "passPct": 100
     },
     {
       "dbn": "18K285",
@@ -2499,7 +2761,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 173,
-      "pct": 25.4
+      "pct": 25.4,
+      "passPct": 97.7
     },
     {
       "dbn": "18K366",
@@ -2508,7 +2771,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 76,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "18K581",
@@ -2517,7 +2781,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 62,
-      "pct": 1.6
+      "pct": 1.6,
+      "passPct": null
     },
     {
       "dbn": "18K588",
@@ -2526,7 +2791,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 46,
-      "pct": 8.7
+      "pct": 8.7,
+      "passPct": null
     },
     {
       "dbn": "18K763",
@@ -2535,7 +2801,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 135,
-      "pct": 19.3
+      "pct": 19.3,
+      "passPct": 100
     },
     {
       "dbn": "18K961",
@@ -2544,7 +2811,8 @@
       "borough": "Brooklyn",
       "district": 18,
       "students": 73,
-      "pct": 47.9
+      "pct": 47.9,
+      "passPct": 100
     },
     {
       "dbn": "19K089",
@@ -2553,7 +2821,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 57,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "19K171",
@@ -2562,7 +2831,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 82,
-      "pct": 23.2
+      "pct": 23.2,
+      "passPct": 100
     },
     {
       "dbn": "19K218",
@@ -2571,7 +2841,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 108,
-      "pct": 27.8
+      "pct": 27.8,
+      "passPct": 100
     },
     {
       "dbn": "19K292",
@@ -2580,7 +2851,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 91,
-      "pct": 34.1
+      "pct": 34.1,
+      "passPct": 100
     },
     {
       "dbn": "19K404",
@@ -2589,7 +2861,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 41,
-      "pct": 31.7
+      "pct": 31.7,
+      "passPct": 100
     },
     {
       "dbn": "19K409",
@@ -2598,7 +2871,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 80,
-      "pct": 36.3
+      "pct": 36.3,
+      "passPct": 96.6
     },
     {
       "dbn": "19K422",
@@ -2607,7 +2881,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 34,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "19K452",
@@ -2616,7 +2891,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 109,
-      "pct": 13.8
+      "pct": 13.8,
+      "passPct": 100
     },
     {
       "dbn": "19K654",
@@ -2625,7 +2901,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 53,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "19K661",
@@ -2634,7 +2911,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 146,
-      "pct": 18.5
+      "pct": 18.5,
+      "passPct": 100
     },
     {
       "dbn": "19K662",
@@ -2643,7 +2921,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 144,
-      "pct": 15.3
+      "pct": 15.3,
+      "passPct": 100
     },
     {
       "dbn": "19K663",
@@ -2652,7 +2931,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 47,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "19K678",
@@ -2661,7 +2941,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 77,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "19K760",
@@ -2670,7 +2951,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 77,
-      "pct": 10.4
+      "pct": 10.4,
+      "passPct": 87.5
     },
     {
       "dbn": "19K907",
@@ -2679,7 +2961,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 59,
-      "pct": 10.2
+      "pct": 10.2,
+      "passPct": 100
     },
     {
       "dbn": "19K935",
@@ -2688,7 +2971,8 @@
       "borough": "Brooklyn",
       "district": 19,
       "students": 87,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "20K030",
@@ -2697,7 +2981,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 122,
-      "pct": 37.7
+      "pct": 37.7,
+      "passPct": 100
     },
     {
       "dbn": "20K062",
@@ -2706,7 +2991,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 320,
-      "pct": 17.2
+      "pct": 17.2,
+      "passPct": 100
     },
     {
       "dbn": "20K104",
@@ -2715,7 +3001,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 156,
-      "pct": 19.2
+      "pct": 19.2,
+      "passPct": 100
     },
     {
       "dbn": "20K163",
@@ -2724,7 +3011,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 77,
-      "pct": 29.9
+      "pct": 29.9,
+      "passPct": 100
     },
     {
       "dbn": "20K180",
@@ -2733,7 +3021,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 145,
-      "pct": 40.7
+      "pct": 40.7,
+      "passPct": 100
     },
     {
       "dbn": "20K187",
@@ -2742,7 +3031,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 282,
-      "pct": 75.9
+      "pct": 75.9,
+      "passPct": 100
     },
     {
       "dbn": "20K192",
@@ -2751,7 +3041,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 61,
-      "pct": 31.1
+      "pct": 31.1,
+      "passPct": 100
     },
     {
       "dbn": "20K201",
@@ -2760,7 +3051,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 506,
-      "pct": 39.3
+      "pct": 39.3,
+      "passPct": 100
     },
     {
       "dbn": "20K220",
@@ -2769,7 +3061,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 437,
-      "pct": 34.1
+      "pct": 34.1,
+      "passPct": 100
     },
     {
       "dbn": "20K223",
@@ -2778,7 +3071,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 214,
-      "pct": 33.6
+      "pct": 33.6,
+      "passPct": 100
     },
     {
       "dbn": "20K227",
@@ -2787,7 +3081,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 463,
-      "pct": 28.5
+      "pct": 28.5,
+      "passPct": 100
     },
     {
       "dbn": "20K229",
@@ -2796,7 +3091,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 120,
-      "pct": 27.5
+      "pct": 27.5,
+      "passPct": 100
     },
     {
       "dbn": "20K259",
@@ -2805,7 +3101,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 625,
-      "pct": 31.8
+      "pct": 31.8,
+      "passPct": 100
     },
     {
       "dbn": "20K609",
@@ -2814,7 +3111,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 51,
-      "pct": 66.7
+      "pct": 66.7,
+      "passPct": 97.1
     },
     {
       "dbn": "20K686",
@@ -2823,7 +3121,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 56,
-      "pct": 96.4
+      "pct": 96.4,
+      "passPct": 100
     },
     {
       "dbn": "20K936",
@@ -2832,7 +3131,8 @@
       "borough": "Brooklyn",
       "district": 20,
       "students": 145,
-      "pct": 39.3
+      "pct": 39.3,
+      "passPct": 100
     },
     {
       "dbn": "21K095",
@@ -2841,7 +3141,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 61,
-      "pct": 41
+      "pct": 41,
+      "passPct": 100
     },
     {
       "dbn": "21K096",
@@ -2850,7 +3151,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 307,
-      "pct": 55.7
+      "pct": 55.7,
+      "passPct": 100
     },
     {
       "dbn": "21K098",
@@ -2859,7 +3161,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 452,
-      "pct": 26.8
+      "pct": 26.8,
+      "passPct": 100
     },
     {
       "dbn": "21K099",
@@ -2868,7 +3171,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 89,
-      "pct": 30.3
+      "pct": 30.3,
+      "passPct": 100
     },
     {
       "dbn": "21K121",
@@ -2877,7 +3181,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 48,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "21K209",
@@ -2886,7 +3191,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 65,
-      "pct": 44.6
+      "pct": 44.6,
+      "passPct": 100
     },
     {
       "dbn": "21K225",
@@ -2895,7 +3201,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 150,
-      "pct": 48.7
+      "pct": 48.7,
+      "passPct": 97.3
     },
     {
       "dbn": "21K226",
@@ -2904,7 +3211,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 98,
-      "pct": 44.9
+      "pct": 44.9,
+      "passPct": 100
     },
     {
       "dbn": "21K228",
@@ -2913,7 +3221,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 478,
-      "pct": 51
+      "pct": 51,
+      "passPct": 100
     },
     {
       "dbn": "21K238",
@@ -2922,7 +3231,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 60,
-      "pct": 6.7
+      "pct": 6.7,
+      "passPct": null
     },
     {
       "dbn": "21K239",
@@ -2931,7 +3241,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 386,
-      "pct": 65.3
+      "pct": 65.3,
+      "passPct": 100
     },
     {
       "dbn": "21K281",
@@ -2940,7 +3251,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 413,
-      "pct": 35.8
+      "pct": 35.8,
+      "passPct": 100
     },
     {
       "dbn": "21K288",
@@ -2949,7 +3261,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 52,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "21K303",
@@ -2958,7 +3271,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 139,
-      "pct": 33.1
+      "pct": 33.1,
+      "passPct": 100
     },
     {
       "dbn": "21K468",
@@ -2967,7 +3281,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 104,
-      "pct": 29.8
+      "pct": 29.8,
+      "passPct": 100
     },
     {
       "dbn": "21K690",
@@ -2976,7 +3291,8 @@
       "borough": "Brooklyn",
       "district": 21,
       "students": 113,
-      "pct": 23
+      "pct": 23,
+      "passPct": 100
     },
     {
       "dbn": "22K014",
@@ -2985,7 +3301,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 146,
-      "pct": 16.4
+      "pct": 16.4,
+      "passPct": 100
     },
     {
       "dbn": "22K078",
@@ -2994,7 +3311,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 207,
-      "pct": 26.6
+      "pct": 26.6,
+      "passPct": 100
     },
     {
       "dbn": "22K109",
@@ -3003,7 +3321,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 78,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "22K206",
@@ -3012,7 +3331,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 145,
-      "pct": 53.8
+      "pct": 53.8,
+      "passPct": 98.7
     },
     {
       "dbn": "22K207",
@@ -3021,7 +3341,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 100,
-      "pct": 30
+      "pct": 30,
+      "passPct": 100
     },
     {
       "dbn": "22K234",
@@ -3030,7 +3351,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 461,
-      "pct": 30.2
+      "pct": 30.2,
+      "passPct": 100
     },
     {
       "dbn": "22K240",
@@ -3039,7 +3361,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 139,
-      "pct": 11.5
+      "pct": 11.5,
+      "passPct": 100
     },
     {
       "dbn": "22K278",
@@ -3048,7 +3371,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 322,
-      "pct": 24.8
+      "pct": 24.8,
+      "passPct": 98.8
     },
     {
       "dbn": "22K381",
@@ -3057,7 +3381,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 85,
-      "pct": 11.8
+      "pct": 11.8,
+      "passPct": 100
     },
     {
       "dbn": "22K890",
@@ -3066,7 +3391,8 @@
       "borough": "Brooklyn",
       "district": 22,
       "students": 103,
-      "pct": 46.6
+      "pct": 46.6,
+      "passPct": 100
     },
     {
       "dbn": "23K155",
@@ -3075,7 +3401,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 27,
-      "pct": 40.7
+      "pct": 40.7,
+      "passPct": 90.9
     },
     {
       "dbn": "23K178",
@@ -3084,7 +3411,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 33,
-      "pct": 27.3
+      "pct": 27.3,
+      "passPct": 100
     },
     {
       "dbn": "23K184",
@@ -3093,7 +3421,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 45,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "23K363",
@@ -3102,7 +3431,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 83,
-      "pct": 28.9
+      "pct": 28.9,
+      "passPct": 100
     },
     {
       "dbn": "23K392",
@@ -3111,7 +3441,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 84,
-      "pct": 46.4
+      "pct": 46.4,
+      "passPct": 100
     },
     {
       "dbn": "23K518",
@@ -3120,7 +3451,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 36,
-      "pct": 2.8
+      "pct": 2.8,
+      "passPct": null
     },
     {
       "dbn": "23K522",
@@ -3129,7 +3461,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 34,
-      "pct": 14.7
+      "pct": 14.7,
+      "passPct": 100
     },
     {
       "dbn": "23K644",
@@ -3138,7 +3471,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 78,
-      "pct": 67.9
+      "pct": 67.9,
+      "passPct": 98.1
     },
     {
       "dbn": "23K664",
@@ -3147,7 +3481,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 56,
-      "pct": 7.1
+      "pct": 7.1,
+      "passPct": null
     },
     {
       "dbn": "23K668",
@@ -3156,7 +3491,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 41,
-      "pct": 41.5
+      "pct": 41.5,
+      "passPct": 88.2
     },
     {
       "dbn": "23K671",
@@ -3165,7 +3501,8 @@
       "borough": "Brooklyn",
       "district": 23,
       "students": 77,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "24Q005",
@@ -3174,7 +3511,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 391,
-      "pct": 38.9
+      "pct": 38.9,
+      "passPct": 100
     },
     {
       "dbn": "24Q049",
@@ -3183,7 +3521,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 132,
-      "pct": 78
+      "pct": 78,
+      "passPct": 100
     },
     {
       "dbn": "24Q061",
@@ -3192,7 +3531,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 744,
-      "pct": 17.6
+      "pct": 17.6,
+      "passPct": 100
     },
     {
       "dbn": "24Q073",
@@ -3201,7 +3541,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 541,
-      "pct": 28.7
+      "pct": 28.7,
+      "passPct": 100
     },
     {
       "dbn": "24Q077",
@@ -3210,7 +3551,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 195,
-      "pct": 13.8
+      "pct": 13.8,
+      "passPct": 100
     },
     {
       "dbn": "24Q087",
@@ -3219,7 +3561,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 62,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "24Q093",
@@ -3228,7 +3571,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 363,
-      "pct": 45.2
+      "pct": 45.2,
+      "passPct": 100
     },
     {
       "dbn": "24Q102",
@@ -3237,7 +3581,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 117,
-      "pct": 23.9
+      "pct": 23.9,
+      "passPct": 100
     },
     {
       "dbn": "24Q113",
@@ -3246,7 +3591,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 99,
-      "pct": 32.3
+      "pct": 32.3,
+      "passPct": 100
     },
     {
       "dbn": "24Q119",
@@ -3255,7 +3601,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 211,
-      "pct": 52.6
+      "pct": 52.6,
+      "passPct": 100
     },
     {
       "dbn": "24Q125",
@@ -3264,7 +3611,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 504,
-      "pct": 37.5
+      "pct": 37.5,
+      "passPct": 99.5
     },
     {
       "dbn": "24Q128",
@@ -3273,7 +3621,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 98,
-      "pct": 67.3
+      "pct": 67.3,
+      "passPct": 100
     },
     {
       "dbn": "24Q311",
@@ -3282,7 +3631,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 250,
-      "pct": 6.4
+      "pct": 6.4,
+      "passPct": 100
     },
     {
       "dbn": "24Q419",
@@ -3291,7 +3641,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 174,
-      "pct": 14.9
+      "pct": 14.9,
+      "passPct": 100
     },
     {
       "dbn": "24Q560",
@@ -3300,7 +3651,8 @@
       "borough": "Queens",
       "district": 24,
       "students": 51,
-      "pct": 64.7
+      "pct": 64.7,
+      "passPct": 100
     },
     {
       "dbn": "25Q025",
@@ -3309,7 +3661,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 347,
-      "pct": 75.8
+      "pct": 75.8,
+      "passPct": 100
     },
     {
       "dbn": "25Q164",
@@ -3318,7 +3671,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 75,
-      "pct": 64
+      "pct": 64,
+      "passPct": 100
     },
     {
       "dbn": "25Q185",
@@ -3327,7 +3681,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 485,
-      "pct": 43.3
+      "pct": 43.3,
+      "passPct": 99.5
     },
     {
       "dbn": "25Q189",
@@ -3336,7 +3691,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 217,
-      "pct": 26.7
+      "pct": 26.7,
+      "passPct": 100
     },
     {
       "dbn": "25Q194",
@@ -3345,7 +3701,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 359,
-      "pct": 48.7
+      "pct": 48.7,
+      "passPct": 100
     },
     {
       "dbn": "25Q200",
@@ -3354,7 +3711,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 55,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "25Q219",
@@ -3363,7 +3721,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 69,
-      "pct": 88.4
+      "pct": 88.4,
+      "passPct": 100
     },
     {
       "dbn": "25Q237",
@@ -3372,7 +3731,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 427,
-      "pct": 40.7
+      "pct": 40.7,
+      "passPct": 100
     },
     {
       "dbn": "25Q250",
@@ -3381,7 +3741,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 94,
-      "pct": 25.5
+      "pct": 25.5,
+      "passPct": 100
     },
     {
       "dbn": "25Q252",
@@ -3390,7 +3751,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 66,
-      "pct": 72.7
+      "pct": 72.7,
+      "passPct": 100
     },
     {
       "dbn": "25Q281",
@@ -3399,7 +3761,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 110,
-      "pct": 87.3
+      "pct": 87.3,
+      "passPct": 100
     },
     {
       "dbn": "25Q285",
@@ -3408,7 +3771,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 81,
-      "pct": 81.5
+      "pct": 81.5,
+      "passPct": 100
     },
     {
       "dbn": "25Q294",
@@ -3417,7 +3781,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 99,
-      "pct": 88.9
+      "pct": 88.9,
+      "passPct": 100
     },
     {
       "dbn": "25Q379",
@@ -3426,7 +3791,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 148,
-      "pct": 34.5
+      "pct": 34.5,
+      "passPct": 100
     },
     {
       "dbn": "25Q499",
@@ -3435,7 +3801,8 @@
       "borough": "Queens",
       "district": 25,
       "students": 67,
-      "pct": 80.6
+      "pct": 80.6,
+      "passPct": 100
     },
     {
       "dbn": "26Q067",
@@ -3444,7 +3811,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 300,
-      "pct": 60.7
+      "pct": 60.7,
+      "passPct": 100
     },
     {
       "dbn": "26Q074",
@@ -3453,7 +3821,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 373,
-      "pct": 35.1
+      "pct": 35.1,
+      "passPct": 100
     },
     {
       "dbn": "26Q158",
@@ -3462,7 +3831,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 268,
-      "pct": 68.3
+      "pct": 68.3,
+      "passPct": 100
     },
     {
       "dbn": "26Q172",
@@ -3471,7 +3841,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 249,
-      "pct": 39
+      "pct": 39,
+      "passPct": 100
     },
     {
       "dbn": "26Q178",
@@ -3480,7 +3851,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 64,
-      "pct": 71.9
+      "pct": 71.9,
+      "passPct": 100
     },
     {
       "dbn": "26Q216",
@@ -3489,7 +3861,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 513,
-      "pct": 31.2
+      "pct": 31.2,
+      "passPct": 100
     },
     {
       "dbn": "26Q266",
@@ -3498,7 +3871,8 @@
       "borough": "Queens",
       "district": 26,
       "students": 75,
-      "pct": 66.7
+      "pct": 66.7,
+      "passPct": 100
     },
     {
       "dbn": "27Q042",
@@ -3507,7 +3881,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 51,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "27Q043",
@@ -3516,7 +3891,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 46,
-      "pct": 41.3
+      "pct": 41.3,
+      "passPct": 94.7
     },
     {
       "dbn": "27Q047",
@@ -3525,7 +3901,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 26,
-      "pct": 69.2
+      "pct": 69.2,
+      "passPct": 100
     },
     {
       "dbn": "27Q053",
@@ -3534,7 +3911,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 81,
-      "pct": 45.7
+      "pct": 45.7,
+      "passPct": 100
     },
     {
       "dbn": "27Q105",
@@ -3543,7 +3921,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 56,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "27Q114",
@@ -3552,7 +3931,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 43,
-      "pct": 72.1
+      "pct": 72.1,
+      "passPct": 100
     },
     {
       "dbn": "27Q124",
@@ -3561,7 +3941,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 140,
-      "pct": 16.4
+      "pct": 16.4,
+      "passPct": 100
     },
     {
       "dbn": "27Q137",
@@ -3570,7 +3951,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 554,
-      "pct": 60.6
+      "pct": 60.6,
+      "passPct": 100
     },
     {
       "dbn": "27Q146",
@@ -3579,7 +3961,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 52,
-      "pct": 69.2
+      "pct": 69.2,
+      "passPct": 100
     },
     {
       "dbn": "27Q183",
@@ -3588,7 +3971,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 42,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "27Q202",
@@ -3597,7 +3981,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 307,
-      "pct": 19.5
+      "pct": 19.5,
+      "passPct": 100
     },
     {
       "dbn": "27Q207",
@@ -3606,7 +3991,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 61,
-      "pct": 26.2
+      "pct": 26.2,
+      "passPct": 100
     },
     {
       "dbn": "27Q210",
@@ -3615,7 +4001,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 521,
-      "pct": 51.6
+      "pct": 51.6,
+      "passPct": 98.9
     },
     {
       "dbn": "27Q226",
@@ -3624,7 +4011,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 247,
-      "pct": 19.8
+      "pct": 19.8,
+      "passPct": 100
     },
     {
       "dbn": "27Q232",
@@ -3633,7 +4021,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 101,
-      "pct": 48.5
+      "pct": 48.5,
+      "passPct": 100
     },
     {
       "dbn": "27Q262",
@@ -3642,7 +4031,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 131,
-      "pct": 51.9
+      "pct": 51.9,
+      "passPct": 98.5
     },
     {
       "dbn": "27Q282",
@@ -3651,7 +4041,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 81,
-      "pct": 32.1
+      "pct": 32.1,
+      "passPct": 100
     },
     {
       "dbn": "27Q297",
@@ -3660,7 +4051,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 126,
-      "pct": 26.2
+      "pct": 26.2,
+      "passPct": 100
     },
     {
       "dbn": "27Q309",
@@ -3669,7 +4061,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 66,
-      "pct": 19.7
+      "pct": 19.7,
+      "passPct": 100
     },
     {
       "dbn": "27Q318",
@@ -3678,7 +4071,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 59,
-      "pct": 23.7
+      "pct": 23.7,
+      "passPct": 100
     },
     {
       "dbn": "27Q319",
@@ -3687,7 +4081,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 82,
-      "pct": 31.7
+      "pct": 31.7,
+      "passPct": 100
     },
     {
       "dbn": "27Q323",
@@ -3696,7 +4091,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 187,
-      "pct": 87.2
+      "pct": 87.2,
+      "passPct": 100
     },
     {
       "dbn": "27Q333",
@@ -3705,7 +4101,8 @@
       "borough": "Queens",
       "district": 27,
       "students": 22,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "28Q008",
@@ -3714,7 +4111,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 92,
-      "pct": 20.7
+      "pct": 20.7,
+      "passPct": 100
     },
     {
       "dbn": "28Q072",
@@ -3723,7 +4121,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 93,
-      "pct": 16.1
+      "pct": 16.1,
+      "passPct": 100
     },
     {
       "dbn": "28Q157",
@@ -3732,7 +4131,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 490,
-      "pct": 66.9
+      "pct": 66.9,
+      "passPct": 100
     },
     {
       "dbn": "28Q167",
@@ -3741,7 +4141,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 113,
-      "pct": 49.6
+      "pct": 49.6,
+      "passPct": 100
     },
     {
       "dbn": "28Q190",
@@ -3750,7 +4151,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 330,
-      "pct": 59.7
+      "pct": 59.7,
+      "passPct": 100
     },
     {
       "dbn": "28Q217",
@@ -3759,7 +4161,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 418,
-      "pct": 44.3
+      "pct": 44.3,
+      "passPct": 100
     },
     {
       "dbn": "28Q284",
@@ -3768,7 +4171,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 91,
-      "pct": 56
+      "pct": 56,
+      "passPct": 100
     },
     {
       "dbn": "28Q287",
@@ -3777,7 +4181,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 90,
-      "pct": 21.1
+      "pct": 21.1,
+      "passPct": 100
     },
     {
       "dbn": "28Q310",
@@ -3786,7 +4191,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 86,
-      "pct": 16.3
+      "pct": 16.3,
+      "passPct": 100
     },
     {
       "dbn": "28Q332",
@@ -3795,7 +4201,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 73,
-      "pct": 64.4
+      "pct": 64.4,
+      "passPct": 100
     },
     {
       "dbn": "28Q358",
@@ -3804,7 +4211,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 120,
-      "pct": 73.3
+      "pct": 73.3,
+      "passPct": 100
     },
     {
       "dbn": "28Q680",
@@ -3813,7 +4221,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 84,
-      "pct": 64.3
+      "pct": 64.3,
+      "passPct": 100
     },
     {
       "dbn": "28Q896",
@@ -3822,7 +4231,8 @@
       "borough": "Queens",
       "district": 28,
       "students": 76,
-      "pct": 44.7
+      "pct": 44.7,
+      "passPct": 100
     },
     {
       "dbn": "29Q059",
@@ -3831,7 +4241,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 145,
-      "pct": 19.3
+      "pct": 19.3,
+      "passPct": 100
     },
     {
       "dbn": "29Q109",
@@ -3840,7 +4251,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 291,
-      "pct": 32
+      "pct": 32,
+      "passPct": 100
     },
     {
       "dbn": "29Q116",
@@ -3849,7 +4261,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 69,
-      "pct": 21.7
+      "pct": 21.7,
+      "passPct": 100
     },
     {
       "dbn": "29Q138",
@@ -3858,7 +4271,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 92,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "29Q147",
@@ -3867,7 +4281,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 59,
-      "pct": 23.7
+      "pct": 23.7,
+      "passPct": 100
     },
     {
       "dbn": "29Q192",
@@ -3876,7 +4291,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 95,
-      "pct": 15.8
+      "pct": 15.8,
+      "passPct": 100
     },
     {
       "dbn": "29Q208",
@@ -3885,7 +4301,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 103,
-      "pct": 20.4
+      "pct": 20.4,
+      "passPct": 100
     },
     {
       "dbn": "29Q238",
@@ -3894,7 +4311,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 314,
-      "pct": 25.2
+      "pct": 25.2,
+      "passPct": 100
     },
     {
       "dbn": "29Q259",
@@ -3903,7 +4321,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 97,
-      "pct": 35.1
+      "pct": 35.1,
+      "passPct": 100
     },
     {
       "dbn": "29Q268",
@@ -3912,7 +4331,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 61,
-      "pct": 32.8
+      "pct": 32.8,
+      "passPct": 100
     },
     {
       "dbn": "29Q270",
@@ -3921,7 +4341,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 93,
-      "pct": 21.5
+      "pct": 21.5,
+      "passPct": 100
     },
     {
       "dbn": "29Q283",
@@ -3930,7 +4351,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 60,
-      "pct": 35
+      "pct": 35,
+      "passPct": 100
     },
     {
       "dbn": "29Q289",
@@ -3939,7 +4361,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 69,
-      "pct": 27.5
+      "pct": 27.5,
+      "passPct": 100
     },
     {
       "dbn": "29Q295",
@@ -3948,7 +4371,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 66,
-      "pct": 56.1
+      "pct": 56.1,
+      "passPct": 100
     },
     {
       "dbn": "29Q327",
@@ -3957,7 +4381,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 64,
-      "pct": 45.3
+      "pct": 45.3,
+      "passPct": 100
     },
     {
       "dbn": "29Q355",
@@ -3966,7 +4391,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 103,
-      "pct": 17.5
+      "pct": 17.5,
+      "passPct": 100
     },
     {
       "dbn": "29Q356",
@@ -3975,7 +4401,8 @@
       "borough": "Queens",
       "district": 29,
       "students": 90,
-      "pct": 20
+      "pct": 20,
+      "passPct": 100
     },
     {
       "dbn": "30Q010",
@@ -3984,7 +4411,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 196,
-      "pct": 19.9
+      "pct": 19.9,
+      "passPct": 100
     },
     {
       "dbn": "30Q078",
@@ -3993,7 +4421,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 55,
-      "pct": 50.9
+      "pct": 50.9,
+      "passPct": 100
     },
     {
       "dbn": "30Q111",
@@ -4002,7 +4431,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 44,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "30Q122",
@@ -4011,7 +4441,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 88,
-      "pct": 63.6
+      "pct": 63.6,
+      "passPct": 100
     },
     {
       "dbn": "30Q126",
@@ -4020,7 +4451,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 116,
-      "pct": 39.7
+      "pct": 39.7,
+      "passPct": 100
     },
     {
       "dbn": "30Q127",
@@ -4029,7 +4461,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 117,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "30Q141",
@@ -4038,7 +4471,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 334,
-      "pct": 58.4
+      "pct": 58.4,
+      "passPct": 98.5
     },
     {
       "dbn": "30Q145",
@@ -4047,7 +4481,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 488,
-      "pct": 61.1
+      "pct": 61.1,
+      "passPct": 99.3
     },
     {
       "dbn": "30Q204",
@@ -4056,7 +4491,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 121,
-      "pct": 24
+      "pct": 24,
+      "passPct": 96.6
     },
     {
       "dbn": "30Q227",
@@ -4065,7 +4501,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 436,
-      "pct": 58.9
+      "pct": 58.9,
+      "passPct": 100
     },
     {
       "dbn": "30Q230",
@@ -4074,7 +4511,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 315,
-      "pct": 60.3
+      "pct": 60.3,
+      "passPct": 99.5
     },
     {
       "dbn": "30Q235",
@@ -4083,7 +4521,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 19,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "30Q286",
@@ -4092,7 +4531,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 76,
-      "pct": 76.3
+      "pct": 76.3,
+      "passPct": 100
     },
     {
       "dbn": "30Q291",
@@ -4101,7 +4541,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 134,
-      "pct": 63.4
+      "pct": 63.4,
+      "passPct": 100
     },
     {
       "dbn": "30Q300",
@@ -4110,7 +4551,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 53,
-      "pct": 92.5
+      "pct": 92.5,
+      "passPct": 100
     },
     {
       "dbn": "30Q580",
@@ -4119,7 +4561,8 @@
       "borough": "Queens",
       "district": 30,
       "students": 65,
-      "pct": 93.8
+      "pct": 93.8,
+      "passPct": 100
     },
     {
       "dbn": "31R002",
@@ -4128,7 +4571,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 335,
-      "pct": 23
+      "pct": 23,
+      "passPct": 100
     },
     {
       "dbn": "31R007",
@@ -4137,7 +4581,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 406,
-      "pct": 25.6
+      "pct": 25.6,
+      "passPct": 100
     },
     {
       "dbn": "31R024",
@@ -4146,7 +4591,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 438,
-      "pct": 29.7
+      "pct": 29.7,
+      "passPct": 100
     },
     {
       "dbn": "31R027",
@@ -4155,7 +4601,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 285,
-      "pct": 18.6
+      "pct": 18.6,
+      "passPct": 100
     },
     {
       "dbn": "31R028",
@@ -4164,7 +4611,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 65,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "31R034",
@@ -4173,7 +4621,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 379,
-      "pct": 50.4
+      "pct": 50.4,
+      "passPct": 100
     },
     {
       "dbn": "31R048",
@@ -4182,7 +4631,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 129,
-      "pct": 73.6
+      "pct": 73.6,
+      "passPct": 100
     },
     {
       "dbn": "31R049",
@@ -4191,7 +4641,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 122,
-      "pct": 13.1
+      "pct": 13.1,
+      "passPct": 100
     },
     {
       "dbn": "31R051",
@@ -4200,7 +4651,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 364,
-      "pct": 16.5
+      "pct": 16.5,
+      "passPct": 100
     },
     {
       "dbn": "31R061",
@@ -4209,7 +4661,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 287,
-      "pct": 16.4
+      "pct": 16.4,
+      "passPct": 100
     },
     {
       "dbn": "31R063",
@@ -4218,7 +4671,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 122,
-      "pct": 27
+      "pct": 27,
+      "passPct": 100
     },
     {
       "dbn": "31R072",
@@ -4227,7 +4681,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 521,
-      "pct": 32.1
+      "pct": 32.1,
+      "passPct": 100
     },
     {
       "dbn": "31R075",
@@ -4236,7 +4691,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 518,
-      "pct": 31.5
+      "pct": 31.5,
+      "passPct": 100
     },
     {
       "dbn": "31R080",
@@ -4245,7 +4701,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 127,
-      "pct": 63
+      "pct": 63,
+      "passPct": 100
     },
     {
       "dbn": "31R085",
@@ -4254,7 +4711,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 58,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "31R861",
@@ -4263,7 +4721,8 @@
       "borough": "Staten Island",
       "district": 31,
       "students": 93,
-      "pct": 12.9
+      "pct": 12.9,
+      "passPct": 100
     },
     {
       "dbn": "32K045",
@@ -4272,7 +4731,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 55,
-      "pct": 18.2
+      "pct": 18.2,
+      "passPct": 100
     },
     {
       "dbn": "32K162",
@@ -4281,7 +4741,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 93,
-      "pct": 47.3
+      "pct": 47.3,
+      "passPct": 100
     },
     {
       "dbn": "32K291",
@@ -4290,7 +4751,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 92,
-      "pct": 45.7
+      "pct": 45.7,
+      "passPct": 100
     },
     {
       "dbn": "32K347",
@@ -4299,7 +4761,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 64,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "32K349",
@@ -4308,7 +4771,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 71,
-      "pct": 8.5
+      "pct": 8.5,
+      "passPct": 100
     },
     {
       "dbn": "32K383",
@@ -4317,7 +4781,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 192,
-      "pct": 25
+      "pct": 25,
+      "passPct": 100
     },
     {
       "dbn": "32K384",
@@ -4326,7 +4791,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 28,
-      "pct": 21.4
+      "pct": 21.4,
+      "passPct": 100
     },
     {
       "dbn": "32K554",
@@ -4335,7 +4801,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 58,
-      "pct": 100
+      "pct": 100,
+      "passPct": 89.7
     },
     {
       "dbn": "32K562",
@@ -4344,7 +4811,8 @@
       "borough": "Brooklyn",
       "district": 32,
       "students": 116,
-      "pct": 45.7
+      "pct": 45.7,
+      "passPct": 100
     },
     {
       "dbn": "84K037",
@@ -4353,7 +4821,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 79,
-      "pct": 45.6
+      "pct": 45.6,
+      "passPct": 44.4
     },
     {
       "dbn": "84K355",
@@ -4362,7 +4831,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 69,
-      "pct": 5.8
+      "pct": 5.8,
+      "passPct": null
     },
     {
       "dbn": "84K356",
@@ -4371,7 +4841,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 84,
-      "pct": 3.6
+      "pct": 3.6,
+      "passPct": null
     },
     {
       "dbn": "84K357",
@@ -4380,7 +4851,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 105,
-      "pct": 2.9
+      "pct": 2.9,
+      "passPct": null
     },
     {
       "dbn": "84K358",
@@ -4389,7 +4861,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 55,
-      "pct": 74.5
+      "pct": 74.5,
+      "passPct": 41.5
     },
     {
       "dbn": "84K360",
@@ -4398,7 +4871,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 86,
-      "pct": 1.2
+      "pct": 1.2,
+      "passPct": null
     },
     {
       "dbn": "84K362",
@@ -4407,7 +4881,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 54,
-      "pct": 29.6
+      "pct": 29.6,
+      "passPct": 100
     },
     {
       "dbn": "84K367",
@@ -4416,7 +4891,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 71,
-      "pct": 1.4
+      "pct": 1.4,
+      "passPct": null
     },
     {
       "dbn": "84K379",
@@ -4425,7 +4901,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 72,
-      "pct": 29.2
+      "pct": 29.2,
+      "passPct": 100
     },
     {
       "dbn": "84K406",
@@ -4434,7 +4911,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 35,
-      "pct": 2.9
+      "pct": 2.9,
+      "passPct": null
     },
     {
       "dbn": "84K508",
@@ -4443,7 +4921,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 86,
-      "pct": 1.2
+      "pct": 1.2,
+      "passPct": null
     },
     {
       "dbn": "84K517",
@@ -4452,7 +4931,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 82,
-      "pct": 3.7
+      "pct": 3.7,
+      "passPct": null
     },
     {
       "dbn": "84K536",
@@ -4461,7 +4941,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 49,
-      "pct": 51
+      "pct": 51,
+      "passPct": 96
     },
     {
       "dbn": "84K538",
@@ -4470,7 +4951,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 102,
-      "pct": 45.1
+      "pct": 45.1,
+      "passPct": 100
     },
     {
       "dbn": "84K593",
@@ -4479,7 +4961,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 74,
-      "pct": 1.4
+      "pct": 1.4,
+      "passPct": null
     },
     {
       "dbn": "84K608",
@@ -4488,7 +4971,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 81,
-      "pct": 2.5
+      "pct": 2.5,
+      "passPct": null
     },
     {
       "dbn": "84K626",
@@ -4497,7 +4981,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 93,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84K648",
@@ -4506,7 +4991,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 81,
-      "pct": 1.2
+      "pct": 1.2,
+      "passPct": null
     },
     {
       "dbn": "84K651",
@@ -4515,7 +5001,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 49,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K652",
@@ -4524,7 +5011,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 85,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K680",
@@ -4533,7 +5021,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 68,
-      "pct": 36.8
+      "pct": 36.8,
+      "passPct": 76
     },
     {
       "dbn": "84K702",
@@ -4542,7 +5031,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 51,
-      "pct": 54.9
+      "pct": 54.9,
+      "passPct": 64.3
     },
     {
       "dbn": "84K704",
@@ -4551,7 +5041,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 71,
-      "pct": 39.4
+      "pct": 39.4,
+      "passPct": 96.4
     },
     {
       "dbn": "84K710",
@@ -4560,7 +5051,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 19,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K711",
@@ -4569,7 +5061,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 74,
-      "pct": 1.4
+      "pct": 1.4,
+      "passPct": null
     },
     {
       "dbn": "84K712",
@@ -4578,7 +5071,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 42,
-      "pct": 2.4
+      "pct": 2.4,
+      "passPct": null
     },
     {
       "dbn": "84K724",
@@ -4587,7 +5081,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 88,
-      "pct": 2.3
+      "pct": 2.3,
+      "passPct": null
     },
     {
       "dbn": "84K730",
@@ -4596,7 +5091,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 33,
-      "pct": 3
+      "pct": 3,
+      "passPct": null
     },
     {
       "dbn": "84K731",
@@ -4605,7 +5101,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 63,
-      "pct": 1.6
+      "pct": 1.6,
+      "passPct": null
     },
     {
       "dbn": "84K737",
@@ -4614,7 +5111,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 79,
-      "pct": 1.3
+      "pct": 1.3,
+      "passPct": null
     },
     {
       "dbn": "84K740",
@@ -4623,7 +5121,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 83,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K741",
@@ -4632,7 +5131,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 73,
-      "pct": 4.1
+      "pct": 4.1,
+      "passPct": null
     },
     {
       "dbn": "84K742",
@@ -4641,7 +5141,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 81,
-      "pct": 22.2
+      "pct": 22.2,
+      "passPct": 94.4
     },
     {
       "dbn": "84K744",
@@ -4650,7 +5151,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 112,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K746",
@@ -4659,7 +5161,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 93,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84K757",
@@ -4668,7 +5171,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 89,
-      "pct": 31.5
+      "pct": 31.5,
+      "passPct": 92.9
     },
     {
       "dbn": "84K758",
@@ -4677,7 +5181,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 110,
-      "pct": 84.5
+      "pct": 84.5,
+      "passPct": 80.6
     },
     {
       "dbn": "84K759",
@@ -4686,7 +5191,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 88,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K769",
@@ -4695,7 +5201,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 46,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K774",
@@ -4704,7 +5211,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 98,
-      "pct": 28.6
+      "pct": 28.6,
+      "passPct": 96.4
     },
     {
       "dbn": "84K775",
@@ -4713,7 +5221,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 90,
-      "pct": 3.3
+      "pct": 3.3,
+      "passPct": null
     },
     {
       "dbn": "84K777",
@@ -4722,7 +5231,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 67,
-      "pct": 1.5
+      "pct": 1.5,
+      "passPct": null
     },
     {
       "dbn": "84K781",
@@ -4731,7 +5241,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 95,
-      "pct": 3.2
+      "pct": 3.2,
+      "passPct": null
     },
     {
       "dbn": "84K782",
@@ -4740,7 +5251,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 90,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K784",
@@ -4749,7 +5261,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 84,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K785",
@@ -4758,7 +5271,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 31,
-      "pct": 12.9
+      "pct": 12.9,
+      "passPct": null
     },
     {
       "dbn": "84K788",
@@ -4767,7 +5281,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 63,
-      "pct": 3.2
+      "pct": 3.2,
+      "passPct": null
     },
     {
       "dbn": "84K790",
@@ -4776,7 +5291,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 86,
-      "pct": 3.5
+      "pct": 3.5,
+      "passPct": null
     },
     {
       "dbn": "84K791",
@@ -4785,7 +5301,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 82,
-      "pct": 1.2
+      "pct": 1.2,
+      "passPct": null
     },
     {
       "dbn": "84K793",
@@ -4794,7 +5311,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 87,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84K803",
@@ -4803,7 +5321,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 7,
-      "pct": null
+      "pct": null,
+      "passPct": null
     },
     {
       "dbn": "84K807",
@@ -4812,7 +5331,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 29,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84K876",
@@ -4821,7 +5341,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 51,
-      "pct": 94.1
+      "pct": 94.1,
+      "passPct": 35.4
     },
     {
       "dbn": "84K879",
@@ -4830,7 +5351,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 115,
-      "pct": 1.7
+      "pct": 1.7,
+      "passPct": null
     },
     {
       "dbn": "84K883",
@@ -4839,7 +5361,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 55,
-      "pct": 3.6
+      "pct": 3.6,
+      "passPct": null
     },
     {
       "dbn": "84K911",
@@ -4848,7 +5371,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 67,
-      "pct": 3
+      "pct": 3,
+      "passPct": null
     },
     {
       "dbn": "84K928",
@@ -4857,7 +5381,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 115,
-      "pct": 4.3
+      "pct": 4.3,
+      "passPct": 100
     },
     {
       "dbn": "84K956",
@@ -4866,7 +5391,8 @@
       "borough": "Brooklyn",
       "district": 84,
       "students": 64,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M068",
@@ -4875,7 +5401,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 101,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M085",
@@ -4884,7 +5411,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 36,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M100",
@@ -4893,7 +5421,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 57,
-      "pct": 15.8
+      "pct": 15.8,
+      "passPct": 100
     },
     {
       "dbn": "84M168",
@@ -4902,7 +5431,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 53,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M174",
@@ -4911,7 +5441,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 100,
-      "pct": 1
+      "pct": 1,
+      "passPct": null
     },
     {
       "dbn": "84M202",
@@ -4920,7 +5451,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 56,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M204",
@@ -4929,7 +5461,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 20,
-      "pct": 35
+      "pct": 35,
+      "passPct": 71.4
     },
     {
       "dbn": "84M263",
@@ -4938,7 +5471,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 87,
-      "pct": 3.4
+      "pct": 3.4,
+      "passPct": null
     },
     {
       "dbn": "84M279",
@@ -4947,7 +5481,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 65,
-      "pct": 12.3
+      "pct": 12.3,
+      "passPct": 50
     },
     {
       "dbn": "84M284",
@@ -4956,7 +5491,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 83,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M295",
@@ -4965,7 +5501,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 100,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M335",
@@ -4974,7 +5511,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 26,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M336",
@@ -4983,7 +5521,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 106,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M338",
@@ -4992,7 +5531,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 25,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M341",
@@ -5001,7 +5541,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 86,
-      "pct": 41.9
+      "pct": 41.9,
+      "passPct": 94.4
     },
     {
       "dbn": "84M350",
@@ -5010,7 +5551,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 77,
-      "pct": 63.6
+      "pct": 63.6,
+      "passPct": 93.9
     },
     {
       "dbn": "84M351",
@@ -5019,7 +5561,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 50,
-      "pct": 2
+      "pct": 2,
+      "passPct": null
     },
     {
       "dbn": "84M353",
@@ -5028,7 +5571,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 93,
-      "pct": 24.7
+      "pct": 24.7,
+      "passPct": 65.2
     },
     {
       "dbn": "84M382",
@@ -5037,7 +5581,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 60,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M385",
@@ -5046,7 +5591,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 95,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M388",
@@ -5055,7 +5601,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 64,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M389",
@@ -5064,7 +5611,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 111,
-      "pct": 2.7
+      "pct": 2.7,
+      "passPct": null
     },
     {
       "dbn": "84M430",
@@ -5073,7 +5621,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 120,
-      "pct": 72.5
+      "pct": 72.5,
+      "passPct": 93.1
     },
     {
       "dbn": "84M478",
@@ -5082,7 +5631,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 133,
-      "pct": 75.9
+      "pct": 75.9,
+      "passPct": 96
     },
     {
       "dbn": "84M481",
@@ -5091,7 +5641,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 102,
-      "pct": 81.4
+      "pct": 81.4,
+      "passPct": 57.8
     },
     {
       "dbn": "84M482",
@@ -5100,7 +5651,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 108,
-      "pct": 0.9
+      "pct": 0.9,
+      "passPct": null
     },
     {
       "dbn": "84M483",
@@ -5109,7 +5661,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 32,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M518",
@@ -5118,7 +5671,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 59,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M523",
@@ -5127,7 +5681,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 142,
-      "pct": 2.8
+      "pct": 2.8,
+      "passPct": null
     },
     {
       "dbn": "84M704",
@@ -5136,7 +5691,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 40,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M708",
@@ -5145,7 +5701,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 80,
-      "pct": 63.8
+      "pct": 63.8,
+      "passPct": 94.1
     },
     {
       "dbn": "84M709",
@@ -5154,7 +5711,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 41,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84M726",
@@ -5163,7 +5721,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 96,
-      "pct": 1
+      "pct": 1,
+      "passPct": null
     },
     {
       "dbn": "84M861",
@@ -5172,7 +5731,8 @@
       "borough": "Manhattan",
       "district": 84,
       "students": 48,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84Q083",
@@ -5181,7 +5741,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 96,
-      "pct": 100
+      "pct": 100,
+      "passPct": 92.7
     },
     {
       "dbn": "84Q298",
@@ -5190,7 +5751,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 112,
-      "pct": 10.7
+      "pct": 10.7,
+      "passPct": 100
     },
     {
       "dbn": "84Q304",
@@ -5199,7 +5761,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 105,
-      "pct": 1.9
+      "pct": 1.9,
+      "passPct": null
     },
     {
       "dbn": "84Q321",
@@ -5208,7 +5771,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 90,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84Q337",
@@ -5217,7 +5781,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 84,
-      "pct": 11.9
+      "pct": 11.9,
+      "passPct": 100
     },
     {
       "dbn": "84Q339",
@@ -5226,7 +5791,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 82,
-      "pct": 1.2
+      "pct": 1.2,
+      "passPct": null
     },
     {
       "dbn": "84Q340",
@@ -5235,7 +5801,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 91,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84Q341",
@@ -5244,7 +5811,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 118,
-      "pct": 3.4
+      "pct": 3.4,
+      "passPct": null
     },
     {
       "dbn": "84Q342",
@@ -5253,7 +5821,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 48,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84Q359",
@@ -5262,7 +5831,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 90,
-      "pct": 7.8
+      "pct": 7.8,
+      "passPct": 100
     },
     {
       "dbn": "84Q372",
@@ -5271,7 +5841,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 85,
-      "pct": 28.2
+      "pct": 28.2,
+      "passPct": 70.8
     },
     {
       "dbn": "84Q375",
@@ -5280,7 +5851,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 39,
-      "pct": 2.6
+      "pct": 2.6,
+      "passPct": null
     },
     {
       "dbn": "84Q380",
@@ -5289,7 +5861,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 91,
-      "pct": 38.5
+      "pct": 38.5,
+      "passPct": 100
     },
     {
       "dbn": "84Q387",
@@ -5298,7 +5871,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 115,
-      "pct": 44.3
+      "pct": 44.3,
+      "passPct": 98
     },
     {
       "dbn": "84Q705",
@@ -5307,7 +5881,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 57,
-      "pct": 1.8
+      "pct": 1.8,
+      "passPct": null
     },
     {
       "dbn": "84Q706",
@@ -5316,7 +5891,8 @@
       "borough": "Queens",
       "district": 84,
       "students": 71,
-      "pct": 2.8
+      "pct": 2.8,
+      "passPct": null
     },
     {
       "dbn": "84R067",
@@ -5325,7 +5901,8 @@
       "borough": "Staten Island",
       "district": 84,
       "students": 109,
-      "pct": 0.9
+      "pct": 0.9,
+      "passPct": null
     },
     {
       "dbn": "84R073",
@@ -5334,7 +5911,8 @@
       "borough": "Staten Island",
       "district": 84,
       "students": 112,
-      "pct": 2.7
+      "pct": 2.7,
+      "passPct": null
     },
     {
       "dbn": "84R083",
@@ -5343,7 +5921,8 @@
       "borough": "Staten Island",
       "district": 84,
       "students": 102,
-      "pct": 9.8
+      "pct": 9.8,
+      "passPct": 100
     },
     {
       "dbn": "84X124",
@@ -5352,7 +5931,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 42,
-      "pct": 2.4
+      "pct": 2.4,
+      "passPct": null
     },
     {
       "dbn": "84X133",
@@ -5361,7 +5941,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 36,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X165",
@@ -5370,7 +5951,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 70,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X177",
@@ -5379,7 +5961,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 67,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X185",
@@ -5388,7 +5971,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 49,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X233",
@@ -5397,7 +5981,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 201,
-      "pct": 1
+      "pct": 1,
+      "passPct": null
     },
     {
       "dbn": "84X255",
@@ -5406,7 +5991,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 79,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X309",
@@ -5415,7 +6001,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 41,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X345",
@@ -5424,7 +6011,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 76,
-      "pct": 76.3
+      "pct": 76.3,
+      "passPct": 81
     },
     {
       "dbn": "84X346",
@@ -5433,7 +6021,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 49,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X362",
@@ -5442,7 +6031,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 32,
-      "pct": 6.3
+      "pct": 6.3,
+      "passPct": null
     },
     {
       "dbn": "84X364",
@@ -5451,7 +6041,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 30,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X378",
@@ -5460,7 +6051,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 33,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X380",
@@ -5469,7 +6061,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 108,
-      "pct": 2.8
+      "pct": 2.8,
+      "passPct": null
     },
     {
       "dbn": "84X387",
@@ -5478,7 +6071,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 89,
-      "pct": 1.1
+      "pct": 1.1,
+      "passPct": null
     },
     {
       "dbn": "84X389",
@@ -5487,7 +6081,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 37,
-      "pct": 2.7
+      "pct": 2.7,
+      "passPct": null
     },
     {
       "dbn": "84X394",
@@ -5496,7 +6091,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 46,
-      "pct": 32.6
+      "pct": 32.6,
+      "passPct": 33.3
     },
     {
       "dbn": "84X398",
@@ -5505,7 +6101,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 50,
-      "pct": 38
+      "pct": 38,
+      "passPct": 100
     },
     {
       "dbn": "84X407",
@@ -5514,7 +6111,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 45,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X419",
@@ -5523,7 +6121,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 67,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X422",
@@ -5532,7 +6131,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 33,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X460",
@@ -5541,7 +6141,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 280,
-      "pct": 0.4
+      "pct": 0.4,
+      "passPct": null
     },
     {
       "dbn": "84X461",
@@ -5550,7 +6151,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 53,
-      "pct": 73.6
+      "pct": 73.6,
+      "passPct": 89.7
     },
     {
       "dbn": "84X465",
@@ -5559,7 +6161,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 56,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X471",
@@ -5568,7 +6171,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 85,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X482",
@@ -5577,7 +6181,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 92,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X487",
@@ -5586,7 +6191,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 1,
-      "pct": null
+      "pct": null,
+      "passPct": null
     },
     {
       "dbn": "84X488",
@@ -5595,7 +6201,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 85,
-      "pct": 25.9
+      "pct": 25.9,
+      "passPct": 95.5
     },
     {
       "dbn": "84X489",
@@ -5604,7 +6211,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 39,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X491",
@@ -5613,7 +6221,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 49,
-      "pct": 2
+      "pct": 2,
+      "passPct": null
     },
     {
       "dbn": "84X492",
@@ -5622,7 +6231,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 94,
-      "pct": 74.5
+      "pct": 74.5,
+      "passPct": 61.4
     },
     {
       "dbn": "84X494",
@@ -5631,7 +6241,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 91,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X496",
@@ -5640,7 +6251,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 38,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X538",
@@ -5649,7 +6261,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 31,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X579",
@@ -5658,7 +6271,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 43,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X585",
@@ -5667,7 +6281,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 92,
-      "pct": 34.8
+      "pct": 34.8,
+      "passPct": 71.9
     },
     {
       "dbn": "84X588",
@@ -5676,7 +6291,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 13,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X589",
@@ -5685,7 +6301,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 32,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X592",
@@ -5694,7 +6311,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 60,
-      "pct": 1.7
+      "pct": 1.7,
+      "passPct": null
     },
     {
       "dbn": "84X598",
@@ -5703,7 +6321,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 100,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X606",
@@ -5712,7 +6331,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 73,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X612",
@@ -5721,7 +6341,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 83,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X614",
@@ -5730,7 +6351,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 89,
-      "pct": 93.3
+      "pct": 93.3,
+      "passPct": 66.3
     },
     {
       "dbn": "84X615",
@@ -5739,7 +6361,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 119,
-      "pct": 0.8
+      "pct": 0.8,
+      "passPct": null
     },
     {
       "dbn": "84X616",
@@ -5748,7 +6371,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 87,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X617",
@@ -5757,7 +6381,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 109,
-      "pct": 0.9
+      "pct": 0.9,
+      "passPct": null
     },
     {
       "dbn": "84X627",
@@ -5766,7 +6391,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 104,
-      "pct": 96.2
+      "pct": 96.2,
+      "passPct": 55
     },
     {
       "dbn": "84X630",
@@ -5775,7 +6401,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 65,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X648",
@@ -5784,7 +6411,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 8,
-      "pct": null
+      "pct": null,
+      "passPct": null
     },
     {
       "dbn": "84X703",
@@ -5793,7 +6421,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 135,
-      "pct": 51.1
+      "pct": 51.1,
+      "passPct": 98.6
     },
     {
       "dbn": "84X704",
@@ -5802,7 +6431,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 97,
-      "pct": 1
+      "pct": 1,
+      "passPct": null
     },
     {
       "dbn": "84X706",
@@ -5811,7 +6441,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 55,
-      "pct": 0
+      "pct": 0,
+      "passPct": null
     },
     {
       "dbn": "84X717",
@@ -5820,7 +6451,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 36,
-      "pct": 50
+      "pct": 50,
+      "passPct": 94.4
     },
     {
       "dbn": "84X730",
@@ -5829,7 +6461,8 @@
       "borough": "Bronx",
       "district": 84,
       "students": 97,
-      "pct": 85.6
+      "pct": 85.6,
+      "passPct": 71.1
     }
   ]
 }
