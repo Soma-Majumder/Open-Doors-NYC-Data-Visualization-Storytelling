@@ -307,7 +307,7 @@ function doSearch() {
     const tier = tierFor(s.pct);
     const color = tier === null ? 'var(--muted)' : RAMP_TEXT[tier];
     return `
-    <div class="result-row">
+    <div class="result-row" onclick="openSchoolDetail('${s.dbn}')">
       <div>
         <div class="rname">${s.name || s.dbn}</div>
         <div class="rmeta">${s.dbn} · ${s.borough || '—'}</div>
@@ -317,5 +317,103 @@ function doSearch() {
   `;
   }).join('');
 }
+
+// Rough per-student swing: with N eighth graders, one kid is worth 100/N
+// percentage points. Below ~20 students that swing gets large enough that
+// the headline rate can jump around year to year without much changing.
+const SMALL_GRADE_THRESHOLD = 20;
+
+function schoolAccessSentence(s) {
+  if (s.pct === null || s.pct === undefined) {
+    return `We don't have an accelerated-math number on file for ${s.name} yet.`;
+  }
+  if (s.pct === 0) {
+    return `No eighth graders at ${s.name} took accelerated math in ${DATA.meta.schoolYearLabel} — the course wasn't reaching any students here, at least not through this path.`;
+  }
+  const inTen = Math.max(1, Math.round(s.pct / 10));
+  return `About ${inTen} in 10 eighth graders at ${s.name} got the chance to take accelerated math (Algebra I, a year ahead of schedule) in ${DATA.meta.schoolYearLabel}.`;
+}
+
+function schoolPassSentence(s) {
+  if (s.pct === 0 || s.pct === null || s.pct === undefined) {
+    return `There's no pass rate to show, because effectively no one here got the chance to take it.`;
+  }
+  if (s.passPct === null || s.passPct === undefined) {
+    return `We don't have a reliable pass rate for this school yet — usually because too few students took the course to report one.`;
+  }
+  return `Of the students who did get in, ${fmtPct(s.passPct)} passed. That's in line with the citywide pass rate of ${fmtPct(DATA.citywide.passPct)} — once kids get access, most of them succeed.`;
+}
+
+function schoolCompareSentence(s) {
+  const cityPct = DATA.citywide.accessPct;
+  const boroughMeta = BOROUGHS.find(b => b.name === s.borough);
+  const parts = [];
+  if (s.pct !== null && s.pct !== undefined) {
+    const diff = Math.round(s.pct - cityPct);
+    if (Math.abs(diff) < 2) {
+      parts.push(`That's about even with the citywide average of ${fmtPct(cityPct)}.`);
+    } else if (diff > 0) {
+      parts.push(`That's ${diff} points above the citywide average of ${fmtPct(cityPct)}.`);
+    } else {
+      parts.push(`That's ${Math.abs(diff)} points below the citywide average of ${fmtPct(cityPct)}.`);
+    }
+  }
+  if (boroughMeta) {
+    parts.push(`In ${s.borough} overall, about ${fmtPct(boroughMeta.pct)} of eighth graders get this opportunity (rank ${boroughMeta.rank} of NYC's 5 boroughs).`);
+  }
+  return parts.join(' ');
+}
+
+function openSchoolDetail(dbn) {
+  if (!DATA) return;
+  const s = DATA.schools.find(x => x.dbn === dbn);
+  if (!s) return;
+
+  const tier = tierFor(s.pct);
+  const band = tier === null ? null : BAND_DEFS[tier];
+  const swatch = tier === null ? 'var(--nodata)' : RAMP[tier];
+  const textColor = tier === null ? 'var(--muted)' : RAMP_TEXT[tier];
+
+  const smallGradeNote = (s.students !== null && s.students !== undefined && s.students < SMALL_GRADE_THRESHOLD)
+    ? `<div class="modal-note">Heads up: this is a small grade (around ${s.students} eighth graders), so one or two students can swing the percentage a lot. Treat the exact number loosely.</div>`
+    : '';
+
+  document.getElementById('schoolModalBody').innerHTML = `
+    <div class="modal-tag">${s.dbn} · ${(s.borough || '—').toUpperCase()} · ${(s.type || '—').toUpperCase()}${s.district ? ' · DISTRICT ' + s.district : ''}</div>
+    <h3 id="schoolModalName">${s.name || s.dbn}</h3>
+
+    <div class="modal-headline-row">
+      <div class="modal-headline-num" style="color:${textColor}">${fmtPct(s.pct)}</div>
+      <div class="modal-headline-sub">of eighth graders got a shot at accelerated math${band ? `<div class="modal-band" style="color:${textColor}">${band.name}</div>` : ''}</div>
+    </div>
+    <div class="modal-track"><div class="modal-fill" style="width:${barPct(s.pct || 0)};background:${swatch}"></div></div>
+
+    <div class="modal-plain-label">What this means for a parent</div>
+    <p class="modal-plain">${schoolAccessSentence(s)}</p>
+    <p class="modal-plain">${schoolPassSentence(s)}</p>
+    <p class="modal-plain">${schoolCompareSentence(s)}</p>
+    ${smallGradeNote}
+
+    <div class="modal-stats">
+      <div><div class="k">Took accelerated math</div><div class="v">${fmtPct(s.pct)}</div></div>
+      <div><div class="k">Passed it (of those who took it)</div><div class="v">${fmtPct(s.passPct)}</div></div>
+      <div><div class="k">8th graders reported</div><div class="v">${s.students ?? '—'}</div></div>
+    </div>
+
+    <div class="modal-footnote">"Accelerated math" means an 8th grader taking a high-school-credit math course (usually Algebra I) a year ahead of standard grade-8 math — the first step on a path that can lead to calculus by senior year. Source: NYC DOE School Quality Reports Data, ${DATA.meta.schoolYearLabel}.</div>
+  `;
+
+  document.getElementById('schoolModalOverlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSchoolDetail() {
+  document.getElementById('schoolModalOverlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeSchoolDetail();
+});
 
 loadData();

@@ -190,34 +190,52 @@ async function getBenchmarkGap(year) {
   };
 }
 
-async function getFullDirectory(year) {
-  const pageSize = 1000;
+async function fetchAllRows(baseParams, pageSize = 1000) {
   let offset = 0;
   const out = [];
-  // Loop defensively in case the school count ever exceeds one page.
+  // Loop defensively in case a result set ever exceeds one page.
   while (true) {
-    const rows = await soql({
-      $select: "dbn, school_name, school_type, number_of_students, metric_value",
-      $where: `metric_variable_name='${ACCESS_METRIC}' AND report_year=${year}`,
-      $order: "dbn",
-      $limit: String(pageSize),
-      $offset: String(offset),
-    });
-    for (const r of rows) {
-      out.push({
-        dbn: r.dbn,
-        name: r.school_name,
-        type: r.school_type,
-        borough: BOROUGH_NAMES[r.dbn?.[2]] || null,
-        district: Number(r.dbn?.slice(0, 2)) || null,
-        students: r.number_of_students ? Number(r.number_of_students) : null,
-        pct: r.metric_value !== undefined && r.metric_value !== null ? Math.round(Number(r.metric_value) * 1000) / 10 : null,
-      });
-    }
+    const rows = await soql({ ...baseParams, $limit: String(pageSize), $offset: String(offset) });
+    out.push(...rows);
     if (rows.length < pageSize) break;
     offset += pageSize;
   }
   return out;
+}
+
+function toPct(metricValue) {
+  return metricValue !== undefined && metricValue !== null ? Math.round(Number(metricValue) * 1000) / 10 : null;
+}
+
+async function getFullDirectory(year) {
+  // Access rate is one row per school (the directory backbone). Pass rate
+  // only exists for schools that had students take accelerated math, so
+  // it's fetched separately and joined by dbn rather than assumed present.
+  const [accessRows, passRows] = await Promise.all([
+    fetchAllRows({
+      $select: "dbn, school_name, school_type, number_of_students, metric_value",
+      $where: `metric_variable_name='${ACCESS_METRIC}' AND report_year=${year}`,
+      $order: "dbn",
+    }),
+    fetchAllRows({
+      $select: "dbn, metric_value",
+      $where: `metric_variable_name='${PASS_METRIC}' AND report_year=${year}`,
+      $order: "dbn",
+    }),
+  ]);
+
+  const passByDbn = new Map(passRows.map((r) => [r.dbn, toPct(r.metric_value)]));
+
+  return accessRows.map((r) => ({
+    dbn: r.dbn,
+    name: r.school_name,
+    type: r.school_type,
+    borough: BOROUGH_NAMES[r.dbn?.[2]] || null,
+    district: Number(r.dbn?.slice(0, 2)) || null,
+    students: r.number_of_students ? Number(r.number_of_students) : null,
+    pct: toPct(r.metric_value),
+    passPct: passByDbn.has(r.dbn) ? passByDbn.get(r.dbn) : null,
+  }));
 }
 
 async function main() {

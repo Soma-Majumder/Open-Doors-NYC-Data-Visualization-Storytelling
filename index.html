@@ -288,6 +288,13 @@
   </div>
 </footer>
 
+  <div class="modal-overlay" id="schoolModalOverlay" onclick="if(event.target===this) closeSchoolDetail()">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="schoolModalName">
+      <div class="modal-close" onclick="closeSchoolDetail()" aria-label="Close">×</div>
+      <div id="schoolModalBody"></div>
+    </div>
+  </div>
+
 </div><!-- #siteContent -->
 
 <script src="js/main.js"></script>
