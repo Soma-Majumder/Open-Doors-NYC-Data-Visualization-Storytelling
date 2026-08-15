@@ -7,7 +7,7 @@ const RAMP = ['var(--ramp-0)', 'var(--ramp-1)', 'var(--ramp-2)', 'var(--ramp-3)'
 const RAMP_TEXT = ['var(--ramp-text-0)', 'var(--ramp-text-1)', 'var(--ramp-text-2)', 'var(--ramp-text-3)', 'var(--ramp-text-4)'];
 
 // Band definitions (range/name/desc) are fixed content per the design spec.
-// School counts per band are computed from the real data — see renderBands().
+// Used to label a borough's or school's access tier in the snapshot and modal.
 const BAND_DEFS = [
   { range: '0–5%', name: 'Barely ajar', desc: 'Almost no eighth grader here enters accelerated math.' },
   { range: '5–15%', name: 'Narrow', desc: 'A small selected group gets in; most students do not.' },
@@ -80,7 +80,6 @@ function renderAll(data) {
   renderEarnLadder();
   BOROUGHS = buildBoroughs(data);
   renderBoroughRows();
-  renderBands(data);
   renderGap(data);
   renderBoroughCards();
   renderCompareBars(data);
@@ -188,27 +187,6 @@ function renderSchoolList(boroughName) {
     </div>
   `;
   }).join('');
-}
-
-function renderBands(data) {
-  const counts = [0, 0, 0, 0, 0];
-  data.schools.forEach(s => {
-    const tier = tierFor(s.pct);
-    if (tier !== null) counts[tier]++;
-  });
-
-  const box = document.getElementById('bandsGrid');
-  box.innerHTML = BAND_DEFS.map((band, i) => `
-    <div class="band-card">
-      <div class="strip" style="background:${RAMP[i]}"></div>
-      <div class="body">
-        <div class="range">${band.range}</div>
-        <div class="label">${band.name}</div>
-        <div class="desc">${band.desc}</div>
-        <div class="count">${counts[i]} schools</div>
-      </div>
-    </div>
-  `).join('');
 }
 
 function renderGap(data) {
