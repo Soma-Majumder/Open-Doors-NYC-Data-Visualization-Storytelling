@@ -81,7 +81,8 @@ function renderAll(data) {
   BOROUGHS = buildBoroughs(data);
   renderBoroughRows();
   renderGap(data);
-  renderBoroughCards();
+  renderBoroughRankList();
+  renderBoroughMap();
   renderTrend(data);
   renderCaseStudy(data);
   renderUnknown(data);
@@ -202,13 +203,39 @@ function renderGap(data) {
   ).join('');
 }
 
-function renderBoroughCards() {
-  const box = document.getElementById('boroughCards');
-  box.innerHTML = BOROUGHS.map(b => `
-    <div class="borough-card">
-      <div class="rate">${fmtPct(b.pct)}</div>
-      <div class="bar" style="width:${barPct(b.pct)};background:${b.swatch}"></div>
-      <div class="name">${b.name}</div>
+// Borough map SVG shapes are static (geography doesn't change); only the
+// percentage labels are data-driven, keyed by borough name.
+const MAP_PCT_IDS = {
+  Queens: 'mapPctQueens',
+  Manhattan: 'mapPctManhattan',
+  Brooklyn: 'mapPctBrooklyn',
+  'Staten Island': 'mapPctStaten',
+  Bronx: 'mapPctBronx',
+};
+
+const MAP_VAR_NAMES = {
+  Queens: '--queens',
+  Manhattan: '--manhattan',
+  Brooklyn: '--brooklyn',
+  'Staten Island': '--staten',
+  Bronx: '--bronx',
+};
+
+function renderBoroughMap() {
+  BOROUGHS.forEach(b => {
+    const id = MAP_PCT_IDS[b.name];
+    if (id) document.getElementById(id).textContent = fmtPct(b.pct);
+  });
+}
+
+// BOROUGHS is already sorted highest-to-lowest by buildBoroughs().
+function renderBoroughRankList() {
+  document.getElementById('boroughRankList').innerHTML = BOROUGHS.map((b, i) => `
+    <div class="borough-rank-row">
+      <div class="borough-rank-num">${i + 1}</div>
+      <div class="borough-rank-swatch" style="background:var(${MAP_VAR_NAMES[b.name]})"></div>
+      <div class="borough-rank-name">${b.name}</div>
+      <div class="borough-rank-pct">${fmtPct(b.pct)}</div>
     </div>
   `).join('');
 }
