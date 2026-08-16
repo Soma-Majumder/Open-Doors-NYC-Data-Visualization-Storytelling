@@ -82,7 +82,6 @@ function renderAll(data) {
   renderBoroughRows();
   renderGap(data);
   renderBoroughCards();
-  renderCompareBars(data);
   renderTrend(data);
   renderCaseStudy(data);
   renderUnknown(data);
@@ -210,20 +209,6 @@ function renderBoroughCards() {
       <div class="rate">${fmtPct(b.pct)}</div>
       <div class="bar" style="width:${barPct(b.pct)};background:${b.swatch}"></div>
       <div class="name">${b.name}</div>
-    </div>
-  `).join('');
-}
-
-function renderCompareBars(data) {
-  const cd = data.charterVsDistrict;
-  const rows = [
-    { label: 'Charter schools', pct: cd.charter.pct },
-    { label: 'District schools', pct: cd.district.pct }
-  ];
-  document.getElementById('compareBars').innerHTML = rows.map(r => `
-    <div class="compare-bar">
-      <div class="head"><span>${r.label}</span><span>${fmtPct(r.pct)}</span></div>
-      <div class="track"><div class="fill" style="width:${barPct(r.pct)};background:${RAMP[tierFor(r.pct)]}"></div></div>
     </div>
   `).join('');
 }
