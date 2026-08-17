@@ -145,6 +145,32 @@ async function getTrend(fromYear, toYear) {
   return out;
 }
 
+async function getBoroughTrend(fromYear, toYear) {
+  const rows = await soql({
+    $select:
+      "report_year, substring(dbn,3,1) as code, sum(metric_value*number_of_students) as wsum, sum(number_of_students) as n",
+    $where: `metric_variable_name='${ACCESS_METRIC}' AND report_year between ${fromYear} and ${toYear}`,
+    $group: "report_year, substring(dbn,3,1)",
+    $order: "report_year",
+  });
+
+  const byBoroughYear = new Map(); // code -> Map(year -> pct)
+  for (const r of rows) {
+    if (!byBoroughYear.has(r.code)) byBoroughYear.set(r.code, new Map());
+    byBoroughYear.get(r.code).set(Number(r.report_year), pct(r.wsum, r.n));
+  }
+
+  return Object.entries(BOROUGH_NAMES).map(([code, name]) => {
+    const yearMap = byBoroughYear.get(code) || new Map();
+    const trend = [];
+    for (let y = fromYear; y <= toYear; y++) {
+      const label = `${y - 1}–${String(y).slice(2)}`;
+      trend.push({ reportYear: y, schoolYear: label, pct: yearMap.has(y) ? yearMap.get(y) : null });
+    }
+    return { code, name, trend };
+  });
+}
+
 async function getBands(year) {
   const [total, zero, upTo20, upTo50, upTo80, top] = await Promise.all([
     soql({ $select: "count(*) as n", $where: `metric_variable_name='${ACCESS_METRIC}' AND report_year=${year}` }),
@@ -248,6 +274,7 @@ async function main() {
     boroughs,
     charterVsDistrict,
     trend,
+    boroughTrend,
     bandData,
     benchmarkGap,
     schools,
@@ -258,6 +285,7 @@ async function main() {
     getBoroughs(REPORT_YEAR),
     getCharterVsDistrict(REPORT_YEAR),
     getTrend(2018, REPORT_YEAR),
+    getBoroughTrend(2018, REPORT_YEAR),
     getBands(REPORT_YEAR),
     getBenchmarkGap(REPORT_YEAR),
     getFullDirectory(REPORT_YEAR),
@@ -275,6 +303,7 @@ async function main() {
     boroughs,
     charterVsDistrict,
     trend,
+    boroughTrend,
     bandsTotal: bandData.total,
     bands: bandData.bands,
     benchmarkGap,

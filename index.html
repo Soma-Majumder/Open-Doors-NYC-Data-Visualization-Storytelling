@@ -257,9 +257,15 @@
     <div class="trend-block">
       <div class="eyebrow">The recent trend</div>
       <h3>Access hasn't recovered — it's fallen again.</h3>
-      <div class="trend-bars" id="trendBars"></div>
+
+      <div class="trend-toggle" id="trendToggle" role="tablist" aria-label="Show trend for"></div>
+
+      <div class="trend-chart-wrap">
+        <svg id="trendChart" class="trend-chart" viewBox="0 0 640 200" role="img" aria-label="Accelerated-math access rate by school year"></svg>
+        <div class="trend-tooltip" id="trendTooltip"></div>
+      </div>
       <div class="trend-years" id="trendYears"></div>
-      <div class="caption" style="margin-top:14px">2019–20 is blank because state testing and reporting were disrupted that spring, not because access was zero.</div>
+      <div class="caption" style="margin-top:14px">The 2019–20 dip (light-blue marker) reflects disrupted state testing and reporting that spring — not necessarily that access itself fell to zero.</div>
     </div>
   </div>
 </section>

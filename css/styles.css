@@ -45,6 +45,14 @@
   --queens-text:#902E00;
   --brooklyn-text:#5E000E;
   --staten-text:#91314A;
+
+  /* Fixed marker color for the 2019–20 (testing-disrupted) point on every
+     trend line, regardless of which borough's color is active. */
+  --disrupted-marker:#4A87B5;
+
+  /* "All boroughs" trend line + toggle dot — green, so the citywide
+     aggregate reads as distinct from any single borough's own hue. */
+  --trend-all:#2F6B45;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -428,10 +436,39 @@ h2.section-head{font-size:42px;line-height:1.14;letter-spacing:-.015em;max-width
 .trend-block .eyebrow{margin-bottom:16px;}
 .caption{font-size:12.5px;line-height:1.6;color:var(--faint);}
 
-.trend-bars{display:flex;align-items:flex-end;gap:12px;height:180px;border-bottom:1px solid var(--rule);}
-.trend-bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;}
-.trend-bar .val{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted-soft);margin-bottom:6px;}
-.trend-bar .col{width:100%;border-radius:3px 3px 0 0;}
+.trend-toggle{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+.trend-toggle-btn{
+  display:flex;align-items:center;gap:7px;
+  padding:8px 14px;border-radius:999px;border:1px solid var(--rule);background:var(--page);
+  font-family:'Instrument Sans',sans-serif;font-size:13.5px;font-weight:500;color:var(--muted);
+  cursor:pointer;transition:background .15s,color .15s,border-color .15s;
+}
+.trend-toggle-btn::before{
+  content:'';width:8px;height:8px;border-radius:50%;background:var(--dot);flex-shrink:0;
+}
+.trend-toggle-btn:hover{border-color:var(--faint);}
+.trend-toggle-btn.active{background:var(--ink);border-color:var(--ink);color:var(--page);}
+
+.trend-chart-wrap{position:relative;border-bottom:1px solid var(--rule);}
+.trend-chart{display:block;width:100%;height:auto;overflow:visible;}
+.trend-chart .grid-line{stroke:var(--rule-soft);stroke-width:1;}
+.trend-chart .axis-label{font-family:'IBM Plex Mono',monospace;font-size:9.5px;fill:var(--faint);}
+.trend-chart .trend-line{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+.trend-chart .trend-gap{fill:none;stroke-width:2;stroke-dasharray:2 4;stroke-linecap:round;}
+.trend-chart .trend-dot{stroke-width:2;}
+.trend-chart .trend-hit{fill:transparent;cursor:pointer;}
+.trend-chart .trend-value-label{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:13px;fill:var(--ink);}
+.trend-chart .trend-nodata-label{font-family:'IBM Plex Mono',monospace;font-size:9.5px;fill:var(--faint);}
+
+.trend-tooltip{
+  position:absolute;top:0;left:0;transform:translate(-50%,-100%);pointer-events:none;
+  background:var(--ink);color:var(--page);padding:6px 10px;border-radius:4px;
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;white-space:nowrap;
+  opacity:0;transition:opacity .1s;z-index:2;
+}
+.trend-tooltip.show{opacity:1;}
+.trend-tooltip b{font-family:Fraunces,Georgia,serif;font-size:13px;margin-left:5px;}
+
 .trend-years{display:flex;gap:12px;margin-top:8px;}
 .trend-years div{flex:1;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--faint);}
 

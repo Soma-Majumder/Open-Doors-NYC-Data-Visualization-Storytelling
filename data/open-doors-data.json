@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-15T19:27:40.274Z",
+    "generatedAt": "2026-08-16T23:10:02.305Z",
     "reportYear": 2025,
     "schoolYearLabel": "2024–25",
     "source": "https://data.cityofnewyork.us/resource/dnpx-dfnc.json",
@@ -88,6 +88,238 @@
       "reportYear": 2025,
       "schoolYear": "2024–25",
       "pct": 31.4
+    }
+  ],
+  "boroughTrend": [
+    {
+      "code": "M",
+      "name": "Manhattan",
+      "trend": [
+        {
+          "reportYear": 2018,
+          "schoolYear": "2017–18",
+          "pct": 35.3
+        },
+        {
+          "reportYear": 2019,
+          "schoolYear": "2018–19",
+          "pct": 40.1
+        },
+        {
+          "reportYear": 2020,
+          "schoolYear": "2019–20",
+          "pct": 0
+        },
+        {
+          "reportYear": 2021,
+          "schoolYear": "2020–21",
+          "pct": 18.8
+        },
+        {
+          "reportYear": 2022,
+          "schoolYear": "2021–22",
+          "pct": 40.9
+        },
+        {
+          "reportYear": 2023,
+          "schoolYear": "2022–23",
+          "pct": 45.9
+        },
+        {
+          "reportYear": 2024,
+          "schoolYear": "2023–24",
+          "pct": 39.3
+        },
+        {
+          "reportYear": 2025,
+          "schoolYear": "2024–25",
+          "pct": 36.2
+        }
+      ]
+    },
+    {
+      "code": "X",
+      "name": "Bronx",
+      "trend": [
+        {
+          "reportYear": 2018,
+          "schoolYear": "2017–18",
+          "pct": 19.8
+        },
+        {
+          "reportYear": 2019,
+          "schoolYear": "2018–19",
+          "pct": 20.9
+        },
+        {
+          "reportYear": 2020,
+          "schoolYear": "2019–20",
+          "pct": 0
+        },
+        {
+          "reportYear": 2021,
+          "schoolYear": "2020–21",
+          "pct": 1.9
+        },
+        {
+          "reportYear": 2022,
+          "schoolYear": "2021–22",
+          "pct": 21.1
+        },
+        {
+          "reportYear": 2023,
+          "schoolYear": "2022–23",
+          "pct": 25.8
+        },
+        {
+          "reportYear": 2024,
+          "schoolYear": "2023–24",
+          "pct": 19.2
+        },
+        {
+          "reportYear": 2025,
+          "schoolYear": "2024–25",
+          "pct": 19.2
+        }
+      ]
+    },
+    {
+      "code": "K",
+      "name": "Brooklyn",
+      "trend": [
+        {
+          "reportYear": 2018,
+          "schoolYear": "2017–18",
+          "pct": 29.6
+        },
+        {
+          "reportYear": 2019,
+          "schoolYear": "2018–19",
+          "pct": 32.9
+        },
+        {
+          "reportYear": 2020,
+          "schoolYear": "2019–20",
+          "pct": 0
+        },
+        {
+          "reportYear": 2021,
+          "schoolYear": "2020–21",
+          "pct": 5.3
+        },
+        {
+          "reportYear": 2022,
+          "schoolYear": "2021–22",
+          "pct": 30.7
+        },
+        {
+          "reportYear": 2023,
+          "schoolYear": "2022–23",
+          "pct": 33.9
+        },
+        {
+          "reportYear": 2024,
+          "schoolYear": "2023–24",
+          "pct": 29.2
+        },
+        {
+          "reportYear": 2025,
+          "schoolYear": "2024–25",
+          "pct": 29.9
+        }
+      ]
+    },
+    {
+      "code": "Q",
+      "name": "Queens",
+      "trend": [
+        {
+          "reportYear": 2018,
+          "schoolYear": "2017–18",
+          "pct": 46
+        },
+        {
+          "reportYear": 2019,
+          "schoolYear": "2018–19",
+          "pct": 49.7
+        },
+        {
+          "reportYear": 2020,
+          "schoolYear": "2019–20",
+          "pct": 0
+        },
+        {
+          "reportYear": 2021,
+          "schoolYear": "2020–21",
+          "pct": 16.4
+        },
+        {
+          "reportYear": 2022,
+          "schoolYear": "2021–22",
+          "pct": 44
+        },
+        {
+          "reportYear": 2023,
+          "schoolYear": "2022–23",
+          "pct": 49.9
+        },
+        {
+          "reportYear": 2024,
+          "schoolYear": "2023–24",
+          "pct": 42.2
+        },
+        {
+          "reportYear": 2025,
+          "schoolYear": "2024–25",
+          "pct": 40.8
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "name": "Staten Island",
+      "trend": [
+        {
+          "reportYear": 2018,
+          "schoolYear": "2017–18",
+          "pct": 26.8
+        },
+        {
+          "reportYear": 2019,
+          "schoolYear": "2018–19",
+          "pct": 32
+        },
+        {
+          "reportYear": 2020,
+          "schoolYear": "2019–20",
+          "pct": 0
+        },
+        {
+          "reportYear": 2021,
+          "schoolYear": "2020–21",
+          "pct": 5.9
+        },
+        {
+          "reportYear": 2022,
+          "schoolYear": "2021–22",
+          "pct": 32
+        },
+        {
+          "reportYear": 2023,
+          "schoolYear": "2022–23",
+          "pct": 29.7
+        },
+        {
+          "reportYear": 2024,
+          "schoolYear": "2023–24",
+          "pct": 29.4
+        },
+        {
+          "reportYear": 2025,
+          "schoolYear": "2024–25",
+          "pct": 27.2
+        }
+      ]
     }
   ],
   "bandsTotal": 633,

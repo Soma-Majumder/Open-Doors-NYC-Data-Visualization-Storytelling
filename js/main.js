@@ -240,26 +240,140 @@ function renderBoroughRankList() {
   `).join('');
 }
 
+// Fixed y-axis ceiling for the trend chart, independent of AXIS_MAX (which
+// scales per-school bars elsewhere) — kept constant across toggle switches
+// so the scale never jumps when the visitor picks a different borough.
+const TREND_AXIS_MAX = 55;
+// Line + toggle-dot color per series: burnt orange (Queens), terracotta
+// (Manhattan), deep sienna (Brooklyn), dusty rose (Staten Island), and plum
+// (the Bronx) — the same named hues as the borough map. "All boroughs" gets
+// its own green so the citywide aggregate reads as distinct from any one
+// borough.
+const TREND_SERIES = [
+  { key: 'all', name: 'All boroughs', color: 'var(--trend-all)' },
+  { key: 'Queens', name: 'Queens', color: 'var(--queens)' },
+  { key: 'Manhattan', name: 'Manhattan', color: 'var(--manhattan)' },
+  { key: 'Staten Island', name: 'Staten Island', color: 'var(--staten)' },
+  { key: 'Brooklyn', name: 'Brooklyn', color: 'var(--brooklyn)' },
+  { key: 'Bronx', name: 'Bronx', color: 'var(--bronx)' },
+];
+let trendSelected = 'all';
+
+function trendPointsFor(data, key) {
+  if (key === 'all') return data.trend;
+  const b = data.boroughTrend.find(bb => bb.name === key);
+  return b ? b.trend : [];
+}
+
 function renderTrend(data) {
-  const bars = data.trend.map(t => {
-    const disrupted = t.schoolYear === '2019–20';
-    if (disrupted) {
-      return { year: t.reportYear, label: '—', height: '4%', color: 'var(--nodata)' };
-    }
-    return {
-      year: t.reportYear,
-      label: t.pct.toFixed(1).replace(/\.0$/, ''),
-      height: Math.max(4, Math.round((t.pct / AXIS_MAX) * 100)) + '%',
-      color: RAMP[tierFor(t.pct)]
-    };
-  });
-  document.getElementById('trendBars').innerHTML = bars.map(b => `
-    <div class="trend-bar">
-      <div class="val">${b.label}</div>
-      <div class="col" style="height:${b.height};background:${b.color}"></div>
-    </div>
+  const toggle = document.getElementById('trendToggle');
+  toggle.innerHTML = TREND_SERIES.map(s => `
+    <button type="button" class="trend-toggle-btn${s.key === trendSelected ? ' active' : ''}"
+      data-key="${s.key}" style="--dot:${s.color}" role="tab" aria-selected="${s.key === trendSelected}">${s.name}</button>
   `).join('');
-  document.getElementById('trendYears').innerHTML = bars.map(b => `<div>${b.year}</div>`).join('');
+  toggle.querySelectorAll('.trend-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      trendSelected = btn.dataset.key;
+      renderTrend(data);
+    });
+  });
+
+  const series = TREND_SERIES.find(s => s.key === trendSelected);
+  const points = trendPointsFor(data, trendSelected);
+  drawTrendChart(points, series.color);
+
+  document.getElementById('trendYears').innerHTML = points.map(t => `<div>${t.schoolYear}</div>`).join('');
+}
+
+function drawTrendChart(points, color) {
+  const W = 640, H = 200, padX = 8, top = 32, bottom = 186;
+  const n = points.length;
+  const xStep = (W - padX * 2) / (n - 1);
+  const xAt = i => padX + i * xStep;
+  const yAt = p => bottom - (Math.min(p, TREND_AXIS_MAX) / TREND_AXIS_MAX) * (bottom - top);
+  // Only genuinely missing values break the line — 2019–20 is real (if
+  // disrupted) data, and we plot it so the chart shows the actual dip
+  // instead of hiding it behind a gap.
+  const isGap = p => p.pct === null || p.pct === undefined;
+  const isDisrupted = p => p.schoolYear === '2019–20';
+
+  // No numeric axis labels — the endpoint value labels and hover tooltip
+  // already give exact figures, and a "50%" mark up here would collide with
+  // whichever endpoint label lands near the top on a given borough's toggle.
+  const grid = [10, 20, 30, 40, 50].map(v => {
+    const y = yAt(v).toFixed(1);
+    return `<line class="grid-line" x1="${padX}" y1="${y}" x2="${(W - padX).toFixed(1)}" y2="${y}" />`;
+  }).join('');
+
+  const segments = [];
+  let current = [];
+  points.forEach((p, i) => {
+    if (isGap(p)) { if (current.length) { segments.push(current); current = []; } return; }
+    current.push([xAt(i), yAt(p.pct)]);
+  });
+  if (current.length) segments.push(current);
+
+  const linePaths = segments.map(seg =>
+    `<path class="trend-line" stroke="${color}" d="${seg.map((pt, i) => (i === 0 ? 'M' : 'L') + pt[0].toFixed(1) + ',' + pt[1].toFixed(1)).join(' ')}" />`
+  ).join('');
+
+  // Every dot's outline matches its own fill (rather than a cream ring),
+  // so the marker reads as one solid piece of color at any size.
+  const dots = points.map((p, i) => {
+    if (isGap(p)) {
+      return `<circle class="trend-dot" cx="${xAt(i).toFixed(1)}" cy="${bottom}" r="3" fill="var(--nodata)" stroke="var(--nodata)" />
+        <text class="trend-nodata-label" x="${xAt(i).toFixed(1)}" y="${bottom + 16}" text-anchor="middle">n/a</text>`;
+    }
+    // The disrupted year always gets a fixed light-blue marker — on every
+    // borough's line, not whatever color that series is — so it reads as
+    // the same flagged event everywhere, not just "this series' dot."
+    return isDisrupted(p)
+      ? `<circle class="trend-dot trend-dot-disrupted" cx="${xAt(i).toFixed(1)}" cy="${yAt(p.pct).toFixed(1)}" r="4.5" fill="var(--disrupted-marker)" stroke="var(--disrupted-marker)" />`
+      : `<circle class="trend-dot" cx="${xAt(i).toFixed(1)}" cy="${yAt(p.pct).toFixed(1)}" r="4" fill="${color}" stroke="${color}" />`;
+  }).join('');
+
+  const validPoints = points.map((p, i) => ({ p, i })).filter(({ p }) => !isGap(p));
+  const endLabels = [validPoints[0], validPoints[validPoints.length - 1]].filter(Boolean).map(({ p, i }) => `
+    <text class="trend-value-label" x="${xAt(i).toFixed(1)}" y="${(yAt(p.pct) - 12).toFixed(1)}" text-anchor="${i === 0 ? 'start' : 'end'}">${fmtPct(p.pct)}</text>
+  `).join('');
+
+  const hits = points.map((p, i) => {
+    const gap = isGap(p);
+    const y = gap ? bottom : yAt(p.pct);
+    return `<circle class="trend-hit" cx="${xAt(i).toFixed(1)}" cy="${y.toFixed(1)}" r="16"
+      data-year="${p.schoolYear}" data-pct="${gap ? '' : fmtPct(p.pct)}"
+      data-gap="${gap ? '1' : ''}" data-disrupted="${isDisrupted(p) ? '1' : ''}" />`;
+  }).join('');
+
+  const svg = document.getElementById('trendChart');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = grid + linePaths + dots + endLabels + hits;
+
+  const wrap = svg.closest('.trend-chart-wrap');
+  const tooltip = document.getElementById('trendTooltip');
+  svg.querySelectorAll('.trend-hit').forEach(hit => {
+    hit.addEventListener('mouseenter', () => showTrendTooltip(hit, svg, wrap, tooltip));
+    hit.addEventListener('mousemove', () => showTrendTooltip(hit, svg, wrap, tooltip));
+    hit.addEventListener('mouseleave', () => tooltip.classList.remove('show'));
+  });
+}
+
+function showTrendTooltip(hit, svg, wrap, tooltip) {
+  const pt = svg.createSVGPoint();
+  pt.x = parseFloat(hit.getAttribute('cx'));
+  pt.y = parseFloat(hit.getAttribute('cy'));
+  const screenPt = pt.matrixTransform(svg.getScreenCTM());
+  const wrapRect = wrap.getBoundingClientRect();
+  tooltip.style.left = (screenPt.x - wrapRect.left) + 'px';
+  tooltip.style.top = (screenPt.y - wrapRect.top - 10) + 'px';
+  if (hit.dataset.gap === '1') {
+    tooltip.innerHTML = `${hit.dataset.year} <b>no data</b>`;
+  } else if (hit.dataset.disrupted === '1') {
+    tooltip.innerHTML = `${hit.dataset.year} <b>${hit.dataset.pct}</b> — testing disrupted`;
+  } else {
+    tooltip.innerHTML = `${hit.dataset.year} <b>${hit.dataset.pct}</b>`;
+  }
+  tooltip.classList.add('show');
 }
 
 function renderCaseStudy(data) {
