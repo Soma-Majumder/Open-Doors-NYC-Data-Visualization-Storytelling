@@ -54,14 +54,36 @@ const BANDS = [
   { key: "top", range: "81–100%", label: "Accelerated math reaches most eighth graders" },
 ];
 
+const MAX_ATTEMPTS = 4;
+const RETRY_BASE_MS = 1000;
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Socrata's shared anonymous endpoint occasionally drops connections
+// (ECONNRESET) or returns 503/429 under load. Those are worth a retry;
+// a 4xx means the query itself is wrong and retrying won't help.
 async function soql(params) {
   const url = `${BASE}?${new URLSearchParams(params).toString()}`;
   const headers = APP_TOKEN ? { "X-App-Token": APP_TOKEN } : {};
-  const res = await fetch(url, { headers });
-  if (!res.ok) {
-    throw new Error(`Socrata request failed (${res.status}): ${url}`);
+
+  for (let attempt = 1; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url, { headers });
+    } catch (err) {
+      if (attempt >= MAX_ATTEMPTS) throw err;
+      await sleep(RETRY_BASE_MS * 2 ** (attempt - 1));
+      continue;
+    }
+    if (res.ok) return res.json();
+    const retryable = res.status === 429 || res.status >= 500;
+    if (!retryable || attempt >= MAX_ATTEMPTS) {
+      throw new Error(`Socrata request failed (${res.status}): ${url}`);
+    }
+    await sleep(RETRY_BASE_MS * 2 ** (attempt - 1));
   }
-  return res.json();
 }
 
 function pct(wsum, n) {
